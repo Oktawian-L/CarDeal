@@ -11,11 +11,20 @@ import pl.szop.cardealshop.models.BookDetails;
 //import pl.szop.cardealshop.models.BooksImages;
 import pl.szop.andrzejshop.models.DaoSession;
 import pl.szop.andrzejshop.models.Image;
+import pl.szop.cardealshop.models.Car;
 import pl.szop.cardealshop.utils.ImageUtils;
 
 public class DatabaseInitializer {
 
     public static void init(DaoSession daoSession, Context context){
+
+        Car car1 = new Car("Camaro","Chevrolet","Diesel", (double) 16000);
+        Car car2 = new Car("Supra","Nissan","Diesel", (double) 10000);
+        byte[] image_car2 = ImageUtils.getBytesFromResource(context, R.drawable.nissan);
+        byte[] image_car1 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        car1.setPhoto(image_car1);
+        car2.setPhoto(image_car2);
+
 
         Book product1 = new Book("Władca pierścieni", "Tolkien", "Fantastyka", 30.99);
         Book product2 = new Book("Hyperion", "Simmons", "Science fiction", 99.99);
