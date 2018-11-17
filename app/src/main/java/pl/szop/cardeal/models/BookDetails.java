@@ -1,17 +1,19 @@
-package pl.szop.andrzejshop.models;
+package pl.szop.cardeal.models;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
-import org.greenrobot.greendao.annotation.JoinEntity;
-import org.greenrobot.greendao.annotation.JoinProperty;
 import org.greenrobot.greendao.annotation.Property;
 import org.greenrobot.greendao.annotation.ToMany;
 
-import java.util.ArrayList;
 import java.util.List;
 import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.DaoException;
 import org.greenrobot.greendao.annotation.ToOne;
+
+import pl.szop.cardeal.models.BookDao;
+import pl.szop.cardeal.models.BookDetailsDao;
+import pl.szop.cardeal.models.DaoSession;
+import pl.szop.cardeal.models.ImageDao;
 
 @Entity(nameInDb = "book_details")
 public class BookDetails extends Product{

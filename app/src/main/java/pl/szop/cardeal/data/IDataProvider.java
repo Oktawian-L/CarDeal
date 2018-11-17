@@ -1,9 +1,9 @@
-package pl.szop.andrzejshop.data;
+package pl.szop.cardeal.data;
 
 import java.util.List;
 
-import pl.szop.andrzejshop.models.Image;
-import pl.szop.andrzejshop.models.Product;
+import pl.szop.cardeal.models.Image;
+import pl.szop.cardeal.models.Product;
 
 public interface IDataProvider {
 

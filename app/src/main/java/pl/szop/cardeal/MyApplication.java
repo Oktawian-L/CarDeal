@@ -6,8 +6,8 @@ import android.content.SharedPreferences;
 import pl.szop.cardeal.data.IDataProvider;
 import pl.szop.cardeal.data.database.DatabaseInitializer;
 import pl.szop.cardeal.data.database.ProductDAO;
-import pl.szop.andrzejshop.models.DaoMaster;
-import pl.szop.andrzejshop.models.DaoSession;
+import pl.szop.cardeal.models.DaoMaster;
+import pl.szop.cardeal.models.DaoSession;
 
 public class MyApplication extends Application {
 

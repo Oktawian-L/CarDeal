@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.actions;
+package pl.szop.cardeal.actions;
 
 import android.content.Context;
 
