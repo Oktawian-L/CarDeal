@@ -1,8 +1,8 @@
-package pl.szop.andrzejshop.actions;
+package pl.szop.cardealshop.actions;
 
 public class ActionFactory {
 
-    public static Action getAction(String actionName){
+    public static pl.szop.andrzejshop.actions.Action getAction(String actionName){
         switch (actionName){
             case AddToCartAction.NAME:
                 return new AddToCartAction();

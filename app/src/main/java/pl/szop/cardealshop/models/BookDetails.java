@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.models;
+package pl.szop.cardealshop.models;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
@@ -13,8 +13,15 @@ import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.DaoException;
 import org.greenrobot.greendao.annotation.ToOne;
 
+import pl.szop.andrzejshop.models.Book;
+import pl.szop.andrzejshop.models.DaoSession;
+import pl.szop.andrzejshop.models.Image;
+import pl.szop.andrzejshop.models.ImageDao;
+import pl.szop.andrzejshop.models.BookDao;
+import pl.szop.andrzejshop.models.Product;
+
 @Entity(nameInDb = "book_details")
-public class BookDetails extends Product{
+public class BookDetails extends Product {
 
     @ToOne(joinProperty = "id")
     private Book book;

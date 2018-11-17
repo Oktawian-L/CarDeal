@@ -1,13 +1,13 @@
-package pl.szop.andrzejshop.actions;
+package pl.szop.cardealshop.actions;
 
 import android.content.Context;
 
 import org.greenrobot.eventbus.EventBus;
 
 import pl.szop.andrzejshop.models.Product;
-import pl.szop.andrzejshop.views.ProductsListFragment;
+import pl.szop.cardealshop.views.ProductsListFragment;
 
-public class AddToCartAction implements Action{
+public class AddToCartAction implements pl.szop.andrzejshop.actions.Action {
 
     public static final String NAME = "ADD_TO_CART";
 

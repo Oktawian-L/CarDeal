@@ -1,8 +1,8 @@
-package pl.szop.andrzejshop.data.database;
+package pl.szop.cardealshop.data.database;
 
 import pl.szop.andrzejshop.models.Book;
-import pl.szop.andrzejshop.models.BookDetails;
-import pl.szop.andrzejshop.models.BookDetailsDao;
+import pl.szop.cardealshop.models.BookDetails;
+import pl.szop.cardealshop.models.BookDetailsDao;
 import pl.szop.andrzejshop.models.DaoSession;
 
 public class ProductDAOSettings {

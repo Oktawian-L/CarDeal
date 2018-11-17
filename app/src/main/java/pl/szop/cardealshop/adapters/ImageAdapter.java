@@ -12,7 +12,7 @@ import android.widget.ImageView;
 
 import java.util.List;
 
-import pl.szop.andrzejshop.R;
+import pl.szop.cardealshop.R;
 import pl.szop.andrzejshop.models.Image;
 
 public class ImageAdapter extends PagerAdapter {

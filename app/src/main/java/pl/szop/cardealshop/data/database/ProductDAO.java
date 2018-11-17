@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.data.database;
+package pl.szop.cardealshop.data.database;
 
 import java.util.List;
 import pl.szop.andrzejshop.data.Filter;
@@ -7,7 +7,7 @@ import pl.szop.andrzejshop.models.DaoSession;
 import pl.szop.andrzejshop.models.Image;
 import pl.szop.andrzejshop.models.Product;
 
-public class ProductDAO implements IDataProvider {
+public abstract class ProductDAO implements IDataProvider {
 
     private DaoSession mDaoSession;
 

@@ -21,10 +21,10 @@ import java.util.Map;
 import java.util.Set;
 
 import pl.szop.andrzejshop.actions.Action;
-import pl.szop.andrzejshop.actions.ActionFactory;
+import pl.szop.cardealshop.actions.ActionFactory;
 import pl.szop.andrzejshop.models.Product;
-import pl.szop.andrzejshop.rules.Rule;
-import pl.szop.andrzejshop.rules.RulesFactory;
+import pl.szop.cardealshop.rules.Rule;
+import pl.szop.cardealshop.rules.RulesFactory;
 
 public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHolder> {
 

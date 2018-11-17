@@ -1,6 +1,6 @@
 package pl.szop.cardealshop.rules;
 
-import pl.szop.cardealshop.models.Product;
+import pl.szop.andrzejshop.models.Product;
 
 public class BoughtRule implements Rule {
 
