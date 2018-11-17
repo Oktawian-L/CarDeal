@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.views;
+package pl.szop.cardeal.views;
 
 import android.net.Uri;
 import android.support.v4.app.Fragment;
@@ -13,11 +13,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
-import pl.szop.andrzejshop.data.Filter;
+import pl.szop.cardeal.data.Filter;
 import pl.szop.andrzejshop.R;
 
 public class ProductsActivity extends AppCompatActivity implements ProductsListFragment.OnFragmentInteractionListener {

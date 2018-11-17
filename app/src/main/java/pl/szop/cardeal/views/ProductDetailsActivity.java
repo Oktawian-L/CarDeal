@@ -1,22 +1,15 @@
-package pl.szop.andrzejshop.views;
+package pl.szop.cardeal.views;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import java.lang.reflect.InvocationTargetException;
-import java.util.List;
-
-import pl.szop.andrzejshop.MyApplication;
+import pl.szop.cardeal.MyApplication;
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.adapters.ViewAdapter;
-import pl.szop.andrzejshop.models.BookDetails;
-import pl.szop.andrzejshop.models.Image;
+import pl.szop.cardeal.adapters.ViewAdapter;
+import pl.szop.cardeal.models.BookDetails;
 
 public class ProductDetailsActivity extends AppCompatActivity implements ImagesFragment.OnFragmentInteractionListener {
 

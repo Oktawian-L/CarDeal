@@ -1,31 +1,24 @@
-package pl.szop.andrzejshop.views;
+package pl.szop.cardeal.views;
 
 import android.content.Context;
 import android.content.Intent;
-import android.gesture.Gesture;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.view.GestureDetector;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.viewpagerindicator.CirclePageIndicator;
-import com.viewpagerindicator.TitlePageIndicator;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import pl.szop.andrzejshop.MyApplication;
+import pl.szop.cardeal.MyApplication;
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.adapters.ImageAdapter;
+import pl.szop.cardeal.adapters.ImageAdapter;
 
-import pl.szop.andrzejshop.models.Image;
+import pl.szop.cardeal.models.Image;
 
 public class ImagesFragment extends Fragment {
 

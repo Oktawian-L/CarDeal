@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.rules;
+package pl.szop.cardeal.rules;
 
 public class RulesFactory {
 
