@@ -7,7 +7,7 @@ import pl.szop.andrzejshop.models.DaoSession;
 import pl.szop.andrzejshop.models.Image;
 import pl.szop.andrzejshop.models.Product;
 
-public abstract class ProductDAO implements IDataProvider {
+public class ProductDAO implements IDataProvider {
 
     private DaoSession mDaoSession;
 
