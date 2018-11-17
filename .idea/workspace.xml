@@ -5,17 +5,18 @@
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="100" />
-    <option name="y" value="35" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="74" />
+    <option name="y" value="4" />
     <option name="width" value="1400" />
-    <option name="height" value="805" />
+    <option name="height" value="970" />
   </component>
   <component name="PropertiesComponent">
-    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="Nexus_5X_API_28" />
+    <property name="android.sdk.path" value="F:/Android/SDK" />
+    <property name="device.picker.selection" value="42008a70cedb3300" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1542483807042" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1542484250526" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
