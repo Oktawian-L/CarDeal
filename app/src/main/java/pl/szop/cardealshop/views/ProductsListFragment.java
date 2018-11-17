@@ -21,7 +21,7 @@ import org.greenrobot.eventbus.Subscribe;
 import java.util.ArrayList;
 import java.util.List;
 
-import pl.szop.andrzejshop.data.Filter;
+import pl.szop.cardealshop.data.Filter;
 import pl.szop.cardealshop.MyApplication;
 import pl.szop.cardealshop.R;
 import pl.szop.cardealshop.actions.AddToCartAction;

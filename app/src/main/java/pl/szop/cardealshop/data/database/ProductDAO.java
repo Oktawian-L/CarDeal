@@ -1,8 +1,8 @@
 package pl.szop.cardealshop.data.database;
 
 import java.util.List;
-import pl.szop.andrzejshop.data.Filter;
-import pl.szop.andrzejshop.data.IDataProvider;
+import pl.szop.cardealshop.data.Filter;
+import pl.szop.cardealshop.data.IDataProvider;
 import pl.szop.andrzejshop.models.DaoSession;
 import pl.szop.andrzejshop.models.Image;
 import pl.szop.andrzejshop.models.Product;
@@ -32,7 +32,7 @@ public class ProductDAO implements IDataProvider {
 
     @Override
     public List<? extends Product> getProducts(){
-        return getProducts(null);
+        return getProducts((Filter) null);
     }
 
     @Override

@@ -32,7 +32,8 @@ public class DatabaseInitializer {
         product1.setCover(image);
         product2.setCover(image);
 
-
+        daoSession.getCarDao().insert(car1);
+        daoSession.getCarDao().insert(car2);
 
         daoSession.getBookDao().insert(product1);
         daoSession.getBookDao().insert(product2);

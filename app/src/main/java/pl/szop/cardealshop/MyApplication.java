@@ -3,7 +3,7 @@ package pl.szop.cardealshop;
 import android.app.Application;
 import android.content.SharedPreferences;
 
-import pl.szop.andrzejshop.data.IDataProvider;
+import pl.szop.cardealshop.data.IDataProvider;
 import pl.szop.cardealshop.data.database.DatabaseInitializer;
 import pl.szop.cardealshop.data.database.ProductDAO;
 import pl.szop.andrzejshop.models.DaoMaster;

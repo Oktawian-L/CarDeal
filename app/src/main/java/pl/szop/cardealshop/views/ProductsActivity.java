@@ -16,7 +16,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
-import pl.szop.andrzejshop.data.Filter;
+import pl.szop.cardealshop.data.Filter;
 import pl.szop.cardealshop.R;
 
 public class ProductsActivity extends AppCompatActivity implements ProductsListFragment.OnFragmentInteractionListener {

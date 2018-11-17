@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.data;
+package pl.szop.cardealshop.data;
 
 public class Filter {
 
