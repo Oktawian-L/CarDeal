@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.views;
+package pl.szop.cardealshop.views;
 
 import android.content.Context;
 import android.content.Intent;
@@ -21,15 +21,13 @@ import org.greenrobot.eventbus.Subscribe;
 import java.util.ArrayList;
 import java.util.List;
 
-import pl.szop.andrzejshop.data.Filter;
-import pl.szop.andrzejshop.MyApplication;
-import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.actions.AddToCartAction;
-import pl.szop.andrzejshop.adapters.ProductsAdapter;
-import pl.szop.andrzejshop.data.database.ProductDAO;
-import pl.szop.andrzejshop.models.Book;
-import pl.szop.andrzejshop.models.Product;
-import pl.szop.andrzejshop.rules.BoughtRule;
+import pl.szop.cardealshop.data.Filter;
+import pl.szop.cardealshop.MyApplication;
+import pl.szop.cardealshop.R;
+import pl.szop.cardealshop.actions.AddToCartAction;
+import pl.szop.cardealshop.adapters.ProductsAdapter;
+import pl.szop.cardealshop.models.Product;
+import pl.szop.cardealshop.rules.BoughtRule;
 
 
 public class ProductsListFragment extends Fragment {

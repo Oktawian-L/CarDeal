@@ -1,11 +1,11 @@
-package pl.szop.andrzejshop.views;
+package pl.szop.cardealshop.views;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import pl.szop.andrzejshop.R;
+import pl.szop.cardealshop.R;
 
 
 public class ImageActivity extends AppCompatActivity implements ImagesFragment.OnFragmentInteractionListener {

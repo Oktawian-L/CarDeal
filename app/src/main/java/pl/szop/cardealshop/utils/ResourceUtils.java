@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.utils;
+package pl.szop.cardealshop.utils;
 
 import android.view.View;
 

@@ -1,10 +1,10 @@
-package pl.szop.andrzejshop.views;
+package pl.szop.cardealshop.views;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import pl.szop.andrzejshop.R;
+import pl.szop.cardealshop.R;
 
 public class HomeActivity extends AppCompatActivity {
 

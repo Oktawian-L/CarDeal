@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop
+package pl.szop.cardealshop
 
 import org.junit.Test
 

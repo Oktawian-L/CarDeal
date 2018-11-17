@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.rules;
+package pl.szop.cardealshop.rules;
 
 public class InCartRule implements Rule{
 
