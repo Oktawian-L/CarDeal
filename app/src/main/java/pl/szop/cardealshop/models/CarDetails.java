@@ -20,11 +20,11 @@ import pl.szop.andrzejshop.models.ImageDao;
 import pl.szop.andrzejshop.models.BookDao;
 import pl.szop.andrzejshop.models.Product;
 
-@Entity(nameInDb = "book_details")
-public class BookDetails extends Product {
+@Entity(nameInDb = "car_details")
+public class CarDetails extends Product {
 
     @ToOne(joinProperty = "id")
-    private Book book;
+    private Car car;
 
     @Id
     private Long id;
@@ -35,35 +35,26 @@ public class BookDetails extends Product {
     @Property(nameInDb = "rating")
     private Double rating;
 
-//    @ToMany
-//    @JoinEntity(
-//            entity = BooksImages.class,
-//            sourceProperty = "book",
-//            targetProperty = "image"
-//    )
-//    private List<Image> images;
-
     @ToMany(referencedJoinProperty = "productId")
     private List<Image> images;
 
+    @Property(nameInDb = "moc")
+    private String moc;
 
-    @Property(nameInDb = "translation")
-    private String translation;
+    @Property(nameInDb = "nadwozie")
+    private String nadwozie;
 
-    @Property(nameInDb = "publisher")
-    private String publisher;
+    @Property(nameInDb = "has_abs")
+    private String has_abs;
 
-    @Property(nameInDb = "language")
-    private String language;
+    @Property(nameInDb = "has_klima")
+    private String has_klima;
 
-    @Property(nameInDb = "org_language")
-    private String orgLanguage;
+    @Property(nameInDb = "przebieg")
+    private int przebieg;
 
-    @Property(nameInDb = "pages")
-    private int pages;
-
-    @Property(nameInDb = "release_number")
-    private int releaseNumber;
+    @Property(nameInDb = "nr_silnika")
+    private int nr_silnika;
 
     @Property(nameInDb = "relase_year")
     private int releaseYear;
@@ -73,27 +64,29 @@ public class BookDetails extends Product {
     private transient DaoSession daoSession;
 
     /** Used for active entity operations. */
-    @Generated(hash = 2006025983)
-    private transient BookDetailsDao myDao;
+    @Generated(hash = 62405507)
+    private transient CarDetailsDao myDao;
 
-    @Generated(hash = 205324385)
-    public BookDetails(Long id, String description, Double rating,
-            String translation, String publisher, String language,
-            String orgLanguage, int pages, int releaseNumber, int releaseYear) {
+    @Generated(hash = 440805916)
+    private transient Long car__resolvedKey;
+
+    @Generated(hash = 1909274008)
+    public CarDetails(Long id, String description, Double rating, String moc, String nadwozie,
+            String has_abs, String has_klima, int przebieg, int nr_silnika, int releaseYear) {
         this.id = id;
         this.description = description;
         this.rating = rating;
-        this.translation = translation;
-        this.publisher = publisher;
-        this.language = language;
-        this.orgLanguage = orgLanguage;
-        this.pages = pages;
-        this.releaseNumber = releaseNumber;
+        this.moc = moc;
+        this.nadwozie = nadwozie;
+        this.has_abs = has_abs;
+        this.has_klima = has_klima;
+        this.przebieg = przebieg;
+        this.nr_silnika = nr_silnika;
         this.releaseYear = releaseYear;
     }
 
-    @Generated(hash = 1372818535)
-    public BookDetails() {
+    @Generated(hash = 1517749497)
+    public CarDetails() {
     }
 
     public Long getId() {
@@ -120,52 +113,52 @@ public class BookDetails extends Product {
         this.rating = rating;
     }
 
-    public String getTranslation() {
-        return this.translation;
+    public String getMoc() {
+        return this.moc;
     }
 
-    public void setTranslation(String translation) {
-        this.translation = translation;
+    public void setMoc(String moc) {
+        this.moc = moc;
     }
 
-    public String getPublisher() {
-        return this.publisher;
+    public String getNadwozie() {
+        return this.nadwozie;
     }
 
-    public void setPublisher(String publisher) {
-        this.publisher = publisher;
+    public void setNadwozie(String nadwozie) {
+        this.nadwozie = nadwozie;
     }
 
-    public String getLanguage() {
-        return this.language;
+    public String getHas_abs() {
+        return this.has_abs;
     }
 
-    public void setLanguage(String language) {
-        this.language = language;
+    public void setHas_abs(String has_abs) {
+        this.has_abs = has_abs;
     }
 
-    public String getOrgLanguage() {
-        return this.orgLanguage;
+    public String getHas_klima() {
+        return this.has_klima;
     }
 
-    public void setOrgLanguage(String orgLanguage) {
-        this.orgLanguage = orgLanguage;
+    public void setHas_klima(String has_klima) {
+        this.has_klima = has_klima;
     }
 
-    public int getPages() {
-        return this.pages;
+    public int getPrzebieg() {
+        return this.przebieg;
     }
 
-    public void setPages(int pages) {
-        this.pages = pages;
+    public void setPrzebieg(int przebieg) {
+        this.przebieg = przebieg;
     }
 
-    public int getReleaseNumber() {
-        return this.releaseNumber;
+    public int getNr_silnika() {
+        return this.nr_silnika;
     }
 
-    public void setReleaseNumber(int releaseNumber) {
-        this.releaseNumber = releaseNumber;
+    public void setNr_silnika(int nr_silnika) {
+        this.nr_silnika = nr_silnika;
     }
 
     public int getReleaseYear() {
@@ -176,28 +169,32 @@ public class BookDetails extends Product {
         this.releaseYear = releaseYear;
     }
 
-    public String getTitle(){
-        return book.getTitle();
+    /** To-one relationship, resolved on first access. */
+    @Generated(hash = 847991781)
+    public Car getCar() {
+        Long __key = this.id;
+        if (car__resolvedKey == null || !car__resolvedKey.equals(__key)) {
+            final DaoSession daoSession = this.daoSession;
+            if (daoSession == null) {
+                throw new DaoException("Entity is detached from DAO context");
+            }
+            CarDao targetDao = daoSession.getCarDao();
+            Car carNew = targetDao.load(__key);
+            synchronized (this) {
+                car = carNew;
+                car__resolvedKey = __key;
+            }
+        }
+        return car;
     }
-
-    public String getAuthor(){
-        return book.getAuthor();
-    }
-
-    public String getCategory(){
-        return book.getCategory();
-    }
-
-    @Generated(hash = 893611298)
-    private transient Long book__resolvedKey;
 
     /** called by internal mechanisms, do not call yourself. */
-    @Generated(hash = 1395036341)
-    public void setBook(Book book) {
+    @Generated(hash = 1489653394)
+    public void setCar(Car car) {
         synchronized (this) {
-            this.book = book;
-            id = book == null ? null : book.getId();
-            book__resolvedKey = id;
+            this.car = car;
+            id = car == null ? null : car.getId();
+            car__resolvedKey = id;
         }
     }
 
@@ -205,7 +202,7 @@ public class BookDetails extends Product {
      * To-many relationship, resolved on first access (and after reset).
      * Changes to to-many relations are not persisted, make changes to the target entity.
      */
-    @Generated(hash = 1726055322)
+    @Generated(hash = 1994303484)
     public List<Image> getImages() {
         if (images == null) {
             final DaoSession daoSession = this.daoSession;
@@ -213,7 +210,7 @@ public class BookDetails extends Product {
                 throw new DaoException("Entity is detached from DAO context");
             }
             ImageDao targetDao = daoSession.getImageDao();
-            List<Image> imagesNew = targetDao._queryBookDetails_Images(id);
+            List<Image> imagesNew = targetDao._queryCarDetails_Images(id);
             synchronized (this) {
                 if (images == null) {
                     images = imagesNew;
@@ -266,32 +263,10 @@ public class BookDetails extends Product {
     }
 
     /** called by internal mechanisms, do not call yourself. */
-    @Generated(hash = 1593577042)
+    @Generated(hash = 1550864587)
     public void __setDaoSession(DaoSession daoSession) {
         this.daoSession = daoSession;
-        myDao = daoSession != null ? daoSession.getBookDetailsDao() : null;
+        myDao = daoSession != null ? daoSession.getCarDetailsDao() : null;
     }
-
-    /** To-one relationship, resolved on first access. */
-    @Generated(hash = 1425297770)
-    public Book getBook() {
-        Long __key = this.id;
-        if (book__resolvedKey == null || !book__resolvedKey.equals(__key)) {
-            final DaoSession daoSession = this.daoSession;
-            if (daoSession == null) {
-                throw new DaoException("Entity is detached from DAO context");
-            }
-            BookDao targetDao = daoSession.getBookDao();
-            Book bookNew = targetDao.load(__key);
-            synchronized (this) {
-                book = bookNew;
-                book__resolvedKey = __key;
-            }
-        }
-        return book;
-    }
-
-    /** Used to resolve relations */
-   
-
 }
+
