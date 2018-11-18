@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import pl.szop.andrzejshop.actions.Action;
+import pl.szop.cardealshop.actions.Action;
 import pl.szop.cardealshop.actions.ActionFactory;
 import pl.szop.andrzejshop.models.Product;
 import pl.szop.cardealshop.rules.Rule;

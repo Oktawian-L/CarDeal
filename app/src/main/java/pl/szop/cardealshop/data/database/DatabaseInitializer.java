@@ -34,7 +34,7 @@ public class DatabaseInitializer {
         product2.setCover(image);*/
 
         byte[] image = ImageUtils.getBytesFromResource(context, R.drawable.game);
-
+        byte[] image_def = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
         daoSession.getCarDao().insert(car1);
         daoSession.getCarDao().insert(car2);
 
@@ -43,7 +43,7 @@ public class DatabaseInitializer {
 
         // saving details
         CarDetails details = new CarDetails();
-        details.setDescription("“Władca Pierścieni” to niesamowita przygoda mówiąca o przyjaźni, poświęceniu i walce o dobro. Przenieś się w świat porywającego Śródziemia, miejsca, gdzie można spotkać nie tylko ludzi, lecz dumne krasnoludy, piękne elfy i, co najważniejsze, dzielne hobbity. Poznaj historię niepozornego niziołka, Froda Bagginsa, na którego barki niespodziewanie spada ogromna odpowiedzialność. Dzięki życzliwości swoich towarzyszy podejmuje się niebezpiecznego zadania i zabiera nas do magicznego świata.");
+        details.setDescription("Camaro car descrpit");
 
 
         details.setCar(car1);
@@ -54,7 +54,7 @@ public class DatabaseInitializer {
         image1.setProductId(details.getId());
         Image image2 = new Image();
         image2.setProductId(details.getId());
-        image2.setImage(image);
+        image2.setImage(image_def);
         daoSession.getImageDao().insert(image1);
         daoSession.getImageDao().insert(image2);
         List<Image> images = Arrays.asList(image1, image2);

@@ -16,7 +16,7 @@ import java.util.List;
 
 import pl.szop.cardealshop.MyApplication;
 import pl.szop.cardealshop.R;
-import pl.szop.andrzejshop.adapters.ImageAdapter;
+import pl.szop.cardealshop.adapters.ImageAdapter;
 
 import pl.szop.andrzejshop.models.Image;
 
