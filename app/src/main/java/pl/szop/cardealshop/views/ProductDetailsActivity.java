@@ -9,7 +9,8 @@ import android.view.View;
 import pl.szop.cardealshop.MyApplication;
 import pl.szop.cardealshop.R;
 import pl.szop.andrzejshop.adapters.ViewAdapter;
-import pl.szop.cardealshop.models.BookDetails;
+import pl.szop.cardealshop.models.CarDetails;
+import pl.szop.cardealshop.models.CarDetails;
 
 public class ProductDetailsActivity extends AppCompatActivity implements ImagesFragment.OnFragmentInteractionListener {
 
@@ -23,7 +24,7 @@ public class ProductDetailsActivity extends AppCompatActivity implements ImagesF
         Intent intent = getIntent();
         Long productId = intent.getLongExtra("id", 0L);
 
-        BookDetails details = (BookDetails) MyApplication.instance().getDataProvider().getDetails(productId);
+        CarDetails details = (CarDetails) MyApplication.instance().getDataProvider().getDetails(productId);
         ViewAdapter.bindView(view, details);
         ImagesFragment imagesFragment = (ImagesFragment) getSupportFragmentManager().findFragmentById(R.id.images_fragment);
         imagesFragment.setImages(details.getId(), null);
