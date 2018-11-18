@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#808080</color>
     <color name="colorAccent">#1b47d8</color>
     <color name="colorPrice">#ff0004</color>
+    <color name="colorBackground">#0d2133</color>
+    <color name="colorTlo">#0d2133</color>
 </resources>

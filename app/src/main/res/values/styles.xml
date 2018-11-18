@@ -10,8 +10,8 @@
 
     <style name="ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
 
-        <item name="android:background">@color/colorPrimary</item>
-        <item name="background">@color/colorPrimary</item>
+        <item name="android:background">@color/colorBackground</item>
+        <item name="background">@color/colorTlo</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
