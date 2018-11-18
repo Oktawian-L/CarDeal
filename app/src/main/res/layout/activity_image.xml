@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< Updated upstream
+=======
+    android:background="@color/colorTlo">
+>>>>>>> Stashed changes
     tools:context="pl.szop.cardealshop.views.ImageActivity">
 
     <fragment android:id="@+id/images_fragment"
