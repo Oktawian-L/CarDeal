@@ -13,11 +13,11 @@ import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.DaoException;
 import org.greenrobot.greendao.annotation.ToOne;
 
-import pl.szop.andrzejshop.models.Book;
-import pl.szop.andrzejshop.models.DaoSession;
+import pl.szop.cardealshop.models.Book;
+import pl.szop.cardealshop.models.DaoSession;
 import pl.szop.andrzejshop.models.Image;
 import pl.szop.andrzejshop.models.ImageDao;
-import pl.szop.andrzejshop.models.BookDao;
+import pl.szop.cardealshop.models.BookDao;
 import pl.szop.andrzejshop.models.Product;
 
 @Entity(nameInDb = "car_details")

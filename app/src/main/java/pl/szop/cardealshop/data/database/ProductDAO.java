@@ -3,7 +3,7 @@ package pl.szop.cardealshop.data.database;
 import java.util.List;
 import pl.szop.cardealshop.data.Filter;
 import pl.szop.cardealshop.data.IDataProvider;
-import pl.szop.andrzejshop.models.DaoSession;
+import pl.szop.cardealshop.models.DaoSession;
 import pl.szop.andrzejshop.models.Image;
 import pl.szop.andrzejshop.models.Product;
 

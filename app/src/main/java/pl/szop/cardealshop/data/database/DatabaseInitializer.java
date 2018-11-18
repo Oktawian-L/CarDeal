@@ -6,10 +6,10 @@ import java.util.Arrays;
 import java.util.List;
 
 import pl.szop.cardealshop.R;
-import pl.szop.andrzejshop.models.Book;
+import pl.szop.cardealshop.models.Car;
 import pl.szop.cardealshop.models.CarDetails;
 //import pl.szop.cardealshop.models.BooksImages;
-import pl.szop.andrzejshop.models.DaoSession;
+import pl.szop.cardealshop.models.DaoSession;
 import pl.szop.andrzejshop.models.Image;
 import pl.szop.cardealshop.models.Car;
 import pl.szop.cardealshop.models.CarDetails;
@@ -27,17 +27,19 @@ public class DatabaseInitializer {
         car2.setPhoto(image_car2);
 
 
-        Book product1 = new Book("Władca pierścieni", "Tolkien", "Fantastyka", 30.99);
+        /*Book product1 = new Book("Władca pierścieni", "Tolkien", "Fantastyka", 30.99);
         Book product2 = new Book("Hyperion", "Simmons", "Science fiction", 99.99);
-        byte[] image = ImageUtils.getBytesFromResource(context, R.drawable.game);
+
         product1.setCover(image);
-        product2.setCover(image);
+        product2.setCover(image);*/
+
+        byte[] image = ImageUtils.getBytesFromResource(context, R.drawable.game);
 
         daoSession.getCarDao().insert(car1);
         daoSession.getCarDao().insert(car2);
 
-        daoSession.getBookDao().insert(product1);
-        daoSession.getBookDao().insert(product2);
+       /* daoSession.getBookDao().insert(product1);
+        daoSession.getBookDao().insert(product2);*/
 
         // saving details
         CarDetails details = new CarDetails();
