@@ -14,7 +14,7 @@
     <fragment android:id="@+id/images_fragment"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:name="pl.szop.andrzejshop.views.ImagesFragment"></fragment>
+        android:name="pl.szop.cardealshop.views.ImagesFragment"></fragment>
     <FrameLayout android:id="@+id/products_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
