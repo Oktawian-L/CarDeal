@@ -1,9 +1,11 @@
-package pl.szop.andrzejshop.models;
+package pl.szop.cardealshop.models;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
 import org.greenrobot.greendao.annotation.Generated;
+
+import pl.szop.andrzejshop.models.Product;
 
 @Entity(nameInDb = "books")
 public class Book extends Product {
