@@ -9,11 +9,8 @@ apply plugin: 'org.greenrobot.greendao'
 android {
     compileSdkVersion 28
     defaultConfig {
-<<<<<<< Updated upstream
-        applicationId "pl.rdyszlewski.cardealshop"
-=======
+
         applicationId "pl.olasek.cardealshop"
->>>>>>> Stashed changes
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
