@@ -7,7 +7,7 @@ import java.util.List;
 
 import pl.szop.cardealshop.R;
 import pl.szop.andrzejshop.models.Book;
-import pl.szop.cardealshop.models.BookDetails;
+import pl.szop.cardealshop.models.CarDetails;
 //import pl.szop.cardealshop.models.BooksImages;
 import pl.szop.andrzejshop.models.DaoSession;
 import pl.szop.andrzejshop.models.Image;
