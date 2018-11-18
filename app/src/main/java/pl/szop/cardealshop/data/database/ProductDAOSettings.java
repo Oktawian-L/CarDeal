@@ -4,6 +4,7 @@ import pl.szop.andrzejshop.models.Book;
 import pl.szop.cardealshop.models.BookDetails;
 import pl.szop.cardealshop.models.BookDetailsDao;
 import pl.szop.andrzejshop.models.DaoSession;
+import pl.szop.cardealshop.models.CarDetailsDao;
 
 public class ProductDAOSettings {
 
@@ -11,7 +12,7 @@ public class ProductDAOSettings {
     public static Class PRODUCT_CLASS = Book.class;
     public static Class PRODUCT_DETAILS_CLASS = BookDetails.class;
 
-    public static BookDetailsDao getDetailsDao(DaoSession daoSession){
-        return daoSession.getBookDetailsDao();
+    public static CarDetailsDao getDetailsDao(DaoSession daoSession){
+        return daoSession.getCarDetailsDao();
     }
 }
