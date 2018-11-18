@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorTlo"
     tools:context=".views.ProductDetailsActivity"
     android:id="@+id/content">
     <!--<android.support.v4.view.ViewPager android:id="@+id/images"-->
@@ -14,7 +13,7 @@
     <fragment android:id="@+id/images_fragment"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:name="pl.szop.cardealshop.views.ImagesFragment"></fragment>
+        android:name="pl.szop.andrzejshop.views.ImagesFragment"></fragment>
     <FrameLayout android:id="@+id/products_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
