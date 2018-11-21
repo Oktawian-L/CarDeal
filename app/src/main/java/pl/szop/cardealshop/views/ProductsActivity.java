@@ -32,9 +32,14 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
 
     private ProductsListFragment mFragment;
 
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onFragmentInteraction(Uri uri) {
+
+    }
+
+
+    //@Override
+    /*protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_products_list);
 //        createActionBar();
@@ -97,5 +102,5 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
     @Override
     public void onFragmentInteraction(Uri uri) {
         // TODO
-    }
+    }*/
 }

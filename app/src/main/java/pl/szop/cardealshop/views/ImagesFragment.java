@@ -30,79 +30,83 @@ public class ImagesFragment extends Fragment {
         // Required empty public constructor
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void setImages(Long id, Object o) {
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_images, container, false);
-        cViewPager = view.findViewById(R.id.images);
-        cIndicator = view.findViewById(R.id.indicator);
-        return view;
-
-    }
-
-    public void setImages(Long productId, Integer position){
-        List<Image> images = MyApplication.instance().getDataProvider().getImages(productId);
-        if(images == null){
-            return;
+    /*
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
         }
-        ImageAdapter adapter = new ImageAdapter(getContext(),images);
-        adapter.setClickListener(index-> startImageActivity(productId, index));
-
-        cViewPager.setAdapter(adapter);
-        cIndicator.setViewPager(cViewPager);
-        if(position != null){
-            cViewPager.setCurrentItem(position);
+    
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View view = inflater.inflate(R.layout.fragment_images, container, false);
+            cViewPager = view.findViewById(R.id.images);
+            cIndicator = view.findViewById(R.id.indicator);
+            return view;
+    
         }
-
-    }
-
-    private void startImageActivity(Long productId, int index) {
-        Intent intent = new Intent(getContext(), ImageActivity.class);
-        intent.putExtra("position", index);
-        intent.putExtra("product", productId);
-        startActivity(intent);
-    }
-
-
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
+    
+        public void setImages(Long productId, Integer position){
+            List<Image> images = MyApplication.instance().getDataProvider().getImages(productId);
+            if(images == null){
+                return;
+            }
+            ImageAdapter adapter = new ImageAdapter(getContext(),images);
+            adapter.setClickListener(index-> startImageActivity(productId, index));
+    
+            cViewPager.setAdapter(adapter);
+            cIndicator.setViewPager(cViewPager);
+            if(position != null){
+                cViewPager.setCurrentItem(position);
+            }
+    
         }
-    }
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+    
+        private void startImageActivity(Long productId, int index) {
+            Intent intent = new Intent(getContext(), ImageActivity.class);
+            intent.putExtra("position", index);
+            intent.putExtra("product", productId);
+            startActivity(intent);
         }
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
-
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
+    
+    
+        // TODO: Rename method, update argument and hook method into UI event
+        public void onButtonPressed(Uri uri) {
+            if (mListener != null) {
+                mListener.onFragmentInteraction(uri);
+            }
+        }
+    
+        @Override
+        public void onAttach(Context context) {
+            super.onAttach(context);
+            if (context instanceof OnFragmentInteractionListener) {
+                mListener = (OnFragmentInteractionListener) context;
+            } else {
+                throw new RuntimeException(context.toString()
+                        + " must implement OnFragmentInteractionListener");
+            }
+        }
+    
+        @Override
+        public void onDetach() {
+            super.onDetach();
+            mListener = null;
+        }
+    
+        /**
+         * This interface must be implemented by activities that contain this
+         * fragment to allow an interaction in this fragment to be communicated
+         * to the activity and potentially other fragments contained in that
+         * activity.
+         * <p>
+         * See the Android Training lesson <a href=
+         * "http://developer.android.com/training/basics/fragments/communicating.html"
+         * >Communicating with Other Fragments</a> for more information.
+         */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);

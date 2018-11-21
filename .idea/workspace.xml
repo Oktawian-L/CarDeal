@@ -24,24 +24,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/actions/AddToCartAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/actions/AddToCartAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/adapters/ImageAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/adapters/ImageAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/adapters/ProductsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/adapters/ProductsAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/adapters/ViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/adapters/ViewAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/IDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/IDataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/database/DatabaseInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/database/DatabaseInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/database/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/database/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/database/ProductDAOSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/database/ProductDAOSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/CarDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/CarDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/rules/BoughtRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/rules/BoughtRule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/DescriptionFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/DescriptionFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ImageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ImageActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ImagesFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ImagesFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductDetailsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductsListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductsListFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductsActivity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -102,43 +89,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AddToCartAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/actions/AddToCartAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/adapters/ViewAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CarDetails.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/CarDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DatabaseInitializer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/database/DatabaseInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="119">
               <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -150,7 +104,7 @@
       <file leaf-file-name="ProductDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/database/ProductDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="153">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -159,7 +113,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IDataProvider.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IDataProvider.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/IDataProvider.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -171,20 +125,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductsAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/adapters/ProductsAdapter.java">
+      <file leaf-file-name="ImagesFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ImagesFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+            <state relative-caret-position="-34">
+              <caret line="43" column="61" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/Book.java">
+      <file leaf-file-name="ImageActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ImageActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="459">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,11 +146,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductsListFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductsListFragment.java">
+      <file leaf-file-name="DescriptionFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/DescriptionFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1768">
-              <caret line="104" column="72" selection-start-line="104" selection-start-column="72" selection-end-line="104" selection-end-column="72" />
+            <state relative-caret-position="-95">
+              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/HomeActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -207,8 +170,32 @@
       <file leaf-file-name="ProductDetailsActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductDetailsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+            <state relative-caret-position="399">
+              <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductsActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductsActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2632,7 +2619,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/Filter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/BookDetails.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" />
@@ -2654,12 +2640,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/rules/BoughtRule.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/Car.java" />
         <option value="$PROJECT_DIR$/app/build/generated/source/greendao/pl/szop/andrzejshop/models/ImageDao.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/DescriptionFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ImagesFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/adapters/ImageAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductsListFragment.java" />
         <option value="$PROJECT_DIR$/app/build/generated/source/greendao/pl/szop/cardealshop/models/DaoSession.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductDetailsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/adapters/ProductsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/actions/AddToCartAction.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/adapters/ViewAdapter.java" />
@@ -2668,6 +2651,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/database/DatabaseInitializer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/database/ProductDAO.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/IDataProvider.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/DescriptionFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ImageActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ImagesFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductsActivity.java" />
       </list>
     </option>
   </component>
@@ -2687,6 +2675,7 @@
     <panes>
       <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2715,50 +2704,7 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="cardealshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="cardealshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="adapters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="cardealshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="cardealshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="cardealshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="cardealshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="rules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="cardealshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
@@ -2770,67 +2716,7 @@
             <path>
               <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="cardealshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="cardealshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="android" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="android" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="arch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="android" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="arch" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="android" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="arch" type="462c0819:PsiDirectoryNode" />
-              <item name="lifecycle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="szop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="szop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="cardealshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
               <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
@@ -2840,7 +2726,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3097,13 +2982,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="27" selection-end-column="11" />
         </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/actions/Action.java">
@@ -3124,9 +3009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3216,9 +3098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3246,73 +3125,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/greendao/pl/szop/andrzejshop/models/ImageDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1547">
-          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/DescriptionFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/greendao/pl/szop/andrzejshop/models/ImageDao.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/adapters/ImageAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ImageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/HomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ImagesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-248">
-          <caret line="52" column="52" lean-forward="true" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-911">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3365,26 +3182,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductsListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="104" column="72" selection-start-line="104" selection-start-column="72" selection-end-line="104" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductDetailsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductsListFragment.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/adapters/ProductsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -3392,19 +3190,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/actions/AddToCartAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/actions/AddToCartAction.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/adapters/ViewAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
+        <state relative-caret-position="221">
           <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -3421,7 +3210,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/models/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="289">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -3431,7 +3220,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/database/DatabaseInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="119">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -3441,7 +3230,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/data/database/ProductDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="153">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -3453,6 +3242,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/DescriptionFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/HomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ImageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ImagesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="43" column="61" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductDetailsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardealshop/views/ProductsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

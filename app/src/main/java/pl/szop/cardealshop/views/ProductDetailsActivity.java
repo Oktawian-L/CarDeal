@@ -21,14 +21,14 @@ public class ProductDetailsActivity extends AppCompatActivity implements ImagesF
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_details);
 
-        View view = findViewById(R.id.content);
+       /* View view = findViewById(R.id.content);
         Intent intent = getIntent();
         Long productId = intent.getLongExtra("id", 0L);
 
         CarDetails details = (CarDetails) MyApplication.instance().getDataProvider().getDetails(productId);
         ViewAdapter.bindView(view, details);
         ImagesFragment imagesFragment = (ImagesFragment) getSupportFragmentManager().findFragmentById(R.id.images_fragment);
-        imagesFragment.setImages(details.getId(), null);
+        imagesFragment.setImages(details.getId(), null);*/
     }
 
 

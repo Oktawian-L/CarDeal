@@ -15,7 +15,7 @@ import pl.szop.cardealshop.utils.ResourceUtils;
 
 public class DescriptionFragment extends Fragment {
 
-    private OnFragmentInteractionListener mListener;
+  /*  private OnFragmentInteractionListener mListener;
     private TextView cDescriptionView;
     private Product mProduct;
     private View cView;
@@ -38,14 +38,7 @@ public class DescriptionFragment extends Fragment {
         }
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment DescriptionFragment.
-     */
+
     // TODO: Rename and change types and number of parameters
     public static DescriptionFragment newInstance(String param1, String param2) {
         DescriptionFragment fragment = new DescriptionFragment();
@@ -100,5 +93,5 @@ public class DescriptionFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
-    }
+    }*/
 }
