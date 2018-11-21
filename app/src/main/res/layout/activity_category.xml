@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.szop.andrzejshop.views.CategoryActivity">
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="349dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="46dp"
+        android:text="Kategorie"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_fantasy"
+        android:layout_width="119dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="51dp"
+        android:background="@color/colorPrimary"
+        android:text="Fantasy"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+    <Button
+        android:id="@+id/button_scifi"
+        android:layout_width="119dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="51dp"
+        android:background="@color/colorPrimary"
+        android:text="SCI-FI"
+        app:layout_constraintStart_toEndOf="@+id/button_fantasy"
+        app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+    <Button
+        android:id="@+id/button_thriller"
+        android:layout_width="119dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/colorPrimary"
+        android:text="Thriller"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_fantasy" />
+
+    <Button
+        android:id="@+id/button_criminal"
+        android:layout_width="119dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/colorPrimary"
+        android:text="Criminal"
+        app:layout_constraintStart_toEndOf="@+id/button_thriller"
+        app:layout_constraintTop_toBottomOf="@+id/button_scifi" />
+
+</android.support.constraint.ConstraintLayout>
