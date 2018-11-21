@@ -26,7 +26,7 @@ public class MyApplication extends Application {
         mPreferences = getSharedPreferences(getPackageName(), MODE_PRIVATE);
         setDataProvider(OFFLINE_MODE);
 
-        if(isFirstRun()){
+       if(isFirstRun()){
             initApplication();
         }
 
