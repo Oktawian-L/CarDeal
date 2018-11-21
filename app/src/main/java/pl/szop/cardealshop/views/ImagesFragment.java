@@ -18,7 +18,7 @@ import pl.szop.cardealshop.MyApplication;
 import pl.szop.cardealshop.R;
 import pl.szop.cardealshop.adapters.ImageAdapter;
 
-import pl.szop.andrzejshop.models.Image;
+import pl.szop.cardealshop.models.Image;
 
 public class ImagesFragment extends Fragment {
 

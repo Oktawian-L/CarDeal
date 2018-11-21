@@ -1,9 +1,10 @@
-package pl.szop.andrzejshop.adapters;
+package pl.szop.cardealshop.adapters;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.annotation.NonNull;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,7 +23,8 @@ import java.util.Set;
 
 import pl.szop.cardealshop.actions.Action;
 import pl.szop.cardealshop.actions.ActionFactory;
-import pl.szop.andrzejshop.models.Product;
+
+import pl.szop.cardealshop.models.Product;
 import pl.szop.cardealshop.rules.Rule;
 import pl.szop.cardealshop.rules.RulesFactory;
 
@@ -35,6 +37,9 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
 
     private Map<Integer, Action> mActions;
     private Map<Integer, Rule> mRules;
+
+    public ProductsAdapter(FragmentActivity activity, int item_layout, List<? extends Product> products, AdapterListener adapterListener) {
+    }
 
     public void addRule(int elementResource, String ruleName, boolean negative){
         Rule rule = RulesFactory.getRule(ruleName, negative);

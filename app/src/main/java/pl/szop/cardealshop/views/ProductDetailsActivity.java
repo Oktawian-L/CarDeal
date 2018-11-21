@@ -8,9 +8,10 @@ import android.view.View;
 
 import pl.szop.cardealshop.MyApplication;
 import pl.szop.cardealshop.R;
-import pl.szop.andrzejshop.adapters.ViewAdapter;
+import pl.szop.cardealshop.adapters.ViewAdapter;
 import pl.szop.cardealshop.models.CarDetails;
 import pl.szop.cardealshop.models.CarDetails;
+import pl.szop.cardealshop.models.Product;
 
 public class ProductDetailsActivity extends AppCompatActivity implements ImagesFragment.OnFragmentInteractionListener {
 

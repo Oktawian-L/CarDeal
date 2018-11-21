@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.adapters;
+package pl.szop.cardealshop.adapters;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -8,14 +8,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.List;
-
-import pl.szop.andrzejshop.models.Image;
-import pl.szop.andrzejshop.models.Product;
+import pl.szop.cardealshop.models.Image;
+import pl.szop.cardealshop.models.Product;
+import pl.szop.cardealshop.models.CarDetails;
 
 public class ViewAdapter {
 
-    public static void bindView(View view, Product product) {
+    public static void bindView(View view, CarDetails product) {
         if(hasChildrenViews(view)){
             ViewGroup viewGroup = (ViewGroup) view;
             View childView;

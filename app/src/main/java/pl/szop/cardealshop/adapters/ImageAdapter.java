@@ -13,9 +13,12 @@ import android.widget.ImageView;
 import java.util.List;
 
 import pl.szop.cardealshop.R;
-import pl.szop.andrzejshop.models.Image;
+
+import pl.szop.cardealshop.models.Image;
 
 public class ImageAdapter extends PagerAdapter {
+
+
 
     public interface ClickListener{
         void onClick(int position);

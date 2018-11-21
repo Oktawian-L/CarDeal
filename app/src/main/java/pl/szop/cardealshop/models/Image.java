@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.models;
+package pl.szop.cardealshop.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;

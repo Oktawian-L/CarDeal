@@ -4,7 +4,7 @@ import android.content.Context;
 
 import org.greenrobot.eventbus.EventBus;
 
-import pl.szop.andrzejshop.models.Product;
+import pl.szop.cardealshop.models.Product;
 import pl.szop.cardealshop.views.ProductsListFragment;
 
 public class AddToCartAction implements Action {

@@ -10,7 +10,7 @@ import pl.szop.cardealshop.models.Car;
 import pl.szop.cardealshop.models.CarDetails;
 //import pl.szop.cardealshop.models.BooksImages;
 import pl.szop.cardealshop.models.DaoSession;
-import pl.szop.andrzejshop.models.Image;
+import pl.szop.cardealshop.models.Image;
 import pl.szop.cardealshop.models.Car;
 import pl.szop.cardealshop.models.CarDetails;
 import pl.szop.cardealshop.utils.ImageUtils;

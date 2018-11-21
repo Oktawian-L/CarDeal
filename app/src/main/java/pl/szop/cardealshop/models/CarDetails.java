@@ -15,10 +15,10 @@ import org.greenrobot.greendao.annotation.ToOne;
 
 import pl.szop.cardealshop.models.Book;
 import pl.szop.cardealshop.models.DaoSession;
-import pl.szop.andrzejshop.models.Image;
-import pl.szop.andrzejshop.models.ImageDao;
+import pl.szop.cardealshop.models.Image;
+import pl.szop.cardealshop.models.ImageDao;
 import pl.szop.cardealshop.models.BookDao;
-import pl.szop.andrzejshop.models.Product;
+import pl.szop.cardealshop.models.Product;
 
 @Entity(nameInDb = "car_details")
 public class CarDetails extends Product {

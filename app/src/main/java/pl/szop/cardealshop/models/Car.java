@@ -6,7 +6,8 @@ import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
 import org.greenrobot.greendao.annotation.Generated;
 
-import pl.szop.andrzejshop.models.Product;
+import pl.szop.cardealshop.models.Product;
+
 
 @Entity(nameInDb = "cars")
 public class Car extends Product {

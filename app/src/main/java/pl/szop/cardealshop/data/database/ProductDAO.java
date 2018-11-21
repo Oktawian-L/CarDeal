@@ -4,8 +4,10 @@ import java.util.List;
 import pl.szop.cardealshop.data.Filter;
 import pl.szop.cardealshop.data.IDataProvider;
 import pl.szop.cardealshop.models.DaoSession;
-import pl.szop.andrzejshop.models.Image;
-import pl.szop.andrzejshop.models.Product;
+import pl.szop.cardealshop.models.Image;
+import pl.szop.cardealshop.models.Product;
+import pl.szop.cardealshop.models.Image;
+import pl.szop.cardealshop.models.Product;
 
 public class ProductDAO implements IDataProvider {
 
@@ -20,7 +22,7 @@ public class ProductDAO implements IDataProvider {
     }
 
     @Override
-    public  List<? extends Product> getProducts(Filter filter) {
+    public List<? extends Product> getProducts(Filter filter) {
         Class productClass = ProductDAOSettings.PRODUCT_CLASS;
         if(filter == null || filter.isEmpty()){
             return (List<? extends Product>) mDaoSession.getDao(productClass).loadAll();

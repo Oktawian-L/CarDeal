@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import pl.szop.cardealshop.R;
-import pl.szop.andrzejshop.models.Product;
+import pl.szop.cardealshop.models.Product;
 import pl.szop.cardealshop.utils.ResourceUtils;
 
 public class DescriptionFragment extends Fragment {
