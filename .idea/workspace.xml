@@ -2536,7 +2536,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="239" />
     <option name="y" value="30" />
     <option name="width" value="1400" />
@@ -2590,7 +2590,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="F:/Android/SDK" />
-    <property name="device.picker.selection" value="42008a70cedb3300" />
+    <property name="device.picker.selection" value="Nexus_5X_API_28" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1543098677682" />
