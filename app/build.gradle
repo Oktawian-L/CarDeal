@@ -9,7 +9,7 @@ apply plugin: 'org.greenrobot.greendao'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "pl.rdyszlewski.andrzejshop"
+        applicationId "pl.olasek.cardeal"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
