@@ -4,14 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorTlo"
     tools:context="pl.szop.cardeal.views.ButtonsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:icon="@drawable/homek"
+        />
 
     <Button
         android:id="@+id/button"
         android:layout_width="117dp"
         android:layout_height="55dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="96dp"
         android:text="Kategorie"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,8 +41,8 @@
         android:id="@+id/button5"
         android:layout_width="98dp"
         android:layout_height="56dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="55dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="52dp"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
