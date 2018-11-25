@@ -43,4 +43,5 @@ dependencies {
     implementation 'org.greenrobot:greendao:3.2.2'
     implementation 'com.inkapplications.viewpageindicator:library:2.4.3'
     implementation 'com.android.support:mediarouter-v7:28.0.0'
+    implementation 'com.lucasurbas:listitemview:0.9.0'
 }
