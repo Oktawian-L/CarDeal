@@ -32,7 +32,7 @@ public class DatabaseInitializer {
         Book product13 = new Book("audi", "tt", "sedan", 3234.45);
         Book product14 = new Book("audi", "tt", "sedan", 3234.45);
 
-        byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.lovemetal);
+        byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
         byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.aeriale);
         byte[] img3 = ImageUtils.getBytesFromResource(context, R.drawable.alwaysascending);
         byte[] img4 = ImageUtils.getBytesFromResource(context, R.drawable.chapter);
