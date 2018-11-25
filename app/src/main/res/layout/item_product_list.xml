@@ -5,40 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
-    <Button
-        android:id="@+id/plus"
-        style="@android:style/Widget.DeviceDefault.Button.Colored"
-        android:layout_width="35dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="3dp"
-        android:background="@drawable/roundbutton"
-        android:text="+"
-        android:textColor="@color/default_circle_indicator_fill_color"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/minus"
-        app:layout_constraintEnd_toStartOf="@+id/buy_button" />
-
-    <Button
-        android:id="@+id/minus"
-        style="@android:style/Widget.DeviceDefault.Button.Colored"
-        android:layout_width="36dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="6dp"
-        android:background="@drawable/roundbutton"
-        android:text="-"
-        android:textColor="@color/default_circle_indicator_fill_color"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buy_button" />
-
-    <ImageView
-        android:id="@+id/cover"
-        android:layout_width="113dp"
-        android:layout_height="99dp"
-        android:adjustViewBounds="true"
-        android:maxWidth="150dp"
+    <ImageView android:id="@+id/cover"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:maxHeight="150dp"
+        android:maxWidth="150dp"
+        android:adjustViewBounds="true"
 
         />
 
@@ -55,17 +27,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:text="Autor"
         app:layout_constraintStart_toEndOf="@+id/cover"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <TextView
-        android:id="@+id/category"
+        android:id="@+id/category.name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:text="Kategoria"
         app:layout_constraintStart_toEndOf="@+id/cover"
         app:layout_constraintTop_toBottomOf="@+id/author" />
@@ -74,16 +46,16 @@
         android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="144dp"
-        android:text="cena"
         android:textColor="@color/colorPrice"
-        android:textSize="24sp"
+        android:textSize="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="cena"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/buyed"
+        android:id="@+id/bought"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrice"
@@ -97,9 +69,10 @@
 
     <ImageButton
         android:id="@+id/buy_button"
-        android:layout_width="77dp"
+        android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:src="@drawable/shopping"

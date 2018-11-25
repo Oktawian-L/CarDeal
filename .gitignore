@@ -1,32 +1,14 @@
 
-\.gradle/4\.6/fileContent/
-
 \.gradle/4\.6/fileHashes/
 
 \.gradle/4\.6/javaCompile/
 
 \.gradle/4\.6/taskHistory/
 
-\.gradle/buildOutputCleanup/
+\.gradle/buildOutputCleanup/buildOutputCleanup\.lock
 
-\.idea/caches/
+\.idea/caches/build_file_checksums\.ser
 
-\.idea/libraries/
+*.iml
 
-\.idea/codeStyles/
-
-\.idea/
-
-\.gradle/4\.6/fileChanges/
-
-\.gradle/vcsWorkingDirs/
-
-app/app\.iml
-
-gradle/wrapper/
-
-gradlew
-
-gradlew\.bat
-
-local\.properties
+\.gradle/4\.6/fileContent/fileContent\.lock

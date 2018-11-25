@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import pl.szop.andrzejshop.R;
+import pl.szop.cardeal.R;
 
 public class GridItemAcivity extends AppCompatActivity {
 

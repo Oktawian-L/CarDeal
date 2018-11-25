@@ -11,7 +11,7 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import pl.szop.andrzejshop.R;
+import pl.szop.cardeal.R;
 
 public class GridActivity extends AppCompatActivity {
     GridView gridView;

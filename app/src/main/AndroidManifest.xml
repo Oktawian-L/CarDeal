@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="pl.szop.andrzejshop">
+    package="pl.szop.cardeal">
 
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="CarDeal"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
         <activity android:name=".views.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".views.ButtonsActivity"/>
         <activity android:name=".views.ProductsActivity" />
         <activity android:name=".views.ProductDetailsActivity" />
         <activity
@@ -24,13 +26,8 @@
             android:label="@string/title_activity_image"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".views.CategoryActivity" />
-        <activity android:name=".views.CartActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".views.MainActivity" />
+        <activity android:name=".views.ButtonsActivity"></activity>
     </application>
 
 </manifest>
-
-
-
-
