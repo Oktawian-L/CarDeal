@@ -5,32 +5,40 @@
     <item
         android:id="@+id/action_favorite"
         android:icon="@drawable/homek"
-
         android:title="Home"
         app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/app_bar_switch"
-        android:title="Switch"
-        app:actionLayout="@layout/switch_item"
-        app:showAsAction="always" >
-
-
-    </item>
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
 
     <item android:id="@+id/search_action"
         android:title="@string/search"
         android:icon="@android:drawable/ic_menu_search"
         app:showAsAction="ifRoom"
         app:actionViewClass="android.support.v7.widget.SearchView" />
+    <item
+        android:id="@+id/miCompose"
+        android:icon="@drawable/ic_compose"
+        app:showAsAction="ifRoom"
+        android:title="Compose">
+    </item>
+    <item
+        android:id="@+id/miProfile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="ifRoom"
+        android:title="Profile">
+    </item>
 
-    </android.support.v7.widget.Toolbar>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="always"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/action_login"
+        android:orderInCategory="100"
+        android:title="Log In"
+        app:showAsAction="never"
+        android:visible="true" />
+
+
 </menu>
