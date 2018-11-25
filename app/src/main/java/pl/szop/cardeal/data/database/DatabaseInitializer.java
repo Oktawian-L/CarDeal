@@ -8,6 +8,8 @@ import java.util.List;
 import pl.szop.cardeal.R;
 import pl.szop.cardeal.models.Book;
 import pl.szop.cardeal.models.BookDetails;
+import pl.szop.cardeal.models.Car;
+import pl.szop.cardeal.models.CarDetails;
 import pl.szop.cardeal.models.Category;
 import pl.szop.cardeal.models.DaoSession;
 import pl.szop.cardeal.models.Image;
@@ -24,60 +26,44 @@ public class DatabaseInitializer {
         daoSession.getCategoryDao().insert(category2);
         daoSession.getCategoryDao().insert(category3);
 
-        Book product1 = new Book("Władca pierścieni", "Tolkien", category2, 30.99);
-        Book product2 = new Book("Hyperion", "Simmons", category3, 99.99);
-        Book product3 = new Book("Nie mów nikomu", "Coben", category1, 99.99);
-        byte[] image = ImageUtils.getBytesFromResource(context, R.drawable.game);
-        byte[] telnoImage = ImageUtils.getBytesFromResource(context, R.drawable.tellnoone);
+        Car car1 = new Car("Camaro","Chevrolet","Diesel", (double) 16000);
+        Car car2 = new Car("Supra","Nissan","Diesel", (double) 10000);
+        byte[] image_car2 = ImageUtils.getBytesFromResource(context, R.drawable.nissan);
+        byte[] image_car1 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        car1.setPhoto(image_car1);
+        car2.setPhoto(image_car2);
+
+
+        /*Book product1 = new Book("Władca pierścieni", "Tolkien", "Fantastyka", 30.99);
+        Book product2 = new Book("Hyperion", "Simmons", "Science fiction", 99.99);
+
         product1.setCover(image);
-        product2.setCover(image);
-        product3.setCover(telnoImage);
+        product2.setCover(image);*/
 
+        byte[] image = ImageUtils.getBytesFromResource(context, R.drawable.game);
+        byte[] image_def = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        daoSession.getCarDao().insert(car1);
+        daoSession.getCarDao().insert(car2);
 
-
-        daoSession.getBookDao().insert(product1);
-        daoSession.getBookDao().insert(product2);
-        daoSession.getBookDao().insert(product3);
-
+       /* daoSession.getBookDao().insert(product1);
+        daoSession.getBookDao().insert(product2);*/
 
         // saving details
-        BookDetails details = new BookDetails();
-        details.setDescription("“Władca Pierścieni” to niesamowita przygoda mówiąca o przyjaźni, poświęceniu i walce o dobro. Przenieś się w świat porywającego Śródziemia, miejsca, gdzie można spotkać nie tylko ludzi, lecz dumne krasnoludy, piękne elfy i, co najważniejsze, dzielne hobbity. Poznaj historię niepozornego niziołka, Froda Bagginsa, na którego barki niespodziewanie spada ogromna odpowiedzialność. Dzięki życzliwości swoich towarzyszy podejmuje się niebezpiecznego zadania i zabiera nas do magicznego świata.");
-//        Image image1 = new Image();
-//        image1.setMImage(image);
-//        Image image2 = new Image();
-//        image2.setMImage(image);
-//        Image image3 = new Image();
-//        image3.setMImage(image);
+        CarDetails details = new CarDetails();
+        details.setDescription("Camaro car descrpit");
 
-//        daoSession.getImageDao().insert(image1);
-//        daoSession.getImageDao().insert(image2);
-//        daoSession.getImageDao().insert(image3);
-//
-//        // to nie działa
 
-//        daoSession.getImageDao().insert(image1);
-//        daoSession.getImageDao().insert(image2);
-//        details.getImages().add(image1);
-//        details.getImages().add(image2);
-//        List<Image> images = Arrays.asList(image1, image2, image3);
-//        details.setImages(images);
-
-        details.setBook(product1);
-        daoSession.getBookDetailsDao().insert(details);
+        details.setCar(car1);
+        daoSession.getCarDetailsDao().insert(details);
 
         Image image1 = new Image();
         image1.setImage(image);
         image1.setProductId(details.getId());
         Image image2 = new Image();
         image2.setProductId(details.getId());
-        image2.setImage(image);
+        image2.setImage(image_def);
         daoSession.getImageDao().insert(image1);
         daoSession.getImageDao().insert(image2);
         List<Image> images = Arrays.asList(image1, image2);
-//        BooksImages booksImages = new BooksImages();
-//        booksImages.setBook(details.getId());
-//        booksImages.setImage(image1.getId());
-//        daoSession.getBooksImagesDao().insert(booksImages);
     }
 }
