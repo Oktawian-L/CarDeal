@@ -14,11 +14,18 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         // TODO: remove this. Temporary. Start another activity
-        startProductsListActivity();
+        //startProductsListActivity();
+        //starting browse all actions
+        startButtonsActivity();
     }
 
     private void startProductsListActivity() {
         Intent intent = new Intent(this, ProductsActivity.class);
+        startActivity(intent);
+    }
+    //starting browse all actions
+    private void startButtonsActivity() {
+        Intent intent = new Intent(this, ButtonsActivity.class);
         startActivity(intent);
     }
 }
