@@ -6,7 +6,7 @@
         android:id="@+id/action_favorite"
         android:icon="@drawable/homek"
         android:title="Home"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 
     <item android:id="@+id/search_action"
         android:title="@string/search"
@@ -16,15 +16,13 @@
     <item
         android:id="@+id/miCompose"
         android:icon="@drawable/ic_compose"
-        app:showAsAction="ifRoom"
-        android:title="Compose">
-    </item>
+        android:title="Compose"
+        app:showAsAction="ifRoom"></item>
     <item
         android:id="@+id/miProfile"
         android:icon="@drawable/ic_profile"
-        app:showAsAction="ifRoom"
-        android:title="Profile">
-    </item>
+        android:title="Profile"
+        app:showAsAction="always"></item>
 
     <item
         android:id="@+id/action_settings"
