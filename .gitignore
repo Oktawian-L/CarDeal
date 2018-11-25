@@ -6,3 +6,7 @@
 \.gradle/4\.6/taskHistory/
 
 \.gradle/buildOutputCleanup/buildOutputCleanup\.lock
+
+\.idea/caches/build_file_checksums\.ser
+
+*.iml
