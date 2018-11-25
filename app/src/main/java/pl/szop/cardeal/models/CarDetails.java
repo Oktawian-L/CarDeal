@@ -46,21 +46,11 @@ public class CarDetails extends Product {
     @Property(nameInDb = "nr_silnika")
     private int nr_silnika;
 
-<<<<<<< HEAD
     @Property(nameInDb = "relase_year")
      private int releaseYear;
-=======
-    // @Property(nameInDb = relase_year)
-    // private int releaseYear;
-
-    //Used to resolve relations
-    // @Generated(hash = 2040040024)
-    //  private transient DaoSession daoSession;
-
-    //Used for active entity operations.
-    // @Generated(hash = 62405507)
-    // private transient CarDetailsDao myDao;
->>>>>>> master
+    
+    @Generated(hash = 440805916)
+    private transient Long car__resolvedKey;
 
     /** Used to resolve relations */
     @Generated(hash = 2040040024)
@@ -70,18 +60,10 @@ public class CarDetails extends Product {
     @Generated(hash = 62405507)
     private transient CarDetailsDao myDao;
 
-    @Generated(hash = 440805916)
-    private transient Long car__resolvedKey;
-
-<<<<<<< HEAD
     @Generated(hash = 1909274008)
     public CarDetails(Long id, String description, Double rating, String moc, String nadwozie, String has_abs,
             String has_klima, int przebieg, int nr_silnika, int releaseYear) {
-=======
-    @Generated(hash = 1985101679)
-    public CarDetails(Long id, String description, Double rating, String moc, String nadwozie, String has_abs,
-            String has_klima, int przebieg, int nr_silnika) {
->>>>>>> master
+
         this.id = id;
         this.description = description;
         this.rating = rating;
@@ -91,10 +73,8 @@ public class CarDetails extends Product {
         this.has_klima = has_klima;
         this.przebieg = przebieg;
         this.nr_silnika = nr_silnika;
-<<<<<<< HEAD
+
         this.releaseYear = releaseYear;
-=======
->>>>>>> master
     }
 
     @Generated(hash = 1517749497)
@@ -173,6 +153,14 @@ public class CarDetails extends Product {
         this.nr_silnika = nr_silnika;
     }
 
+    public int getReleaseYear() {
+        return this.releaseYear;
+    }
+
+    public void setReleaseYear(int releaseYear) {
+        this.releaseYear = releaseYear;
+    }
+
     /** To-one relationship, resolved on first access. */
     @Generated(hash = 847991781)
     public Car getCar() {
@@ -238,22 +226,6 @@ public class CarDetails extends Product {
         myDao.update(this);
     }
 
-<<<<<<< HEAD
-    public int getReleaseYear() {
-        return this.releaseYear;
-    }
-
-   public void setReleaseYear(int releaseYear) {
-        this.releaseYear = releaseYear;
-    }
-
-/** called by internal mechanisms, do not call yourself. */
-@Generated(hash = 1550864587)
-public void __setDaoSession(DaoSession daoSession) {
-    this.daoSession = daoSession;
-    myDao = daoSession != null ? daoSession.getCarDetailsDao() : null;
-}
-=======
     /** called by internal mechanisms, do not call yourself. */
     @Generated(hash = 1550864587)
     public void __setDaoSession(DaoSession daoSession) {
@@ -261,13 +233,7 @@ public void __setDaoSession(DaoSession daoSession) {
         myDao = daoSession != null ? daoSession.getCarDetailsDao() : null;
     }
 
-   /* public int getReleaseYear() {
-        return this.releaseYear;
-    }*/
 
-   /* public void setReleaseYear(int releaseYear) {
-        this.releaseYear = releaseYear;
-    }*/
->>>>>>> master
+
 
 }
