@@ -17,40 +17,37 @@ public class DatabaseInitializer {
 
     public static void init(DaoSession daoSession, Context context){
 
-        Book product1 = new Book("Love Metal", "HIM", "Metal", 30.99);
-        Book product2 = new Book("I see you", "The XX", "Indie rock", 99.99);
-        Book product3 = new Book("Coexist", "The XX", "Indie Rock", 29.99);
-        Book product4 = new Book("Collide", "Aeraile Bightman", "Game Soundtrack", 19.99);
-        Book product5 = new Book("Whatever people say I am, that's what I am not", "Arctic Monkeys", "Indie Rock", 29.99);
-        Book product6 = new Book("Always ascending", "Franz Ferdinand", "Indie rock", 39.99);
-        Book product7 = new Book("Chapter 11", "HIM", "Metal", 69.99);
-        Book product8 = new Book("Dark light", "HIM", "Metal", 29.99);
-        Book product9 = new Book("Devils", "69 eyes", "Hard Rock", 9.99);
-        Book product10 = new Book("Fallen", "Evanescene", "Hard Rock", 19.99);
-        Book product11 = new Book("Bright skies", "The howling bells", "Indie Rock", 29.99);
-        Book product12 = new Book("Ori and the blind forest", "Gareth Coker", "Game Soundtrack", 29.99);
-        Book product13 = new Book("Primal", "Gareth Coker", "Game Soundtrack", 29.99);
-        Book product14 = new Book("Tonight", "Franz Ferdidand", "Indie Rock", 34.97);
+        Book product1 = new Book("Camaro", "Chevrolet", "Sport", 32340.99);
+        Book product2 = new Book("Camaro2", "Chevrolet", "Sport", 32340.99);
+        Book product3 = new Book("Camaro", "Chevrolet", "Sport", 32340.99);
+        /*Book product1 = new Book("Camaro", "Chevrolet", "Sport", 32340.99);
+        Book product1 = new Book("Camaro", "Chevrolet", "Sport", 32340.99);
+        Book product1 = new Book("Camaro", "Chevrolet", "Sport", 32340.99);
+        Book product1 = new Book("Camaro", "Chevrolet", "Sport", 32340.99);
+        Book product1 = new Book("Camaro", "Chevrolet", "Sport", 32340.99);
+        Book product1 = new Book("Camaro", "Chevrolet", "Sport", 32340.99);
+        Book product1 = new Book("Camaro", "Chevrolet", "Sport", 32340.99);*/
 
-        byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.lovemetal);
-        byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.aeriale);
-        byte[] img3 = ImageUtils.getBytesFromResource(context, R.drawable.alwaysascending);
-        byte[] img4 = ImageUtils.getBytesFromResource(context, R.drawable.chapter);
-        byte[] img5 = ImageUtils.getBytesFromResource(context, R.drawable.dark);
-        byte[] img6 = ImageUtils.getBytesFromResource(context, R.drawable.devils);
-        byte[] img7 = ImageUtils.getBytesFromResource(context, R.drawable.fallen);
-        byte[] img8 = ImageUtils.getBytesFromResource(context, R.drawable.howling);
-        byte[] img9 = ImageUtils.getBytesFromResource(context, R.drawable.ori);
-        byte[] img10 = ImageUtils.getBytesFromResource(context, R.drawable.primal);
-        byte[] img11 = ImageUtils.getBytesFromResource(context, R.drawable.tonight);
-        byte[] img12 = ImageUtils.getBytesFromResource(context, R.drawable.xx);
-        byte[] img13 = ImageUtils.getBytesFromResource(context, R.drawable.album1);
-        byte[] img14 = ImageUtils.getBytesFromResource(context, R.drawable.isthisit);
+
+        byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        byte[] img3 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        byte[] img4 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        byte[] img5 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        byte[] img6 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        byte[] img7 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        byte[] img8 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        byte[] img9 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        byte[] img10 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        byte[] img11 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        byte[] img12 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        byte[] img13 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
+        byte[] img14 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
 
         product1.setCover(img1);
         product2.setCover(img2);
         product3.setCover(img3);
-        product4.setCover(img4);
+        /*product4.setCover(img4);
         product5.setCover(img5);
         product6.setCover(img6);
         product7.setCover(img7);
@@ -60,12 +57,12 @@ public class DatabaseInitializer {
         product11.setCover(img11);
         product12.setCover(img12);
         product13.setCover(img13);
-        product14.setCover(img14);
+        product14.setCover(img14);*/
 
         daoSession.getBookDao().insert(product1);
         daoSession.getBookDao().insert(product2);
         daoSession.getBookDao().insert(product3);
-       daoSession.getBookDao().insert(product4);
+      /* daoSession.getBookDao().insert(product4);
         daoSession.getBookDao().insert(product5);
        daoSession.getBookDao().insert(product6);
        daoSession.getBookDao().insert(product7);
@@ -75,7 +72,7 @@ public class DatabaseInitializer {
         daoSession.getBookDao().insert(product11);
        daoSession.getBookDao().insert(product12);
         daoSession.getBookDao().insert(product13);
-        daoSession.getBookDao().insert(product14);
+        daoSession.getBookDao().insert(product14);*/
 
 
 
