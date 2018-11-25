@@ -17,7 +17,7 @@ public class DatabaseInitializer {
 
     public static void init(DaoSession daoSession, Context context){
 
-        Book product1 = new Book("Love Metal", "HIM", "Metal", 30.99);
+        Book product1 = new Book("audi", "tt", "Metal", 30.99);
         Book product2 = new Book("I see you", "The XX", "Indie rock", 99.99);
         Book product3 = new Book("Coexist", "The XX", "Indie Rock", 29.99);
         Book product4 = new Book("Collide", "Aeraile Bightman", "Game Soundtrack", 19.99);
