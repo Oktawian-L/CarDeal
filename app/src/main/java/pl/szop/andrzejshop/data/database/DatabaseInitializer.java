@@ -32,20 +32,20 @@ public class DatabaseInitializer {
         Book product13 = new Book("audi", "tt", "sedan", 3234.45);
         Book product14 = new Book("audi", "tt", "sedan", 3234.45);
 
-        byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
-        byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.aeriale);
-        byte[] img3 = ImageUtils.getBytesFromResource(context, R.drawable.alwaysascending);
-        byte[] img4 = ImageUtils.getBytesFromResource(context, R.drawable.chapter);
-        byte[] img5 = ImageUtils.getBytesFromResource(context, R.drawable.dark);
-        byte[] img6 = ImageUtils.getBytesFromResource(context, R.drawable.devils);
-        byte[] img7 = ImageUtils.getBytesFromResource(context, R.drawable.fallen);
-        byte[] img8 = ImageUtils.getBytesFromResource(context, R.drawable.howling);
-        byte[] img9 = ImageUtils.getBytesFromResource(context, R.drawable.ori);
-        byte[] img10 = ImageUtils.getBytesFromResource(context, R.drawable.primal);
-        byte[] img11 = ImageUtils.getBytesFromResource(context, R.drawable.tonight);
-        byte[] img12 = ImageUtils.getBytesFromResource(context, R.drawable.xx);
-        byte[] img13 = ImageUtils.getBytesFromResource(context, R.drawable.album1);
-        byte[] img14 = ImageUtils.getBytesFromResource(context, R.drawable.isthisit);
+        byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img3 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img4 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img5 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img6 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img7 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img8 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img9 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img10 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img11 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img12 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img13 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img14 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
 
         product1.setCover(img1);
         product2.setCover(img2);
