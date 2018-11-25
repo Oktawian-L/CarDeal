@@ -22,9 +22,11 @@ public class DatabaseInitializer {
         Category category1 = new Category(1L, "sportowe");
         Category category2 = new Category(2L, "sedan");
         Category category3 = new Category(3L, "coupe");
+        Category category4 = new Category(4L, "kombi");
         daoSession.getCategoryDao().insert(category1);
         daoSession.getCategoryDao().insert(category2);
         daoSession.getCategoryDao().insert(category3);
+        daoSession.getCategoryDao().insert(category4);
 
         Car car1 = new Car("Camaro","Chevrolet","Diesel", (double) 16000);
         Car car2 = new Car("Supra","Nissan","Diesel", (double) 10000);
