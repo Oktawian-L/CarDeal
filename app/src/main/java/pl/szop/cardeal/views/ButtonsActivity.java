@@ -41,6 +41,13 @@ public class ButtonsActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle presses on the action bar items
         switch (item.getItemId()) {
+         /*  case R.id
+                Toast.makeText(
+                        getApplicationContext(),
+                        "You clicked the compose button.",
+                        Toast.LENGTH_SHORT)
+                        .show();
+                return true;*/
             case R.id.miCompose:
                 Toast.makeText(
                         getApplicationContext(),
