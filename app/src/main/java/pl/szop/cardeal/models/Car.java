@@ -20,7 +20,7 @@ public class Car extends Product {
     private String marka;
 
     @Property(nameInDb = "typ")
-    private String typ;
+    private String typ;//category
 
     @Property(nameInDb = "price")
     private Double price;

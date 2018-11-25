@@ -19,9 +19,9 @@ public class DatabaseInitializer {
 
     public static void init(DaoSession daoSession, Context context){
 
-        Category category1 = new Category(1L, "thriller");
-        Category category2 = new Category(2L, "fantasy");
-        Category category3 = new Category(3L, "sci_fi");
+        Category category1 = new Category(1L, "sportowe");
+        Category category2 = new Category(2L, "sedan");
+        Category category3 = new Category(3L, "coupe");
         daoSession.getCategoryDao().insert(category1);
         daoSession.getCategoryDao().insert(category2);
         daoSession.getCategoryDao().insert(category3);
