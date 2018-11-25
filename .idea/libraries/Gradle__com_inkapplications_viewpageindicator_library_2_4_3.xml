@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.inkapplications.viewpageindicator:library-2.4.3">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-2.4.3.aar/9a42d47668a7de9d6028bd12347993cb/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-2.4.3.aar/9a42d47668a7de9d6028bd12347993cb/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-2.4.3.aar/a69d0f6dc0d32c9fd7162925f6bb892b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-2.4.3.aar/a69d0f6dc0d32c9fd7162925f6bb892b/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
