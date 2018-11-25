@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import pl.szop.cardeal.R;
@@ -29,6 +30,18 @@ public class ButtonsActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ButtonsActivity.class);
         startActivity(intent);
     }
+
+    public void showCategory(View view)
+    {
+        Intent intent = new Intent(this, CategoryActivity.class);
+        startActivity(intent);
+    }
+    public void showProductList(View view)
+    {
+        Intent intent = new Intent(this, ProductsActivity.class);
+        startActivity(intent);
+    }
+
     @Override
    public boolean onCreateOptionsMenu(Menu menu)
    {
@@ -41,13 +54,13 @@ public class ButtonsActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle presses on the action bar items
         switch (item.getItemId()) {
-         /*  case R.id
+            case R.id.miHome:
                 Toast.makeText(
                         getApplicationContext(),
                         "You clicked the compose button.",
                         Toast.LENGTH_SHORT)
                         .show();
-                return true;*/
+                return true;
             case R.id.miCompose:
                 Toast.makeText(
                         getApplicationContext(),
@@ -78,18 +91,9 @@ public class ButtonsActivity extends AppCompatActivity {
     }
 
     private void fadeIn(View view) {
-        // Create an AlphaAnimation variable
-        // 0.0f makes the view invisible
-        // 1.0f makes the view fully visible
         AlphaAnimation anim = new AlphaAnimation(0.0f, 1.0f);
-        // Set out long you want the animation to be. * Measured in milliseconds *
-        // 1000 milliseconds = 1 second
         anim.setDuration(1500);
-        // Start the animation on our passed in view
         view.startAnimation(anim);
-        /*  After the animation is complete we want to make sure we set the visibility of the view
-            to VISIBLE. Otherwise it will go back to being INVISIBLE due to our previous lines
-            that set the view to INVISIBLE */
         view.setVisibility(View.VISIBLE);
     }
 }
