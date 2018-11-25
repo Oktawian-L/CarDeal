@@ -17,7 +17,7 @@ import android.widget.Toast;
 import pl.szop.cardeal.R;
 
 public class Dialogsorting extends AppCompatActivity {
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.x_list_item_view);
 
