@@ -17,20 +17,20 @@ public class DatabaseInitializer {
 
     public static void init(DaoSession daoSession, Context context){
 
-        Book product1 = new Book("audi", "tt", "Metal", 30.99);
-        Book product2 = new Book("I see you", "The XX", "Indie rock", 99.99);
-        Book product3 = new Book("Coexist", "The XX", "Indie Rock", 29.99);
-        Book product4 = new Book("Collide", "Aeraile Bightman", "Game Soundtrack", 19.99);
-        Book product5 = new Book("Whatever people say I am, that's what I am not", "Arctic Monkeys", "Indie Rock", 29.99);
-        Book product6 = new Book("Always ascending", "Franz Ferdinand", "Indie rock", 39.99);
-        Book product7 = new Book("Chapter 11", "HIM", "Metal", 69.99);
-        Book product8 = new Book("Dark light", "HIM", "Metal", 29.99);
-        Book product9 = new Book("Devils", "69 eyes", "Hard Rock", 9.99);
-        Book product10 = new Book("Fallen", "Evanescene", "Hard Rock", 19.99);
-        Book product11 = new Book("Bright skies", "The howling bells", "Indie Rock", 29.99);
-        Book product12 = new Book("Ori and the blind forest", "Gareth Coker", "Game Soundtrack", 29.99);
-        Book product13 = new Book("Primal", "Gareth Coker", "Game Soundtrack", 29.99);
-        Book product14 = new Book("Tonight", "Franz Ferdidand", "Indie Rock", 34.97);
+        Book product1 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product2 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product3 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product4 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product5 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product6 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product7 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product8 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product9 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product10 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product11 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product12 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product13 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product14 = new Book("audi", "tt", "sedan", 3234.45);
 
         byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.lovemetal);
         byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.aeriale);
