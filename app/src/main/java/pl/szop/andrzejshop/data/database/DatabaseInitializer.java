@@ -60,7 +60,7 @@ public class DatabaseInitializer {
         product1.setCover(img1);
         product2.setCover(img2);
         product3.setCover(img3);
-        product4.setCover(img4);
+        /*product4.setCover(img4);
         product5.setCover(img5);
         product6.setCover(img6);
         product7.setCover(img7);
@@ -70,12 +70,12 @@ public class DatabaseInitializer {
         product11.setCover(img11);
         product12.setCover(img12);
         product13.setCover(img13);
-        product14.setCover(img14);
+        product14.setCover(img14);*/
 
         daoSession.getBookDao().insert(product1);
         daoSession.getBookDao().insert(product2);
         daoSession.getBookDao().insert(product3);
-       daoSession.getBookDao().insert(product4);
+      /* daoSession.getBookDao().insert(product4);
         daoSession.getBookDao().insert(product5);
        daoSession.getBookDao().insert(product6);
        daoSession.getBookDao().insert(product7);
@@ -85,7 +85,7 @@ public class DatabaseInitializer {
         daoSession.getBookDao().insert(product11);
        daoSession.getBookDao().insert(product12);
         daoSession.getBookDao().insert(product13);
-        daoSession.getBookDao().insert(product14);
+        daoSession.getBookDao().insert(product14);*/
 
 
 
