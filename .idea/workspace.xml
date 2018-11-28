@@ -13,7 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e4b68320-bdab-46b4-b4c3-59200b47ce9c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsActivity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,7 +47,7 @@
       <file leaf-file-name="ProductsActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1355">
+            <state relative-caret-position="806">
               <caret line="226" column="29" selection-start-line="226" selection-start-column="29" selection-end-line="226" selection-end-column="29" />
               <folding>
                 <element signature="e#2697#2698#0" expanded="true" />
@@ -2517,9 +2516,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2538,34 +2534,13 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="andrzejshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="andrzejshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="menu" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2573,7 +2548,7 @@
     <property name="device.picker.selection" value="42008a70cedb3300" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1543183266673" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1543428332794" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2702,9 +2677,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
@@ -2718,8 +2692,8 @@
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.32995495" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32995495" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
@@ -2739,6 +2713,59 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/toolbar_menu.xml">
+      <provider editor-type-id="text-editor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_products_list.xml">
+      <provider editor-type-id="text-editor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
+      <provider editor-type-id="text-editor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2193">
+          <caret line="226" column="29" selection-start-line="226" selection-start-column="29" selection-end-line="226" selection-end-column="29" />
+          <folding>
+            <element signature="e#2697#2698#0" expanded="true" />
+            <element signature="e#2752#2753#0" expanded="true" />
+            <element signature="e#3136#3137#0" expanded="true" />
+            <element signature="e#3187#3188#0" expanded="true" />
+            <element signature="method#createActionBar#0;class#ProductsActivity#0" />
+            <element signature="method#initComponents#0;class#ProductsActivity#0" />
+            <element signature="method#openSortingDialog#0;class#ProductsActivity#0" />
+            <element signature="method#getCurrentSortingOptions#0;class#ProductsActivity#0" />
+            <element signature="method#getSortingOptions#0;class#ProductsActivity#0" />
+            <element signature="method#loadFragment#0;class#ProductsActivity#0" />
+            <element signature="method#onFragmentInteraction#0;class#ProductsActivity#0" />
+            <element signature="method#startButtonsActivity#0;class#ProductsActivity#0" />
+            <element signature="method#fadeIn#0;class#ProductsActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -2808,7 +2835,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1355">
+        <state relative-caret-position="806">
           <caret line="226" column="29" selection-start-line="226" selection-start-column="29" selection-end-line="226" selection-end-column="29" />
           <folding>
             <element signature="e#2697#2698#0" expanded="true" />
