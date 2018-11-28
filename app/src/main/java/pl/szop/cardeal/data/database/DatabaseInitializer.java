@@ -30,6 +30,7 @@ public class DatabaseInitializer {
 
         Car car1 = new Car("Camaro","Chevrolet","Diesel", (double) 16000);
         Car car2 = new Car("Supra","Nissan","Diesel", (double) 10000);
+        Car car4 = new Car("Supra","Nissan","Diesel", (double) 10000);
         byte[] image_car2 = ImageUtils.getBytesFromResource(context, R.drawable.nissan);
         byte[] image_car1 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
         car1.setPhoto(image_car1);
