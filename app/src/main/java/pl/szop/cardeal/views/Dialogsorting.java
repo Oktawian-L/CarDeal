@@ -14,7 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import pl.szop.cardeal.R;
+import pl.szop.andrzejshop.R;
 
 public class Dialogsorting extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
