@@ -28,7 +28,7 @@ public class CategoryActivity extends AppCompatActivity {
         btnFantasy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startProductsListActivity("fantastyka");
+                startProductsListActivity("sportowe");
             }
         });
 
@@ -37,7 +37,7 @@ public class CategoryActivity extends AppCompatActivity {
         btnThriller.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startProductsListActivity("thriller");
+                startProductsListActivity("coupe");
             }
         });
 
@@ -46,7 +46,7 @@ public class CategoryActivity extends AppCompatActivity {
         btnSciFi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startProductsListActivity("Science fiction");
+                startProductsListActivity("sedan");
             }
         });
 
