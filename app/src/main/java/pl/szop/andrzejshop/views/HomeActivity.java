@@ -21,15 +21,16 @@ public class HomeActivity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         // TODO: remove this. Temporary. Start another activity
-        startProductsListActivity();
+       // startProductsListActivity();
+        startButtonsActivity();
     }
 
     private void startProductsListActivity() {
         Intent intent = new Intent(this, ProductsActivity.class);
         startActivity(intent);
     }
-    private void startButtonsActivity(String cat) {
-        Intent intent = new Intent(this, ProductsActivity.class);
+    private void startButtonsActivity() {
+        Intent intent = new Intent(this, ButtonsActivity.class);
         startActivity(intent);
     }
     @Override
