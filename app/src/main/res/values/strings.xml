@@ -1,18 +1,18 @@
 <resources>
-    <string name="app_name">AndrzejShop</string>
-    <string name="filter">Filtruj</string>
-    <string name="sort">Sortuj</string>
-    <string name="change_view">Zmień widok</string>
+    <string name="app_name">CarDeal</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="change_view">Change view</string>
     <string name="ok">OK</string>
-    <string name="cancel">Anuluj</string>
-    <string name="categories">Kategorie</string>
-    <string name="search">Szukaj</string>
-    <string name="promotions">Promocje</string>
-    <string name="buy">Dodaj do koszyka</string>
+    <string name="cancel">Cancel</string>
+    <string name="categories">category</string>
+    <string name="search">Search</string>
+    <string name="promotions">Okazje</string>
+    <string name="buy">add to cart</string>
 
-    <string name="sorting">Sortowanie</string>
-    <string name="title_product">Tytuł</string>
-    <string name="author_product">Autor</string>
+    <string name="sorting">Sort</string>
+    <string name="title_product">Model</string>
+    <string name="author_product">Marka</string>
     <string name="price_product">Cena</string>
 
     <string name="asc">rosnąco</string>

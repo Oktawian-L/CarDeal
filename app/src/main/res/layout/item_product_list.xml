@@ -3,34 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorTlo"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
-    <Button
-        android:id="@+id/plus"
-        style="@android:style/Widget.DeviceDefault.Button.Colored"
-        android:layout_width="35dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="3dp"
-        android:background="@drawable/roundbutton"
-        android:text="+"
-        android:textColor="@color/default_circle_indicator_fill_color"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/minus"
-        app:layout_constraintEnd_toStartOf="@+id/buy_button" />
-
-    <Button
-        android:id="@+id/minus"
-        style="@android:style/Widget.DeviceDefault.Button.Colored"
-        android:layout_width="36dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="6dp"
-        android:background="@drawable/roundbutton"
-        android:text="-"
-        android:textColor="@color/default_circle_indicator_fill_color"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buy_button" />
 
     <ImageView
         android:id="@+id/cover"
@@ -47,7 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="Tytul"
+        android:text="Model"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toEndOf="@+id/cover" />
 
     <TextView
@@ -56,7 +32,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
-        android:text="Autor"
+        android:text="Marka"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toEndOf="@+id/cover"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
@@ -67,6 +44,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:text="Kategoria"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toEndOf="@+id/cover"
         app:layout_constraintTop_toBottomOf="@+id/author" />
 

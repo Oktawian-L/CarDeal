@@ -57,10 +57,10 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
         mCurrentFilter = new Filter();
         setContentView(R.layout.activity_products_list);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
 //        createActionBar();
         Bundle b = getIntent().getExtras();
         String cat = null;
@@ -224,13 +224,13 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle presses on the action bar items
         switch (item.getItemId()) {
-         /*  case R.id
+            case R.id.miHome:
                 Toast.makeText(
                         getApplicationContext(),
                         "You clicked the compose button.",
                         Toast.LENGTH_SHORT)
                         .show();
-                return true;*/
+                return true;
             case R.id.miCompose:
                 Toast.makeText(
                         getApplicationContext(),

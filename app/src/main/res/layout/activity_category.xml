@@ -4,63 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="pl.szop.andrzejshop.views.CategoryActivity">
+    android:background="@color/colorTlo"
+    tools:context="pl.szop.cardeal.views.CategoryActivity">
 
     <TextView
         android:id="@+id/title2"
-        android:layout_width="349dp"
+        android:layout_width="250dp"
         android:layout_height="47dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="46dp"
+        android:fontFamily="monospace"
+        android:lineSpacingExtra="8sp"
         android:text="Kategorie"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
         android:textSize="25dp"
         android:textStyle="bold"
+        android:typeface="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_fantasy"
+        android:id="@+id/button_sportowe"
         android:layout_width="119dp"
         android:layout_height="74dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="51dp"
-        android:background="@color/colorPrimary"
-        android:text="Fantasy"
+        android:background="@color/colorBtn"
+        android:text="Sportowe"
+        android:textColor="@color/colorPrimary"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title2" />
 
     <Button
-        android:id="@+id/button_scifi"
+        android:id="@+id/button_sedan"
         android:layout_width="119dp"
         android:layout_height="74dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="51dp"
-        android:background="@color/colorPrimary"
-        android:text="SCI-FI"
-        app:layout_constraintStart_toEndOf="@+id/button_fantasy"
+        android:background="@color/colorBtn"
+        android:text="Sedan"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/button_sportowe"
         app:layout_constraintTop_toBottomOf="@+id/title2" />
 
     <Button
-        android:id="@+id/button_thriller"
+        android:id="@+id/button_coupe"
         android:layout_width="119dp"
         android:layout_height="74dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="23dp"
-        android:background="@color/colorPrimary"
-        android:text="Thriller"
+        android:background="@color/colorBtn"
+        android:text="Coupe"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_fantasy" />
+        app:layout_constraintTop_toBottomOf="@+id/button_sportowe" />
 
     <Button
-        android:id="@+id/button_criminal"
+        android:id="@+id/button_kombi"
         android:layout_width="119dp"
         android:layout_height="74dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="23dp"
-        android:background="@color/colorPrimary"
-        android:text="Criminal"
-        app:layout_constraintStart_toEndOf="@+id/button_thriller"
-        app:layout_constraintTop_toBottomOf="@+id/button_scifi" />
+        android:background="@color/colorBtn"
+        android:text="Kombi"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/button_coupe"
+        app:layout_constraintTop_toBottomOf="@+id/button_sedan" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="256dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/car" />
 
 </android.support.constraint.ConstraintLayout>

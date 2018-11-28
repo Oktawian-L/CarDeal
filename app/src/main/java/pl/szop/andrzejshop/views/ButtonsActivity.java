@@ -1,6 +1,8 @@
 package pl.szop.andrzejshop.views;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -8,31 +10,43 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import pl.szop.andrzejshop.R;
+import pl.szop.andrzejshop.models.Product;
 
-public class HomeActivity extends AppCompatActivity {
+public class ButtonsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_buttons);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
-        // TODO: remove this. Temporary. Start another activity
-       // startProductsListActivity();
-        startButtonsActivity();
     }
 
-    private void startProductsListActivity() {
-        Intent intent = new Intent(this, ProductsActivity.class);
-        startActivity(intent);
-    }
-    private void startButtonsActivity() {
+    private void startButtonsActivity(String cat) {
         Intent intent = new Intent(this, ButtonsActivity.class);
         startActivity(intent);
     }
+
+    public void showCategory(View view)
+    {
+        Intent intent = new Intent(this, CategoryActivity.class);
+        startActivity(intent);
+    }
+    public void showProductList(View view)
+    {
+        Intent intent = new Intent(this, ProductsActivity.class);
+        startActivity(intent);
+    }
+   /* public void showBasicList(View view)
+    {
+        Intent intent = new Intent(this, Dialogsorting.class);
+        startActivity(intent);
+    }*/
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
@@ -48,29 +62,28 @@ public class HomeActivity extends AppCompatActivity {
             case R.id.miHome:
                 Toast.makeText(
                         getApplicationContext(),
-                        "GoHome func",
+                        "You clicked the compose button.",
                         Toast.LENGTH_SHORT)
                         .show();
                 return true;
-
             case R.id.miCompose:
                 Toast.makeText(
                         getApplicationContext(),
-                        "Compose func",
+                        "You clicked the compose button.",
                         Toast.LENGTH_SHORT)
                         .show();
                 return true;
             case R.id.miProfile:
                 Toast.makeText(
                         getApplicationContext(),
-                        "Profile func",
+                        "You clicked the profile button.",
                         Toast.LENGTH_SHORT)
                         .show();
                 return true;
             case R.id.action_settings:
                 Toast.makeText(
                         getApplicationContext(),
-                        "settings func",
+                        "You clicked the settings button.",
                         Toast.LENGTH_SHORT)
                         .show();
                 return true;
@@ -83,11 +96,9 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void fadeIn(View view) {
-        //animacje fadeIN
         AlphaAnimation anim = new AlphaAnimation(0.0f, 1.0f);
         anim.setDuration(1500);
-        // Start the animation on our passed in view
         view.startAnimation(anim);
-       view.setVisibility(View.VISIBLE);
+        view.setVisibility(View.VISIBLE);
     }
 }
