@@ -121,8 +121,8 @@ public class ProductsListFragment extends Fragment {
 
     private void addActions(ProductsAdapter adapter) {
         adapter.addAction(R.id.buy_button, AddToCartAction.NAME);
-        adapter.addAction(R.id.plus, UpdateAmountAction.NAME);
-        adapter.addAction(R.id.minus, DecreaseAmountAction.NAME);
+        //adapter.addAction(R.id.plus, UpdateAmountAction.NAME);
+        //adapter.addAction(R.id.minus, DecreaseAmountAction.NAME);
        // adapter.addAction(R.id.remove_button, RemoveFromCartAction.NAME);
     }
 
