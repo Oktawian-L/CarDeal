@@ -28,8 +28,8 @@ public class DatabaseInitializer {
         daoSession.getCategoryDao().insert(category4);*/
 
         Book product1 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product2 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product3 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product2 = new Book("chevrolet", "camaro", "sportowe", 5432.99);
+        Book product3 = new Book("bmw", "tt", "sedan", 3234.45);
         Book product4 = new Book("audi", "tt", "sedan", 3234.45);
         Book product5 = new Book("audi", "tt", "sedan", 3234.45);
         Book product6 = new Book("audi", "tt", "sedan", 3234.45);
