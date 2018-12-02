@@ -21,6 +21,7 @@
         <activity android:name=".views.GridActivity"/>
         <activity android:name=".views.ProductsActivity" />
         <activity android:name=".views.ProductDetailsActivity" />
+        <activity android:name=".views.ViewPagerActivity" />
         <activity
             android:name=".views.ImageActivity"
             android:label="@string/title_activity_image"
