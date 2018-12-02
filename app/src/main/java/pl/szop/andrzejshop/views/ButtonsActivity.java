@@ -52,7 +52,7 @@ public class ButtonsActivity extends AppCompatActivity {
         Log.v("1","odpalam view");
         Intent intent = new Intent(this,GridActivity.class);
         startActivity(intent);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
 
     }
 
