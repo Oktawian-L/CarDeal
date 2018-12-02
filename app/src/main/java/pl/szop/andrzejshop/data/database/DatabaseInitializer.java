@@ -10,7 +10,7 @@ import pl.szop.andrzejshop.models.Book;
 import pl.szop.andrzejshop.models.BookDetails;
 import pl.szop.andrzejshop.models.BooksImages;
 import pl.szop.andrzejshop.models.Category;
-import pl.szop.cardeal.models.DaoSession;
+import pl.szop.andrzejshop.models.DaoSession;
 import pl.szop.andrzejshop.models.Image;
 import pl.szop.andrzejshop.utils.ImageUtils;
 
@@ -28,8 +28,8 @@ public class DatabaseInitializer {
         daoSession.getCategoryDao().insert(category4);*/
 
         Book product1 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product2 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product3 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product2 = new Book("chevrolet", "camaro", "sportowe", 5432.99);
+        Book product3 = new Book("bmw", "tt", "sedan", 3234.45);
         Book product4 = new Book("audi", "tt", "sedan", 3234.45);
         Book product5 = new Book("audi", "tt", "sedan", 3234.45);
         Book product6 = new Book("audi", "tt", "sedan", 3234.45);
@@ -42,20 +42,20 @@ public class DatabaseInitializer {
         Book product13 = new Book("audi", "tt", "sedan", 3234.45);
         Book product14 = new Book("audi", "tt", "sedan", 3234.45);
 
-        byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
-        byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
-        byte[] img3 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
-        byte[] img4 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
-        byte[] img5 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
-        byte[] img6 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
-        byte[] img7 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
-        byte[] img8 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
-        byte[] img9 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
-        byte[] img10 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
-        byte[] img11 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
-        byte[] img12 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
-        byte[] img13 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
-        byte[] img14 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+        byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img3 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img4 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img5 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img6 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img7 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img8 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img9 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img10 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img11 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img12 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img13 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img14 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
 
         product1.setCover(img1);
         product2.setCover(img2);

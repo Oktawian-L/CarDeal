@@ -3,9 +3,11 @@ package pl.szop.andrzejshop.views;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +16,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import pl.szop.andrzejshop.R;
+import pl.szop.andrzejshop.adapters.ImageAdapterSlide;
 import pl.szop.andrzejshop.models.Product;
 
 public class ButtonsActivity extends AppCompatActivity {
@@ -41,11 +44,24 @@ public class ButtonsActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ProductsActivity.class);
         startActivity(intent);
     }
-   /* public void showBasicList(View view)
+    public void showBasicList(View view)
     {
         Intent intent = new Intent(this, Dialogsorting.class);
         startActivity(intent);
-    }*/
+    }
+    public void showGridList(View view)
+    {
+        Log.v("1","odpalam view");
+        Intent intent = new Intent(this,GridActivity.class);
+        startActivity(intent);
+        //setContentView(R.layout.activity_main);
+
+    }
+    public void showGallery(View view)
+    {
+        Intent intent = new Intent(this,ViewPagerActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)

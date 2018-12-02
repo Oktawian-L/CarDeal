@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorTlo"
     tools:context=".views.ProductDetailsActivity"
     android:id="@+id/content">
     <!--<android.support.v4.view.ViewPager android:id="@+id/images"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="200dp"></android.support.v4.view.ViewPager>-->
 
-    <fragment android:id="@+id/images_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:name="pl.szop.andrzejshop.views.ImagesFragment"></fragment>
-    <FrameLayout android:id="@+id/products_details"
+    <FrameLayout
+        android:id="@+id/products_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/images_fragment">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
         <include layout="@layout/element_product_details" />
     </FrameLayout>
 
@@ -34,5 +34,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/details_tabs"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="62dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/audi2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="393dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

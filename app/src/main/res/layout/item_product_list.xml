@@ -7,32 +7,43 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="113dp"
+        android:layout_height="99dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+
+        />
+
     <TextView
         android:id="@+id/title"
-        android:layout_width="82dp"
-        android:layout_height="31dp"
+        android:layout_width="81dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="33dp"
         android:text="Model"
         android:textColor="@color/colorPrimary"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="17dp" />
+        app:layout_constraintStart_toEndOf="@+id/cover"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/author"
-        android:layout_width="95dp"
-        android:layout_height="34dp"
+        android:layout_width="57dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="32dp"
         android:text="Marka"
         android:textColor="@color/colorPrimary"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="17dp" />
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="60dp"
         android:text="cena"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
@@ -51,5 +62,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="26dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="18dp"
+        android:text="$"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
