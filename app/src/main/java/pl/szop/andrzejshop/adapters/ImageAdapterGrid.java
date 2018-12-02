@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import pl.szop.andrzejshop.R;
 
 public class ImageAdapterGrid extends BaseAdapter {
+
         private Context mContext;
 
         public ImageAdapterGrid(Context c) {
@@ -45,10 +46,18 @@ public class ImageAdapterGrid extends BaseAdapter {
         }
 
         // references to our images
-        private Integer[] mThumbIds = {
-                R.drawable.audi2, R.drawable.audi2
-               /* R.drawable.camaro, R.drawable.car,
-                R.drawable.chevrolet*/
+        private Integer[] mThumbIds = {/*
+                R.drawable.sample_2, R.drawable.sample_3,
+                R.drawable.sample_4, R.drawable.sample_5,
+                R.drawable.sample_6, R.drawable.sample_7,
+                R.drawable.sample_0, R.drawable.sample_1,
+                R.drawable.sample_2, R.drawable.sample_3,
+                R.drawable.sample_4, R.drawable.sample_5,
+                R.drawable.sample_6, R.drawable.sample_7,
+                R.drawable.sample_0, R.drawable.sample_1,
+                R.drawable.sample_2, R.drawable.sample_3,
+                R.drawable.sample_4, R.drawable.sample_5,
+                R.drawable.sample_6, R.drawable.sample_7*/
         };
     }
 

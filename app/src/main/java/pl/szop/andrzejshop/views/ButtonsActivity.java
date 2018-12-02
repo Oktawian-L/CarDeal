@@ -6,6 +6,7 @@ import android.content.ServiceConnection;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -48,8 +49,11 @@ public class ButtonsActivity extends AppCompatActivity {
     }
     public void showGridList(View view)
     {
+        Log.v("1","odpalam view");
         Intent intent = new Intent(this,GridActivity.class);
         startActivity(intent);
+        setContentView(R.layout.activity_main);
+
     }
 
     @Override
