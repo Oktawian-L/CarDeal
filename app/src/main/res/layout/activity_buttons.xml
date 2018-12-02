@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorTlo"
-    tools:context="pl.szop.cardeal.views.ButtonsActivity">
+    tools:context="pl.szop.andrzejshop.views.ButtonsActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -62,11 +62,11 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="98dp"
+        android:layout_width="139dp"
         android:layout_height="56dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="76dp"
-        android:text="Button"
+        android:layout_marginEnd="32dp"
+        android:text="Grid"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/productlistbtn" />
 
