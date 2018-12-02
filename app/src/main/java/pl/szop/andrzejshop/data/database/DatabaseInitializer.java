@@ -10,7 +10,7 @@ import pl.szop.andrzejshop.models.Book;
 import pl.szop.andrzejshop.models.BookDetails;
 import pl.szop.andrzejshop.models.BooksImages;
 import pl.szop.andrzejshop.models.Category;
-import pl.szop.andrzejshop.models.DaoSession;
+import pl.szop.cardeal.models.DaoSession;
 import pl.szop.andrzejshop.models.Image;
 import pl.szop.andrzejshop.utils.ImageUtils;
 
