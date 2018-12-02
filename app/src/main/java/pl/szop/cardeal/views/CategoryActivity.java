@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.views;
+package pl.szop.cardeal.views;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,12 +9,11 @@ import android.widget.Button;
 import pl.szop.andrzejshop.R;
 
 public class CategoryActivity extends AppCompatActivity {
-
-    @Override
+ @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
-        Button btnCriminal = findViewById(R.id.button_criminal);
+        Button btnCriminal = findViewById(R.id.button_kombi);
 
         btnCriminal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -23,30 +22,30 @@ public class CategoryActivity extends AppCompatActivity {
             }
         });
 
-        Button btnFantasy = findViewById(R.id.button_fantasy);
+        Button btnFantasy = findViewById(R.id.button_sportowe);
 
         btnFantasy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startProductsListActivity("fantastyka");
+                startProductsListActivity("sportowe");
             }
         });
 
-        Button btnThriller = findViewById(R.id.button_thriller);
+        Button btnThriller = findViewById(R.id.button_coupe);
 
         btnThriller.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startProductsListActivity("thriller");
+                startProductsListActivity("coupe");
             }
         });
 
-        Button btnSciFi = findViewById(R.id.button_scifi);
+        Button btnSciFi = findViewById(R.id.button_sedan);
 
         btnSciFi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startProductsListActivity("Science fiction");
+                startProductsListActivity("sedan");
             }
         });
 
@@ -56,4 +55,5 @@ public class CategoryActivity extends AppCompatActivity {
         intent.putExtra("categoryType", cat);
         startActivity(intent);
     }
+ 
 }

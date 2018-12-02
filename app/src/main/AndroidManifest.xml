@@ -3,14 +3,14 @@
     package="pl.szop.andrzejshop">
 
     <application
-        android:name=".MyApplication"
+        android:name="pl.szop.cardeal.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="CarDeal"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".views.HomeActivity">
+        <activity android:name="pl.szop.cardeal.views.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,13 +21,13 @@
         <activity android:name=".views.ProductsActivity" />
         <activity android:name=".views.ProductDetailsActivity" />
         <activity
-            android:name=".views.ImageActivity"
+            android:name="pl.szop.cardeal.views.ImageActivity"
             android:label="@string/title_activity_image"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".views.CategoryActivity" />
-        <activity android:name=".views.CartActivity"
+        <activity android:name="pl.szop.cardeal.views.CategoryActivity" />
+        <activity android:name="pl.szop.cardeal.views.CartActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".views.MainActivity" />
+        <activity android:name="pl.szop.cardeal.views.MainActivity" />
     </application>
 
 </manifest>
