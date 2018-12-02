@@ -1,26 +1,22 @@
-package pl.szop.andrzejshop.views;
+package pl.szop.cardeal.views;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import pl.szop.andrzejshop.MyApplication;
+import pl.szop.cardeal.MyApplication;
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.actions.RemoveFromCartAction;
-import pl.szop.andrzejshop.adapters.ProductsAdapter;
-import pl.szop.andrzejshop.models.Book;
-import pl.szop.andrzejshop.models.CartItem;
-import pl.szop.andrzejshop.models.Product;
+import pl.szop.cardeal.actions.RemoveFromCartAction;
+import pl.szop.cardeal.adapters.ProductsAdapter;
+import pl.szop.cardeal.models.Book;
+import pl.szop.cardeal.models.CartItem;
 
 public class CartActivity extends AppCompatActivity {
 

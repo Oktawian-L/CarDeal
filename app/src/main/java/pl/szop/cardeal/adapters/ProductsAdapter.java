@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.adapters;
+package pl.szop.cardeal.adapters;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,7 +13,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
@@ -21,11 +20,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import pl.szop.andrzejshop.actions.Action;
-import pl.szop.andrzejshop.actions.ActionFactory;
-import pl.szop.andrzejshop.models.Product;
-import pl.szop.andrzejshop.rules.Rule;
-import pl.szop.andrzejshop.rules.RulesFactory;
+import pl.szop.cardeal.actions.Action;
+import pl.szop.cardeal.actions.ActionFactory;
+import pl.szop.cardeal.models.Product;
+import pl.szop.cardeal.rules.Rule;
+import pl.szop.cardeal.rules.RulesFactory;
 
 public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHolder> {
 

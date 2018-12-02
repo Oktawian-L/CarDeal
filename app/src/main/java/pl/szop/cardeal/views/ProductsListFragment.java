@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.views;
+package pl.szop.cardeal.views;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,11 +10,9 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -22,16 +20,13 @@ import org.greenrobot.eventbus.Subscribe;
 import java.util.ArrayList;
 import java.util.List;
 
-import pl.szop.andrzejshop.actions.DecreaseAmountAction;
-import pl.szop.andrzejshop.actions.RemoveFromCartAction;
-import pl.szop.andrzejshop.actions.UpdateAmountAction;
-import pl.szop.andrzejshop.data.Filter;
-import pl.szop.andrzejshop.MyApplication;
+import pl.szop.cardeal.data.Filter;
+import pl.szop.cardeal.MyApplication;
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.actions.AddToCartAction;
-import pl.szop.andrzejshop.adapters.ProductsAdapter;
-import pl.szop.andrzejshop.models.Product;
-import pl.szop.andrzejshop.rules.BoughtRule;
+import pl.szop.cardeal.actions.AddToCartAction;
+import pl.szop.cardeal.adapters.ProductsAdapter;
+import pl.szop.cardeal.models.Product;
+import pl.szop.cardeal.rules.BoughtRule;
 
 
 public class ProductsListFragment extends Fragment {

@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.views;
+package pl.szop.cardeal.views;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

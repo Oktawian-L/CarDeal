@@ -1,18 +1,14 @@
-package pl.szop.andrzejshop.data.database;
+package pl.szop.cardeal.data;
 
 import android.content.Context;
 
-import java.util.Arrays;
-import java.util.List;
-
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.models.Book;
-import pl.szop.andrzejshop.models.BookDetails;
-import pl.szop.andrzejshop.models.BooksImages;
-import pl.szop.andrzejshop.models.Category;
-import pl.szop.andrzejshop.models.DaoSession;
-import pl.szop.andrzejshop.models.Image;
-import pl.szop.andrzejshop.utils.ImageUtils;
+import pl.szop.cardeal.models.Book;
+import pl.szop.cardeal.models.BookDetails;
+import pl.szop.cardeal.models.Category;
+import pl.szop.cardeal.models.DaoSession;
+import pl.szop.cardeal.models.Image;
+import pl.szop.cardeal.utils.ImageUtils;
 
 public class DatabaseInitializer {
 

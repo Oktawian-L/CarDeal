@@ -1,19 +1,18 @@
-package pl.szop.andrzejshop.actions;
+package pl.szop.cardeal.actions;
 
 import android.app.Activity;
 import android.content.Context;
 import android.widget.Button;
-import android.widget.Toast;
 
 import org.greenrobot.eventbus.EventBus;
 
 import java.lang.reflect.InvocationTargetException;
 
-import pl.szop.andrzejshop.MyApplication;
+import pl.szop.cardeal.MyApplication;
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.models.CartItem;
-import pl.szop.andrzejshop.models.Product;
-import pl.szop.andrzejshop.views.ProductsListFragment;
+import pl.szop.cardeal.models.CartItem;
+import pl.szop.cardeal.models.Product;
+import pl.szop.cardeal.views.ProductsListFragment;
 
 public class DecreaseAmountAction implements Action {
     public static final String NAME = "DECREASE_AMOUNT";

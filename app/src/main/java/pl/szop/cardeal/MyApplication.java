@@ -1,13 +1,13 @@
-package pl.szop.andrzejshop;
+package pl.szop.cardeal;
 
 import android.app.Application;
 import android.content.SharedPreferences;
 
-import pl.szop.andrzejshop.data.IDataProvider;
-import pl.szop.andrzejshop.data.database.DatabaseInitializer;
-import pl.szop.andrzejshop.data.database.DatabaseProvider;
-import pl.szop.andrzejshop.models.DaoMaster;
-import pl.szop.andrzejshop.models.DaoSession;
+import pl.szop.cardeal.data.IDataProvider;
+import pl.szop.cardeal.data.DatabaseInitializer;
+import pl.szop.cardeal.data.database.DatabaseProvider;
+import pl.szop.cardeal.models.DaoMaster;
+import pl.szop.cardeal.models.DaoSession;
 
 public class MyApplication extends Application {
 

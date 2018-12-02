@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.adapters;
+package pl.szop.cardeal.adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -12,8 +12,8 @@ import android.widget.TextView;
 import java.util.List;
 
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.data.Sort;
-import pl.szop.andrzejshop.utils.ResourceUtils;
+import pl.szop.cardeal.data.Sort;
+import pl.szop.cardeal.utils.ResourceUtils;
 
 public class SortingAdapter extends ArrayAdapter {
 

@@ -1,12 +1,11 @@
-package pl.szop.andrzejshop.actions;
+package pl.szop.cardeal.actions;
 
 import android.content.Context;
 
 import java.lang.reflect.InvocationTargetException;
 
-import pl.szop.andrzejshop.MyApplication;
-import pl.szop.andrzejshop.models.CartItem;
-import pl.szop.andrzejshop.models.Product;
+import pl.szop.cardeal.MyApplication;
+import pl.szop.cardeal.models.Product;
 
 public class RemoveFromCartAction implements Action{
 

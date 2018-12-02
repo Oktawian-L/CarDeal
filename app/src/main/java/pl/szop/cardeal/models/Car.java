@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.models;
+package pl.szop.cardeal.models;
 
 
 import org.greenrobot.greendao.annotation.Entity;
@@ -6,7 +6,7 @@ import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
 import org.greenrobot.greendao.annotation.Generated;
 
-import pl.szop.andrzejshop.models.Product;
+import pl.szop.cardeal.models.Product;
 
 
 @Entity(nameInDb = "cars")

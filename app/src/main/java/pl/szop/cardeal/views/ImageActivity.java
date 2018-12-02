@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.views;
+package pl.szop.cardeal.views;
 
 import android.content.Intent;
 import android.net.Uri;

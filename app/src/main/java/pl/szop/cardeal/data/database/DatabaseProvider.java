@@ -1,14 +1,14 @@
-package pl.szop.andrzejshop.data.database;
+package pl.szop.cardeal.data.database;
 
 import java.util.List;
 
-import pl.szop.andrzejshop.data.Filter;
-import pl.szop.andrzejshop.data.IDataProvider;
-import pl.szop.andrzejshop.data.Sort;
-import pl.szop.andrzejshop.models.CartItem;
-import pl.szop.andrzejshop.models.DaoSession;
-import pl.szop.andrzejshop.models.Image;
-import pl.szop.andrzejshop.models.Product;
+import pl.szop.cardeal.data.Filter;
+import pl.szop.cardeal.data.IDataProvider;
+import pl.szop.cardeal.data.Sort;
+import pl.szop.cardeal.models.CartItem;
+import pl.szop.cardeal.models.DaoSession;
+import pl.szop.cardeal.models.Image;
+import pl.szop.cardeal.models.Product;
 
 public class DatabaseProvider implements IDataProvider {
 

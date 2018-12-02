@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.actions;
+package pl.szop.cardeal.actions;
 
 import android.content.Context;
 import android.widget.Toast;
@@ -7,10 +7,10 @@ import org.greenrobot.eventbus.EventBus;
 
 import java.lang.reflect.InvocationTargetException;
 
-import pl.szop.andrzejshop.MyApplication;
-import pl.szop.andrzejshop.models.CartItem;
-import pl.szop.andrzejshop.models.Product;
-import pl.szop.andrzejshop.views.ProductsListFragment;
+import pl.szop.cardeal.MyApplication;
+import pl.szop.cardeal.models.CartItem;
+import pl.szop.cardeal.models.Product;
+import pl.szop.cardeal.views.ProductsListFragment;
 
 public class UpdateAmountAction implements Action {
     public static final String NAME = "UPDATE_AMOUNT";

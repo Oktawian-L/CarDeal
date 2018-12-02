@@ -1,8 +1,6 @@
-package pl.szop.andrzejshop.views;
+package pl.szop.cardeal.views;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.ServiceConnection;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -10,11 +8,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.models.Product;
 
 public class ButtonsActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.views;
+package pl.szop.cardeal.views;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.models.Product;
-import pl.szop.andrzejshop.utils.ResourceUtils;
+import pl.szop.cardeal.models.Product;
+import pl.szop.cardeal.utils.ResourceUtils;
 
 public class DescriptionFragment extends Fragment {
 

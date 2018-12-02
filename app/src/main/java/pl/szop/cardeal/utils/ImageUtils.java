@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.utils;
+package pl.szop.cardeal.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;

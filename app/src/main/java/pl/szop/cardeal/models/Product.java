@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.models;
+package pl.szop.cardeal.models;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

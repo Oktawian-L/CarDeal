@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.adapters;
+package pl.szop.cardeal.adapters;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import java.util.List;
 
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.models.Image;
+import pl.szop.cardeal.models.Image;
 
 public class ImageAdapter extends PagerAdapter {
 

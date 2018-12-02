@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.models;
+package pl.szop.cardeal.models;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;

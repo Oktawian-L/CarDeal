@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.views;
+package pl.szop.cardeal.views;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -12,7 +12,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -27,12 +26,12 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-import pl.szop.andrzejshop.MyApplication;
-import pl.szop.andrzejshop.adapters.SortingAdapter;
-import pl.szop.andrzejshop.data.Filter;
+import pl.szop.cardeal.MyApplication;
+import pl.szop.cardeal.adapters.SortingAdapter;
+import pl.szop.cardeal.data.Filter;
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.data.Sort;
-import pl.szop.andrzejshop.models.CartItem;
+import pl.szop.cardeal.data.Sort;
+import pl.szop.cardeal.models.CartItem;
 
 public class ProductsActivity extends AppCompatActivity implements ProductsListFragment.OnFragmentInteractionListener {
 
