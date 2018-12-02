@@ -34,7 +34,7 @@ public class ImageAdapterGrid extends BaseAdapter {
             if (convertView == null) {
                 // if it's not recycled, initialize some attributes
                 imageView = new ImageView(mContext);
-                imageView.setLayoutParams(new ViewGroup.LayoutParams(85, 85));
+                imageView.setLayoutParams(new ViewGroup.LayoutParams(185, 185));
                 imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
                 imageView.setPadding(8, 8, 8, 8);
             } else {
@@ -46,9 +46,9 @@ public class ImageAdapterGrid extends BaseAdapter {
         }
 
         // references to our images
-        private Integer[] mThumbIds = {/*
-                R.drawable.sample_2, R.drawable.sample_3,
-                R.drawable.sample_4, R.drawable.sample_5,
+        private Integer[] mThumbIds = {
+                R.drawable.audi2, R.drawable.audi,
+                R.drawable.chevrolet, R.drawable.camaro,
                 R.drawable.sample_6, R.drawable.sample_7,
                 R.drawable.sample_0, R.drawable.sample_1,
                 R.drawable.sample_2, R.drawable.sample_3,
@@ -57,7 +57,7 @@ public class ImageAdapterGrid extends BaseAdapter {
                 R.drawable.sample_0, R.drawable.sample_1,
                 R.drawable.sample_2, R.drawable.sample_3,
                 R.drawable.sample_4, R.drawable.sample_5,
-                R.drawable.sample_6, R.drawable.sample_7*/
+                R.drawable.sample_6, R.drawable.sample_7
         };
     }
 
