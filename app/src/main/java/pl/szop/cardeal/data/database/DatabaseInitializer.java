@@ -1,13 +1,12 @@
 package pl.szop.cardeal.data.database;
 
 import android.content.Context;
-
-import java.util.Arrays;
-import java.util.List;
+import android.net.Uri;
 
 import pl.szop.andrzejshop.R;
-import pl.szop.cardeal.models.Car;
-import pl.szop.cardeal.models.CarDetails;
+import pl.szop.cardeal.models.Book;
+import pl.szop.cardeal.models.BookDetails;
+import pl.szop.cardeal.models.Category;
 import pl.szop.cardeal.models.DaoSession;
 import pl.szop.cardeal.models.Image;
 import pl.szop.cardeal.utils.ImageUtils;
@@ -16,53 +15,89 @@ public class DatabaseInitializer {
 
     public static void init(DaoSession daoSession, Context context){
 
-        /*Category category1 = new Category(1L, "sportowe");
-        Category category2 = new Category(2L, "sedan");
-        Category category3 = new Category(3L, "coupe");
-        Category category4 = new Category(4L, "kombi");
-        daoSession.getCategoryDao().insert(category1);
-        daoSession.getCategoryDao().insert(category2);
+        Category category1 = new Category( "sportowe");
+        Category category2 = new Category( "sedan");
+        Category category3 = new Category ("coupe");
+        Category category4 = new Category( "kombi");
+
+       /* daoSession.getCategoryDao().insert(category2);
         daoSession.getCategoryDao().insert(category3);
         daoSession.getCategoryDao().insert(category4);*/
 
-        Car car1 = new Car("Camaro","Chevrolet","Diesel", (double) 16000);
-        Car car2 = new Car("Supra","Nissan","Diesel", (double) 10000);
-        byte[] image_car2 = ImageUtils.getBytesFromResource(context, R.drawable.nissan);
-        byte[] image_car1 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
-        car1.setPhoto(image_car1);
-        car2.setPhoto(image_car2);
+        Book product1 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product2 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product3 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product4 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product5 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product6 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product7 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product8 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product9 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product10 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product11 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product12 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product13 = new Book("audi", "tt", "sedan", 3234.45);
+        Book product14 = new Book("audi", "tt", "sedan", 3234.45);
+
+        byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+        byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+        byte[] img3 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+        byte[] img4 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+        byte[] img5 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+        byte[] img6 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+        byte[] img7 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+        byte[] img8 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+        byte[] img9 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+        byte[] img10 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+        byte[] img11 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+        byte[] img12 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+        byte[] img13 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+        byte[] img14 = ImageUtils.getBytesFromResource(context, R.drawable.audi);
+
+        product1.setCover(img1);
+        product2.setCover(img2);
+        product3.setCover(img3);
+        /*product4.setCover(img4);
+        product5.setCover(img5);
+        product6.setCover(img6);
+        product7.setCover(img7);
+        product8.setCover(img8);
+        product9.setCover(img9);
+        product10.setCover(img10);
+        product11.setCover(img11);
+        product12.setCover(img12);
+        product13.setCover(img13);
+        product14.setCover(img14);*/
+
+        daoSession.getBookDao().insert(product1);
+        daoSession.getBookDao().insert(product2);
+        daoSession.getBookDao().insert(product3);
+      /* daoSession.getBookDao().insert(product4);
+        daoSession.getBookDao().insert(product5);
+       daoSession.getBookDao().insert(product6);
+       daoSession.getBookDao().insert(product7);
+        daoSession.getBookDao().insert(product8);
+        daoSession.getBookDao().insert(product9);
+       daoSession.getBookDao().insert(product10);
+        daoSession.getBookDao().insert(product11);
+       daoSession.getBookDao().insert(product12);
+        daoSession.getBookDao().insert(product13);
+        daoSession.getBookDao().insert(product14);*/
 
 
-        /*Book product1 = new Book("Władca pierścieni", "Tolkien", "Fantastyka", 30.99);
-        Book product2 = new Book("Hyperion", "Simmons", "Science fiction", 99.99);
 
-        product1.setCover(image);
-        product2.setCover(image);*/
-
-        byte[] image = ImageUtils.getBytesFromResource(context, R.drawable.game);
-        byte[] image_def = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
-        daoSession.getCarDao().insert(car1);
-        daoSession.getCarDao().insert(car2);
-
-       /* daoSession.getBookDao().insert(product1);
-        daoSession.getBookDao().insert(product2);*/
 
         // saving details
-        CarDetails details = new CarDetails();
-        details.setDescription("Camaro car descrpit");
+        BookDetails details = new BookDetails();
+        details.setDescription("Camaro car descrpt from database");
 
-
-        details.setCar(car1);
-        daoSession.getCarDetailsDao().insert(details);
+        details.setBook(product1);
+        daoSession.getBookDetailsDao().insert(details);
 
         Image image1 = new Image();
-        image1.setImage(image);
+        image1.setImage(img1);
         image1.setProductId(details.getId());
         Image image2 = new Image();
-        image2.setProductId(details.getId());
-        image2.setImage(image_def);
-        daoSession.getImageDao().insert(image1);
-        daoSession.getImageDao().insert(image2);
-        List<Image> images = Arrays.asList(image1, image2);
+
     }
 }

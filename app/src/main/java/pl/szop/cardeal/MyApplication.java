@@ -4,7 +4,7 @@ import android.app.Application;
 import android.content.SharedPreferences;
 
 import pl.szop.cardeal.data.IDataProvider;
-import pl.szop.cardeal.data.DatabaseInitializer;
+import pl.szop.cardeal.data.database.DatabaseInitializer;
 import pl.szop.cardeal.data.database.DatabaseProvider;
 import pl.szop.cardeal.models.DaoMaster;
 import pl.szop.cardeal.models.DaoSession;
