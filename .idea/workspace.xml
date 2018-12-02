@@ -12,12 +12,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4b68320-bdab-46b4-b4c3-59200b47ce9c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/CarDeal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/DecreaseAmountAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/DecreaseAmountAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsListFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_products_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_products_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_product_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_product_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarDeal3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/pl/szop/andrzejshop/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/pl/szop/cardeal/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/ActionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/ActionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/AddToCartAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/AddToCartAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/DecreaseAmountAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/DecreaseAmountAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/RemoveFromCartAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/RemoveFromCartAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/UpdateAmountAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/UpdateAmountAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/adapters/ImageAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/adapters/ImageAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/adapters/ProductsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/adapters/ProductsAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/adapters/SortingAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/adapters/SortingAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/adapters/ViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/adapters/ViewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/data/Filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/IDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/data/IDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/data/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/data/database/DatabaseInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/data/database/DatabaseProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseProviderSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/data/database/DatabaseProviderSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/models/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/BookDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/models/BookDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/BooksImages.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/models/BooksImages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/models/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/CarDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/models/CarDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/CarImages.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/models/CarImages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/models/CartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/models/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/models/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/rules/BoughtRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/rules/BoughtRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/rules/InCartRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/rules/InCartRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/rules/Rule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/rules/Rule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/rules/RulesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/rules/RulesFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/utils/ImageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/utils/ImageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/utils/ResourceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/utils/ResourceUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ButtonsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/ButtonsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/CartActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/CartActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/CategoryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/CategoryActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/DescriptionFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/DescriptionFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/HomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/HomeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ImageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/ImageActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ImagesFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/ImagesFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/ProductDetailsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/ProductsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/ProductsListFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_image.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_product_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_product_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_cart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_images.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_images.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/pl/szop/andrzejshop/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/pl/szop/cardeal/ExampleUnitTest.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,49 +93,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="DecreaseAmountAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/DecreaseAmountAction.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/DecreaseAmountAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+            <state relative-caret-position="527">
+              <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="activity_products_list.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_products_list.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
           <provider editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
             </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="item_product_list.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_product_list.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="85">
               <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
             </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="RemoveFromCartAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/RemoveFromCartAction.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/RemoveFromCartAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="UpdateAmountAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/UpdateAmountAction.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/UpdateAmountAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
@@ -93,25 +145,25 @@
       </file>
       <file leaf-file-name="activity_cart.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml">
-          <provider selected="true" editor-type-id="android-designer2">
+          <provider editor-type-id="text-editor">
             <state />
           </provider>
-          <provider editor-type-id="text-editor">
+          <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ProductsListFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsListFragment.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/ProductsListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1153">
-              <caret line="124" column="10" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
+            <state relative-caret-position="1581">
+              <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Action.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/Action.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/Action.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
@@ -120,7 +172,7 @@
         </entry>
       </file>
       <file leaf-file-name="ActionFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/ActionFactory.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/ActionFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -129,10 +181,10 @@
         </entry>
       </file>
       <file leaf-file-name="AddToCartAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/AddToCartAction.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/AddToCartAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -165,14 +217,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="CarDeal3" />
+              <option name="name" value="CarDeal" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="CarDeal3" />
+                <option name="name" value="CarDeal" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
@@ -190,7 +242,7 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'CarDeal3'." />
+                <option name="description" value="Displays the sub-projects of root project 'CarDeal'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
@@ -270,7 +322,7 @@
                 <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'CarDeal3'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'CarDeal'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
@@ -554,12 +606,12 @@
                 <option name="name" value="generateDebugAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'CarDeal3'. [incubating]" />
+                <option name="description" value="Displays the dependent components of components in root project 'CarDeal'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'CarDeal3'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'CarDeal'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
@@ -689,7 +741,7 @@
                 <option name="name" value="bundleRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'CarDeal3'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'CarDeal'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
@@ -702,7 +754,7 @@
                 <option name="name" value="reportSourceSetTransformAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'CarDeal3' (some of the displayed tasks may belong to subprojects)." />
+                <option name="description" value="Displays the tasks runnable from root project 'CarDeal' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
@@ -720,7 +772,7 @@
                 <option name="name" value="bundleDebugAndroidTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'CarDeal3'." />
+                <option name="description" value="Displays all dependencies declared in root project 'CarDeal'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
@@ -825,7 +877,7 @@
                 <option name="name" value="packageAppClassesReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'CarDeal3'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'CarDeal'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -1077,7 +1129,7 @@
                 <option name="name" value="packageDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'CarDeal3'." />
+                <option name="description" value="Displays the properties of root project 'CarDeal'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
@@ -2380,7 +2432,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="CarDeal3" />
+              <option name="name" value="CarDeal" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/announce" />
@@ -2537,11 +2589,6 @@
         </entry>
       </map>
     </option>
-    <option name="projectSyncType">
-      <map>
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -2565,8 +2612,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="163" />
-    <option name="y" value="181" />
+    <option name="x" value="229" />
+    <option name="y" value="44" />
     <option name="width" value="1400" />
     <option name="height" value="942" />
   </component>
@@ -2578,95 +2625,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
+              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
-            </path>
-            <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
+              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
+              <item name="CarDeal" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="andrzejshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="andrzejshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="andrzejshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="andrzejshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="andrzejshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="andrzejshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="andrzejshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="CarDeal3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="cardeal" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2674,7 +2657,7 @@
     <property name="device.picker.selection" value="42008a70cedb3300" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1543428332794" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1543759196027" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2803,76 +2786,75 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Preview" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Logcat" order="7" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.3310811" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3310811" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32995495" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Preview" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Gradle" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="bottom" id="Logcat" order="8" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Captures" order="6" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Logcat" order="8" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
-      <window_info id="Captures" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Android Profiler" order="12" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Build" order="11" visible="true" weight="0.32995495" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Android Profiler" order="12" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseInitializer.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/data/database/DatabaseInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
@@ -2880,30 +2862,30 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/toolbar_menu.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_products_list.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state />
       </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/ProductsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2193">
           <caret line="226" column="29" selection-start-line="226" selection-start-column="29" selection-end-line="226" selection-end-column="29" />
@@ -2925,14 +2907,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseInitializer.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/data/database/DatabaseInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/ProductsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2635">
           <caret line="191" column="4" lean-forward="true" selection-start-line="190" selection-start-column="59" selection-end-line="190" selection-end-column="60" />
@@ -2954,7 +2936,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseInitializer.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/data/database/DatabaseInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
@@ -2962,22 +2944,22 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/toolbar_menu.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state />
       </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/ProductsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="226" column="29" selection-start-line="226" selection-start-column="29" selection-end-line="226" selection-end-column="29" />
@@ -3005,26 +2987,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ButtonsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseInitializer.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/ButtonsActivity.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/data/database/DatabaseInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
@@ -3034,125 +3007,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
-          <folding>
-            <element signature="e#1353#1354#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1444#1445#0" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1509#1510#0" expanded="true" />
-            <element signature="e#1550#1551#0" expanded="true" />
-            <element signature="e#1584#1585#0" expanded="true" />
-            <element signature="e#1616#1617#0" expanded="true" />
-            <element signature="e#1649#1650#0" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
-            <element signature="e#1724#1725#0" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-            <element signature="e#1785#1786#0" expanded="true" />
-            <element signature="e#1822#1823#0" expanded="true" />
-            <element signature="e#1852#1853#0" expanded="true" />
-            <element signature="e#1884#1885#0" expanded="true" />
-            <element signature="e#1917#1918#0" expanded="true" />
-            <element signature="e#1958#1959#0" expanded="true" />
-            <element signature="e#1992#1993#0" expanded="true" />
-            <element signature="e#2036#2037#0" expanded="true" />
-            <element signature="e#2080#2081#0" expanded="true" />
-            <element signature="e#2231#2232#0" expanded="true" />
-            <element signature="e#2264#2265#0" expanded="true" />
-            <element signature="e#2305#2306#0" expanded="true" />
-            <element signature="e#2339#2340#0" expanded="true" />
-            <element signature="e#2371#2372#0" expanded="true" />
-            <element signature="e#2404#2405#0" expanded="true" />
-            <element signature="e#2446#2447#0" expanded="true" />
-            <element signature="e#2480#2481#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/CarDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="222" column="28" selection-start-line="222" selection-start-column="28" selection-end-line="222" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2239#2240#0" expanded="true" />
-            <element signature="e#2269#2270#0" expanded="true" />
-            <element signature="e#2303#2304#0" expanded="true" />
-            <element signature="e#2331#2332#0" expanded="true" />
-            <element signature="e#2369#2370#0" expanded="true" />
-            <element signature="e#2408#2409#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
-            <element signature="e#2508#2509#0" expanded="true" />
-            <element signature="e#2541#2542#0" expanded="true" />
-            <element signature="e#2575#2576#0" expanded="true" />
-            <element signature="e#2619#2620#0" expanded="true" />
-            <element signature="e#2655#2656#0" expanded="true" />
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2716#2717#0" expanded="true" />
-            <element signature="e#2754#2755#0" expanded="true" />
-            <element signature="e#2784#2785#0" expanded="true" />
-            <element signature="e#2819#2820#0" expanded="true" />
-            <element signature="e#2855#2856#0" expanded="true" />
-            <element signature="e#2903#2904#0" expanded="true" />
-            <element signature="e#2943#2944#0" expanded="true" />
-            <element signature="e#2977#2978#0" expanded="true" />
-            <element signature="e#3012#3013#0" expanded="true" />
-            <element signature="e#3058#3059#0" expanded="true" />
-            <element signature="e#3096#3097#0" expanded="true" />
-            <element signature="e#3132#3133#0" expanded="true" />
-            <element signature="e#3169#3170#0" expanded="true" />
-            <element signature="e#3219#3220#0" expanded="true" />
-            <element signature="e#3261#3262#0" expanded="true" />
-            <element signature="e#3293#3294#0" expanded="true" />
-            <element signature="e#3329#3330#0" expanded="true" />
-            <element signature="e#3374#3375#0" expanded="true" />
-            <element signature="e#3414#3415#0" expanded="true" />
-            <element signature="e#3448#3449#0" expanded="true" />
-            <element signature="e#3486#3487#0" expanded="true" />
-            <element signature="e#3535#3536#0" expanded="true" />
-            <element signature="e#3579#3580#0" expanded="true" />
-            <element signature="e#3614#3615#0" expanded="true" />
-            <element signature="e#3653#3654#0" expanded="true" />
-            <element signature="e#3704#3705#0" expanded="true" />
-            <element signature="e#3750#3751#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/CarImages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-422">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/Category.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/models/Car.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/models/CarDetails.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/models/CarImages.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/models/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/CategoryActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/CategoryActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-833">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
@@ -3169,7 +3034,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/HomeActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/HomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
@@ -3177,156 +3042,142 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_product_details.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="text-editor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_image.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_category.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_buttons.xml">
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state />
-      </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_buttons.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/action_bar.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/cartitem_layout.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-859" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_cart.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_cart.xml">
       <provider editor-type-id="text-editor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_sorting.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/element_product_details.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_description.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_images.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_products_grid.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_products_list.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_image.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_layout.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_product_grid.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/switch_item.xml">
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state />
-      </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/switch_item.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_simple_text.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
@@ -3337,49 +3188,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsListFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/views/ProductsListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1153">
-          <caret line="124" column="10" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
+        <state relative-caret-position="1581">
+          <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/Action.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/Action.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/ActionFactory.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/ActionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/AddToCartAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/DecreaseAmountAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/RemoveFromCartAction.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/AddToCartAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/UpdateAmountAction.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/DecreaseAmountAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/RemoveFromCartAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/cardeal/actions/UpdateAmountAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
@@ -3387,31 +3238,31 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_products_list.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_product_list.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="85">
           <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>
