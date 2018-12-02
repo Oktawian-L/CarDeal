@@ -7,55 +7,34 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/cover"
-        android:layout_width="113dp"
-        android:layout_height="99dp"
-        android:adjustViewBounds="true"
-        android:maxWidth="150dp"
-        android:maxHeight="150dp"
-
-        />
-
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_width="82dp"
+        android:layout_height="31dp"
         android:text="Model"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/cover" />
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="17dp" />
 
     <TextView
         android:id="@+id/author"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="95dp"
+        android:layout_height="34dp"
         android:text="Marka"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/cover"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
-
-    <TextView
-        android:id="@+id/category"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:text="Kategoria"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/cover"
-        app:layout_constraintTop_toBottomOf="@+id/author" />
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="17dp" />
 
     <TextView
         android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="144dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
         android:text="cena"
-        android:textColor="@color/colorPrice"
+        android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -73,15 +52,4 @@
         app:layout_constraintTop_toTopOf="parent"
         android:visibility="gone"/>
 
-    <ImageButton
-        android:id="@+id/buy_button"
-        android:layout_width="77dp"
-        android:layout_height="80dp"
-        android:layout_marginEnd="8dp"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:src="@drawable/shopping"
-        android:tooltipText="@string/buy"
-        app:layout_constraintBottom_toBottomOf="@+id/cover"
-        app:layout_constraintEnd_toEndOf="parent" />
 </android.support.constraint.ConstraintLayout>
