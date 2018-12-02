@@ -41,11 +41,16 @@ public class ButtonsActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ProductsActivity.class);
         startActivity(intent);
     }
-   /* public void showBasicList(View view)
+    public void showBasicList(View view)
     {
         Intent intent = new Intent(this, Dialogsorting.class);
         startActivity(intent);
-    }*/
+    }
+    public void showGridList(View view)
+    {
+        Intent intent = new Intent(this,GridActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
