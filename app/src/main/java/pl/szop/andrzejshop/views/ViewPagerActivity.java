@@ -1,5 +1,12 @@
 package pl.szop.andrzejshop.views;
-
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
+import me.relex.circleindicator.CircleIndicator;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -13,29 +20,42 @@ import pl.szop.andrzejshop.adapters.ImageAdapterSlide;
 
 public class ViewPagerActivity extends AppCompatActivity {
 
+    private static ViewPager mPager;
+    private static int currentPage = 0;
+    private static final Integer[] XMEN= {R.drawable.beast,R.drawable.sample_2,R.drawable.sample_3,R.drawable.sample_3,R.drawable.sample_6};
+    private ArrayList<Integer> XMENArray = new ArrayList<Integer>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.view_pager);
+        setContentView(R.layout.activity_main);
+        init();
+    }
+    private void init() {
+        for(int i=0;i<XMEN.length;i++)
+            XMENArray.add(XMEN[i]);
 
-        //definicja zamiast nadpisywania
-       /* private Context mContext;
-        private int[] mImageIds = new int[]{R.drawable.audi2, R.drawable.audi2, R.drawable.audi2, R.drawable.audi2};
-        ImageView imageView = new ImageView(mContext);
-        imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        imageView.setImageResource(mImageIds[position]);
-        container.addView(imageView,0);*/
+        mPager = (ViewPager) findViewById(R.id.pager);
+        mPager.setAdapter(new ImageAdapterSlide(ViewPagerActivity.this,XMENArray));
+       CircleIndicator indicator = (CircleIndicator) findViewById(R.id.indicator);
+        indicator.setViewPager(mPager);
 
-        //incjalizacja gallery
-        ViewPager viewPager = findViewById(R.id.view_pager2);
-        ImageAdapterSlide adapterslide = new ImageAdapterSlide(this);
-        viewPager.setAdapter(adapterslide);
-
-        Toast.makeText(
-                getApplicationContext(),
-                "Witaj w galerii",
-                Toast.LENGTH_SHORT)
-                .show();
-
+        // Auto start of viewpager
+        final Handler handler = new Handler();
+        final Runnable Update = new Runnable() {
+            public void run() {
+                if (currentPage == XMEN.length) {
+                    currentPage = 0;
+                }
+                mPager.setCurrentItem(currentPage++, true);
+            }
+        };
+        Timer swipeTimer = new Timer();
+        swipeTimer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(Update);
+            }
+        }, 2500, 2500);
     }
 }
+
