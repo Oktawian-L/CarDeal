@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -27,61 +28,38 @@ import pl.szop.andrzejshop.R;
 
 public class ImageAdapterSlide extends PagerAdapter {
 
-        private ArrayList<Integer> IMAGES;
-        private LayoutInflater inflater;
-        private Context context;
+    Context mContext;
 
-
-        public ImageAdapterSlide(Context context,ArrayList<Integer> IMAGES) {
-            this.context = context;
-            this.IMAGES=IMAGES;
-            inflater = LayoutInflater.from(context);
-        }
-
-        @Override
-        public void destroyItem(ViewGroup container, int position, Object object) {
-            container.removeView((View) object);
-        }
-
-        @Override
-        public int getCount() {
-            return IMAGES.size();
-        }
-
-        @Override
-        public Object instantiateItem(ViewGroup view, int position) {
-            View imageLayout = inflater.inflate(R.layout.view_pager_item, view, false);
-
-            assert imageLayout != null;
-            final ImageView imageView = (ImageView) imageLayout
-                    .findViewById(R.id.image);
-
-
-            imageView.setImageResource(IMAGES.get(position));
-
-            view.addView(imageLayout, 0);
-
-            return imageLayout;
-        }
-
-        @Override
-        public boolean isViewFromObject(View view, Object object) {
-            return view.equals(object);
-        }
-
-        @Override
-        public void restoreState(Parcelable state, ClassLoader loader) {
-        }
-
-        @Override
-        public Parcelable saveState() {
-            return null;
-        }
-
-
+    public ImageAdapterSlide(Context context) {
+        this.mContext = context;
     }
 
+    @Override
+    public int getCount() {
+        return sliderImagesId.length;
+    }
 
+    private int[] sliderImagesId = new int[]{
+            R.drawable.skoda, R.drawable.skoda_fabia_49, R.drawable.mustang2,
+            R.drawable.fabia_red, R.drawable.camaro2, R.drawable.images,
+    };
 
+    @Override
+    public boolean isViewFromObject(View v, Object obj) {
+        return v == ((ImageView) obj);
+    }
 
+    @Override
+    public Object instantiateItem(ViewGroup container, int i) {
+        ImageView mImageView = new ImageView(mContext);
+        mImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        mImageView.setImageResource(sliderImagesId[i]);
+        ((ViewPager) container).addView(mImageView, 0);
+        return mImageView;
+    }
+
+    @Override
+    public void destroyItem(ViewGroup container, int i, Object obj) {
+        ((ViewPager) container).removeView((ImageView) obj);
+    }
 
