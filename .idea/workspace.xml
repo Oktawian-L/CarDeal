@@ -15,6 +15,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4b68320-bdab-46b4-b4c3-59200b47ce9c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/camaro2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/fabia_red.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/images.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mustang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mustang2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/skoda.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/skoda_fabia_49.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/adapters/ImageAdapterSlide.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/adapters/ImageAdapterSlide.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ViewPagerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ViewPagerActivity.java" afterDir="false" />
@@ -69,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/adapters/ImageAdapterSlide.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#400#401#0" expanded="true" />
@@ -2636,7 +2643,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-13" />
     <option name="y" value="407" />
     <option name="width" value="1400" />
@@ -3305,7 +3312,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/adapters/ImageAdapterSlide.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#400#401#0" expanded="true" />
