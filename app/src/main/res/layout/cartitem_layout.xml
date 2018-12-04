@@ -2,14 +2,13 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorTlo"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="130dp">
 
     <ImageView
         android:id="@+id/cover"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
         android:adjustViewBounds="true"
         android:maxWidth="150dp"
         android:maxHeight="150dp" />
@@ -20,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Tytul"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/cover" />
 
     <TextView
@@ -44,7 +44,37 @@
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cover"
-        app:layout_constraintTop_toBottomOf="@+id/author" />
+        app:layout_constraintTop_toBottomOf="@+id/author"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/plus"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/roundbutton"
+        android:text="+"
+        android:textColor="@color/default_circle_indicator_fill_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/remove_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minus"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/roundbutton"
+        android:text="-"
+        android:textColor="@color/default_circle_indicator_fill_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/remove_button"
+        app:layout_constraintTop_toBottomOf="@+id/plus" />
+
 
     <ImageButton
         android:id="@+id/remove_button"
@@ -54,6 +84,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:adjustViewBounds="true"
+        android:background="@color/default_circle_indicator_page_color"
         android:scaleType="fitCenter"
         android:src="@drawable/trash_small"
         app:layout_constraintBottom_toBottomOf="@+id/cover"
@@ -71,7 +102,7 @@
         android:textColor="@color/default_line_indicator_selected_color"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/remove_button"
-        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/price"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

@@ -13,6 +13,7 @@ import pl.szop.andrzejshop.MyApplication;
 import pl.szop.andrzejshop.R;
 import pl.szop.andrzejshop.models.CartItem;
 import pl.szop.andrzejshop.models.Product;
+import pl.szop.andrzejshop.views.CartActivity;
 import pl.szop.andrzejshop.views.ProductsListFragment;
 
 public class DecreaseAmountAction implements Action {
@@ -20,7 +21,6 @@ public class DecreaseAmountAction implements Action {
 
     @Override
     public void execute(Object object, Context context){
-        EventBus.getDefault().post(new ProductsListFragment.TestEvent());
         try {
             Long id = null;
             try {
@@ -28,23 +28,25 @@ public class DecreaseAmountAction implements Action {
             } catch (InvocationTargetException e) {
                 e.printStackTrace();
             }
-            Button buyButton = (Button) ((Activity) context).findViewById(R.id.CartButton);
-            //Button subtractButton = (Button) ((Activity) context).findViewById(R.id.minus);
+            Button subtractButton = ((Activity) context).findViewById(R.id.minus);
             CartItem cartItem = MyApplication.instance().getDataProvider().getItem(id);
             int qty = cartItem.getAmount();
-            double price = cartItem.getBook().getPrice();
-            double newPrice = (double) qty * price;
+            double price = cartItem.getBook().getPrice() / (qty);
+            double newPrice = (double) (double) cartItem.getBook().getPrice()-  price;
+            newPrice = newPrice * 100;
+            newPrice = Math.round(newPrice);
+            newPrice = newPrice / 100;
             cartItem.setPrice(newPrice);
             cartItem.setAmount(qty - 1);
-           /* if ((qty -1) < 1) {
+            if ((qty -1) < 1) {
                 subtractButton.setEnabled(false);
                 Toast.makeText(context, "You removed all items", Toast.LENGTH_SHORT).show();
             } else {
                 subtractButton.setEnabled(true);
                 Toast.makeText(context, "You removed 1 items", Toast.LENGTH_SHORT).show();
-            }*/
-
+            }
             MyApplication.instance().getDataProvider().updateAmount(cartItem);
+            EventBus.getDefault().post(new CartActivity.TestEvent());
         } catch (NoSuchMethodException | IllegalAccessException e) {
             e.printStackTrace();
         }

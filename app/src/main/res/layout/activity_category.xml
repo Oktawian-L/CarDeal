@@ -4,86 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorTlo"
-    tools:context="pl.szop.cardeal.views.CategoryActivity">
+    tools:context="pl.szop.andrzejshop.views.CategoryActivity">
 
     <TextView
         android:id="@+id/title2"
-        android:layout_width="250dp"
+        android:layout_width="349dp"
         android:layout_height="47dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="46dp"
-        android:fontFamily="monospace"
-        android:lineSpacingExtra="8sp"
         android:text="Kategorie"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
         android:textSize="25dp"
         android:textStyle="bold"
-        android:typeface="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_sportowe"
-        android:layout_width="119dp"
-        android:layout_height="74dp"
+        android:id="@+id/button_indie"
+        android:layout_width="292dp"
+        android:layout_height="73dp"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="51dp"
-        android:background="@color/colorBtn"
-        android:text="Sportowe"
-        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="37dp"
+        android:background="@color/colorPrimary"
+        android:text="Indie rock"
         android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title2" />
 
     <Button
-        android:id="@+id/button_sedan"
-        android:layout_width="119dp"
+        android:id="@+id/button_metal"
+        android:layout_width="283dp"
         android:layout_height="74dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="51dp"
-        android:background="@color/colorBtn"
-        android:text="Sedan"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/button_sportowe"
-        app:layout_constraintTop_toBottomOf="@+id/title2" />
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="46dp"
+        android:background="@color/colorPrimary"
+        android:text="Metal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_hard" />
 
     <Button
-        android:id="@+id/button_coupe"
-        android:layout_width="119dp"
+        android:id="@+id/button_hard"
+        android:layout_width="283dp"
         android:layout_height="74dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="23dp"
-        android:background="@color/colorBtn"
-        android:text="Coupe"
-        android:textColor="@color/colorPrimary"
+        android:layout_marginEnd="46dp"
+        android:background="@color/colorPrimary"
+        android:text="Hard rock"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_sportowe" />
+        app:layout_constraintTop_toBottomOf="@+id/button_indie" />
 
     <Button
-        android:id="@+id/button_kombi"
-        android:layout_width="119dp"
+        android:id="@+id/button_game"
+        android:layout_width="274dp"
         android:layout_height="74dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="23dp"
-        android:background="@color/colorBtn"
-        android:text="Kombi"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/button_coupe"
-        app:layout_constraintTop_toBottomOf="@+id/button_sedan" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="256dp"
-        android:layout_height="245dp"
-        android:layout_marginStart="43dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="55dp"
+        android:background="@color/colorPrimary"
+        android:text="Game soundtrack"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/car" />
+        app:layout_constraintTop_toBottomOf="@+id/button_metal" />
 
 </android.support.constraint.ConstraintLayout>

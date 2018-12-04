@@ -9,89 +9,44 @@ import android.widget.Button;
 import pl.szop.andrzejshop.R;
 
 public class CategoryActivity extends AppCompatActivity {
- @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category);
-        Button btnCriminal = findViewById(R.id.button_kombi);
 
-        btnCriminal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startProductsListActivity("category");
-            }
-        });
-
-        Button btnFantasy = findViewById(R.id.button_sportowe);
-
-        btnFantasy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startProductsListActivity("sportowe");
-            }
-        });
-
-        Button btnThriller = findViewById(R.id.button_coupe);
-
-        btnThriller.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startProductsListActivity("coupe");
-            }
-        });
-
-        Button btnSciFi = findViewById(R.id.button_sedan);
-
-        btnSciFi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startProductsListActivity("sedan");
-            }
-        });
-
-    }
-    private void startProductsListActivity(String cat) {
-        Intent intent = new Intent(this, ProductsActivity.class);
-        intent.putExtra("categoryType", cat);
-        startActivity(intent);
-    }/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
-        Button btnCriminal = findViewById(R.id.button_criminal);
+        Button btnCriminal = findViewById(R.id.button_metal);
 
         btnCriminal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startProductsListActivity("category");
+                startProductsListActivity("Game soundtrack");
             }
         });
 
-        Button btnFantasy = findViewById(R.id.button_fantasy);
+        Button btnFantasy = findViewById(R.id.button_indie);
 
         btnFantasy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startProductsListActivity("fantastyka");
+                startProductsListActivity("Indie rock");
             }
         });
 
-        Button btnThriller = findViewById(R.id.button_thriller);
+        Button btnThriller = findViewById(R.id.button_hard);
 
         btnThriller.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startProductsListActivity("thriller");
+                startProductsListActivity("Hard rock");
             }
         });
 
-        Button btnSciFi = findViewById(R.id.button_scifi);
+        Button btnSciFi = findViewById(R.id.button_metal);
 
         btnSciFi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startProductsListActivity("Science fiction");
+                startProductsListActivity("Metal");
             }
         });
 
@@ -100,5 +55,5 @@ public class CategoryActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ProductsActivity.class);
         intent.putExtra("categoryType", cat);
         startActivity(intent);
-    }*/
+    }
 }

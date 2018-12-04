@@ -62,4 +62,5 @@ public class ImageAdapterSlide extends PagerAdapter {
     public void destroyItem(ViewGroup container, int i, Object obj) {
         ((ViewPager) container).removeView((ImageView) obj);
     }
+}
 

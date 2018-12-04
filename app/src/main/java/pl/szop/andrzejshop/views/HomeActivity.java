@@ -19,18 +19,17 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
+     //   setSupportActionBar(myToolbar);
         // TODO: remove this. Temporary. Start another activity
-       // startProductsListActivity();
-        startButtonsActivity();
+        startProductsListActivity();
     }
 
     private void startProductsListActivity() {
         Intent intent = new Intent(this, ProductsActivity.class);
         startActivity(intent);
     }
-    private void startButtonsActivity() {
-        Intent intent = new Intent(this, ButtonsActivity.class);
+    private void startButtonsActivity(String cat) {
+        Intent intent = new Intent(this, ProductsActivity.class);
         startActivity(intent);
     }
     @Override
@@ -45,13 +44,6 @@ public class HomeActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle presses on the action bar items
         switch (item.getItemId()) {
-            case R.id.miHome:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "GoHome func",
-                        Toast.LENGTH_SHORT)
-                        .show();
-                return true;
 
             case R.id.miCompose:
                 Toast.makeText(
@@ -66,16 +58,6 @@ public class HomeActivity extends AppCompatActivity {
                         "Profile func",
                         Toast.LENGTH_SHORT)
                         .show();
-                return true;
-            case R.id.action_settings:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "settings func",
-                        Toast.LENGTH_SHORT)
-                        .show();
-                return true;
-            case R.id.action_login:
-                startActivity(new Intent(getApplicationContext(), ProductsActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

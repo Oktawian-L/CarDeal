@@ -25,6 +25,7 @@ import java.util.List;
 import pl.szop.andrzejshop.actions.DecreaseAmountAction;
 import pl.szop.andrzejshop.actions.RemoveFromCartAction;
 import pl.szop.andrzejshop.actions.UpdateAmountAction;
+import pl.szop.andrzejshop.actions.AddToFavoritesAction;
 import pl.szop.andrzejshop.data.Filter;
 import pl.szop.andrzejshop.MyApplication;
 import pl.szop.andrzejshop.R;
@@ -32,6 +33,7 @@ import pl.szop.andrzejshop.actions.AddToCartAction;
 import pl.szop.andrzejshop.adapters.ProductsAdapter;
 import pl.szop.andrzejshop.models.Product;
 import pl.szop.andrzejshop.rules.BoughtRule;
+import pl.szop.andrzejshop.rules.FavoritesRule;
 
 
 public class ProductsListFragment extends Fragment {
@@ -43,7 +45,7 @@ public class ProductsListFragment extends Fragment {
     public ProductsListFragment() {
         // Required empty public constructor
         // Register EventBus methods
-        EventBus.getDefault().register(this);
+
     }
 
     /**
@@ -121,15 +123,15 @@ public class ProductsListFragment extends Fragment {
 
     private void addActions(ProductsAdapter adapter) {
         adapter.addAction(R.id.buy_button, AddToCartAction.NAME);
-        //adapter.addAction(R.id.plus, UpdateAmountAction.NAME);
-        //adapter.addAction(R.id.minus, DecreaseAmountAction.NAME);
-       // adapter.addAction(R.id.remove_button, RemoveFromCartAction.NAME);
+       adapter.addAction(R.id.remove_button, RemoveFromCartAction.NAME);
+        adapter.addAction(R.id.favorites, AddToFavoritesAction.NAME);
     }
 
     private void addRules(ProductsAdapter adapter){
         adapter.addRule(R.id.buy_button, BoughtRule.NAME, false);
         adapter.addRule(R.id.price, BoughtRule.NAME, false);
         adapter.addRule(R.id.buyed, BoughtRule.NAME, true);
+        adapter.addRule(R.id.favorites, FavoritesRule.NAME, false);
     }
 
     private void startDetailsActivity(Long productId){
@@ -206,13 +208,4 @@ public class ProductsListFragment extends Fragment {
         void onFragmentInteraction(Uri uri);
     }
 
-    // TODO: delete this
-    @Subscribe
-    public void testEventBus(TestEvent testEvent){
-        //Toast.makeText(getActivity(), "Testowanie EventBus", Toast.LENGTH_SHORT).show();
-    }
-
-    public static class TestEvent{
-
-    }
 }

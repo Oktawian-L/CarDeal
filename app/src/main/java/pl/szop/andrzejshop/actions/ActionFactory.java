@@ -4,6 +4,8 @@ public class ActionFactory {
 
     public static Action getAction(String actionName){
         switch (actionName){
+            case RemoveFromFavoritesAction.NAME:
+                return new RemoveFromFavoritesAction();
             case AddToCartAction.NAME:
                 return new AddToCartAction();
             case RemoveFromCartAction.NAME:
@@ -12,13 +14,10 @@ public class ActionFactory {
                 return new UpdateAmountAction();
             case DecreaseAmountAction.NAME:
                 return new DecreaseAmountAction();
-
+            case AddToFavoritesAction.NAME:
+                return new AddToFavoritesAction();
                 default:
                     throw new IllegalArgumentException();
-
-
-
-
         }
     }
 }

@@ -1,7 +1,11 @@
 package pl.szop.andrzejshop.actions;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.support.v7.view.menu.ActionMenuItemView;
+import android.support.v7.widget.ActionMenuView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -23,9 +27,8 @@ public class AddToCartAction implements Action{
 
     @Override
     public void execute(Object object, Context context){
-        EventBus.getDefault().post(new ProductsListFragment.TestEvent());
         ImageButton buyButton = (ImageButton) ((Activity) context).findViewById(R.id.buy_button);
-        Button cartButton = (Button) ((Activity) context).findViewById(R.id.CartButton);
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
 
          try {
              Long id = null;
@@ -38,24 +41,30 @@ public class AddToCartAction implements Action{
              CartItem checkItem = MyApplication.instance().getDataProvider().getItem(id);
              if (checkItem == null) {
                  MyApplication.instance().getDataProvider().addToCart(ci);
-                 cartButton.setEnabled(true);
+                 builder.setMessage("You have added item to the cart!")
+                         .setCancelable(false)
+                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                             public void onClick(DialogInterface dialog, int id) {
+
+                             }
+                         });
+                 AlertDialog alert = builder.create();
+                 alert.show();
              } else {
-                 Toast.makeText(context, "This item is in cart already", Toast.LENGTH_SHORT).show();
+                 builder.setMessage("This item is already in your cart!")
+                         .setCancelable(false)
+                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                             public void onClick(DialogInterface dialog, int id) {
+                             }
+                         });
+                 AlertDialog alert = builder.create();
+                 alert.show();
              }
 
              buyButton.setEnabled(false);
          } catch (NoSuchMethodException | IllegalAccessException e) {
                     e.printStackTrace();
                     }
-//        try {
-//            Toast.makeText(context, (String)prod.getValue("title"), Toast.LENGTH_SHORT).show();
-//        } catch (NoSuchMethodException e) {
-//            e.printStackTrace();
-//        } catch (InvocationTargetException e) {
-//            e.printStackTrace();
-//        } catch (IllegalAccessException e) {
-//            e.printStackTrace();
-//        }
 
     }
 }

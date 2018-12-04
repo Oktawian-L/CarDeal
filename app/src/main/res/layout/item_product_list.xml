@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorTlo"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
+
 
     <ImageView
         android:id="@+id/cover"
@@ -19,34 +19,44 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="81dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="33dp"
-        android:text="Model"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/cover"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Tytul"
+        android:textColor="@color/vpi__bright_foreground_holo_light"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/cover" />
 
     <TextView
         android:id="@+id/author"
-        android:layout_width="57dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="32dp"
-        android:text="Marka"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/title"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Autor"
+        app:layout_constraintStart_toEndOf="@+id/cover"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Kategoria"
+        app:layout_constraintStart_toEndOf="@+id/cover"
+        app:layout_constraintTop_toBottomOf="@+id/author" />
 
     <TextView
         android:id="@+id/price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="60dp"
+        android:layout_width="74dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
         android:text="cena"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorPrice"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,25 +64,35 @@
         android:id="@+id/buyed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorPrice"
-        android:textSize="30dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="Zakupiono"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:visibility="gone"/>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="26dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="18dp"
-        android:text="$"
-        android:textColor="@color/colorPrimary"
-        android:textSize="30sp"
+        android:textColor="@color/colorPrice"
+        android:textSize="30dp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <CheckBox
+        android:id="@+id/favorites"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="2dp"
+        android:button="@drawable/heart_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cover"
+        app:layout_constraintTop_toBottomOf="@+id/category" />
+
+    <ImageButton
+        android:id="@+id/buy_button"
+        android:layout_width="37dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="100dp"
+        android:adjustViewBounds="true"
+        android:background="@color/default_title_indicator_selected_color"
+        android:scaleType="fitCenter"
+        android:src="@drawable/shopping"
+        android:tooltipText="@string/buy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </android.support.constraint.ConstraintLayout>

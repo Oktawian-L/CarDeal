@@ -1,26 +1,28 @@
 <resources>
-    <string name="app_name">CarDeal</string>
+    <string name="app_name">MusicMe</string>
     <string name="filter">Filter</string>
     <string name="sort">Sort</string>
-    <string name="change_view">Change view</string>
+    <string name="change_view">Zmień widok</string>
     <string name="ok">OK</string>
-    <string name="cancel">Cancel</string>
-    <string name="categories">category</string>
-    <string name="search">Search</string>
-    <string name="promotions">Okazje</string>
-    <string name="buy">add to cart</string>
+    <string name="cancel">Anuluj</string>
+    <string name="categories">Categories</string>
+    <string name="search">Szukaj</string>
+    <string name="promotions">Promocje</string>
+    <string name="buy">Dodaj do koszyka</string>
 
     <string name="sorting">Sort</string>
-    <string name="title_product">Model</string>
-    <string name="author_product">Marka</string>
-    <string name="price_product">Cena</string>
+    <string name="title_product">Title</string>
+    <string name="author_product">Author</string>
+    <string name="price_product">Price</string>
 
-    <string name="asc">rosnąco</string>
-    <string name="desc">malejąco</string>
+    <string name="asc">Ascending</string>
+    <string name="desc">Descending</string>
 
-    <string name="lack">Brak</string>
+    <string name="lack">None</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_favorites">My Wish list</string>
+    <string name="title_activity_cart">Bought items</string>
 </resources>

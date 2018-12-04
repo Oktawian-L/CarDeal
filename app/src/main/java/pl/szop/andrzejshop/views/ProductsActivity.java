@@ -1,6 +1,8 @@
 package pl.szop.andrzejshop.views;
 
 import android.content.Intent;
+import android.content.res.AssetManager;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -49,6 +51,8 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
 
     private Button btnCat;
     private Button btnCart;
+//    private Button btnCat;
+    private Button cFavoritesButton;
     private String category = "";
 
     private Filter mCurrentFilter;
@@ -59,9 +63,14 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
         setContentView(R.layout.activity_home);
         mCurrentFilter = new Filter();
         setContentView(R.layout.activity_products_list);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
+
 //        createActionBar();
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        TextView tv=(TextView) myToolbar.getChildAt(0);
+        AssetManager mgr = getAssets();
+        Typeface tf = Typeface.createFromAsset(mgr, "Sacra.ttf");
+       // tv.setTypeface(tf);
+        setSupportActionBar(myToolbar);
         Bundle b = getIntent().getExtras();
         String cat = null;
         if (b != null) {
@@ -76,25 +85,19 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
             myButton.setVisibility(View.GONE);
         }
 
-        btnCat  = findViewById(R.id.cat_button);
-        btnCat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                gotToCategoryActivity();
-            }
-        });
-        btnCart = findViewById(R.id.CartButton);
-        List<CartItem> cartitems = (List<CartItem>) MyApplication.instance().getDataProvider().getCartItems();
-        if (cartitems.isEmpty()) {
-            btnCart.setEnabled(false);
-       }
 
-        btnCart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startCartActivity();
-            }
-        });
+//        btnCart = findViewById(R.id.CartButton);
+//        List<CartItem> cartitems = (List<CartItem>) MyApplication.instance().getDataProvider().getCartItems();
+//        if (cartitems.isEmpty()) {
+//            btnCart.setEnabled(false);
+//       }
+//
+//        btnCart.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startCartActivity();
+//            }
+//        });
 
         initComponents();
 
@@ -122,14 +125,12 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
     }
 
     private void initComponents(){
-        cFilterButton = findViewById(R.id.filter_button);
-        cSortButton = findViewById(R.id.sort_button);
-        cChangeViewButton = findViewById(R.id.change_view_button);
 
+    }
 
-        cSortButton.setOnClickListener(v -> openSortingDialog());
-        cChangeViewButton.setOnClickListener(v -> mFragment.changeListLayout());
-        // TODO add action to the buttons
+    private void startFavoritesActivity() {
+        Intent intent = new Intent(this, FavoritesActivity.class);
+        startActivity(intent);
     }
 
     private void openSortingDialog(){
@@ -224,37 +225,20 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle presses on the action bar items
         switch (item.getItemId()) {
-            case R.id.miHome:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "You clicked the compose button.",
-                        Toast.LENGTH_SHORT)
-                        .show();
+            case R.id.search_action:
+                openSortingDialog();
                 return true;
-            case R.id.miCompose:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "You clicked the compose button.",
-                        Toast.LENGTH_SHORT)
-                        .show();
+            case R.id.toggle_view:
+                mFragment.changeListLayout();
                 return true;
             case R.id.miProfile:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "You clicked the profile button.",
-                        Toast.LENGTH_SHORT)
-                        .show();
+                startFavoritesActivity();
                 return true;
-            case R.id.action_settings:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "You clicked the settings button.",
-                        Toast.LENGTH_SHORT)
-                        .show();
+            case R.id.miCompose:
+                gotToCategoryActivity();
                 return true;
-            case R.id.action_login:
-                startActivity(new Intent(getApplicationContext(), ProductsActivity.class));
-                return true;
+            case R.id.cart_button:
+                startCartActivity();
             default:
                 return super.onOptionsItemSelected(item);
         }

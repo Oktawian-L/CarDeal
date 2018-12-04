@@ -75,13 +75,13 @@ public class ButtonsActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle presses on the action bar items
         switch (item.getItemId()) {
-            case R.id.miHome:
+            /*case R.id.miCompose:
                 Toast.makeText(
                         getApplicationContext(),
                         "You clicked the compose button.",
                         Toast.LENGTH_SHORT)
                         .show();
-                return true;
+                return true;*/
             case R.id.miCompose:
                 Toast.makeText(
                         getApplicationContext(),
@@ -96,7 +96,7 @@ public class ButtonsActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT)
                         .show();
                 return true;
-            case R.id.action_settings:
+           /* case R.id.action_settings:
                 Toast.makeText(
                         getApplicationContext(),
                         "You clicked the settings button.",
@@ -105,7 +105,7 @@ public class ButtonsActivity extends AppCompatActivity {
                 return true;
             case R.id.action_login:
                 startActivity(new Intent(getApplicationContext(), ProductsActivity.class));
-                return true;
+                return true;*/
             default:
                 return super.onOptionsItemSelected(item);
         }

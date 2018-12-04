@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
-import me.relex.circleindicator.CircleIndicator;
+//import me.relex.circleindicator.CircleIndicator;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;

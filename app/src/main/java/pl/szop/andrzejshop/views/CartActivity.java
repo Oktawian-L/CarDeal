@@ -10,13 +10,19 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import pl.szop.andrzejshop.MyApplication;
 import pl.szop.andrzejshop.R;
+import pl.szop.andrzejshop.actions.DecreaseAmountAction;
 import pl.szop.andrzejshop.actions.RemoveFromCartAction;
+import pl.szop.andrzejshop.actions.UpdateAmountAction;
 import pl.szop.andrzejshop.adapters.ProductsAdapter;
 import pl.szop.andrzejshop.models.Book;
 import pl.szop.andrzejshop.models.CartItem;
@@ -29,11 +35,18 @@ public class CartActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        EventBus.getDefault().register(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        initComponents();
+    }
+    // TODO: delete this
+    @Subscribe
+    public void testEventBus(CartActivity.TestEvent testEvent){
+      //  Toast.makeText(this, "Testowanie EventBus", Toast.LENGTH_SHORT).show();
         initComponents();
     }
 
@@ -48,8 +61,10 @@ public class CartActivity extends AppCompatActivity {
 
         ProductsAdapter adapter = new ProductsAdapter(this, R.layout.cartitem_layout, new ArrayList<>(), productId -> {}); // TODO wstawić jakiegoś słuchacza
         adapter.addAction(R.id.remove_button, RemoveFromCartAction.NAME);
+        adapter.addAction(R.id.plus, UpdateAmountAction.NAME);
+        adapter.addAction(R.id.minus, DecreaseAmountAction.NAME);
         cFavoritesList.setAdapter(adapter);
-        Log.i("XXX", Integer.toString(cartitems.get(1).getAmount()));
+        cFavoritesList.setAdapter(adapter);
         setListLayout(cFavoritesList);
         mAdapter = adapter;
         mAdapter.setItems(cartitems);
@@ -60,6 +75,13 @@ public class CartActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         productList.setLayoutManager(layoutManager);
         productList.setItemAnimator(new DefaultItemAnimator());
+    }
+
+
+
+
+    public static class TestEvent{
+
     }
 
 }
