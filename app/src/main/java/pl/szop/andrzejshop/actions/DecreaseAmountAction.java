@@ -3,7 +3,6 @@ package pl.szop.andrzejshop.actions;
 import android.app.Activity;
 import android.content.Context;
 import android.widget.Button;
-import android.widget.Toast;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -32,7 +31,7 @@ public class DecreaseAmountAction implements Action {
             //Button subtractButton = (Button) ((Activity) context).findViewById(R.id.minus);
             CartItem cartItem = MyApplication.instance().getDataProvider().getItem(id);
             int qty = cartItem.getAmount();
-            double price = cartItem.getBook().getPrice();
+            double price = cartItem.getAuto().getPrice();
             double newPrice = (double) qty * price;
             cartItem.setPrice(newPrice);
             cartItem.setAmount(qty - 1);

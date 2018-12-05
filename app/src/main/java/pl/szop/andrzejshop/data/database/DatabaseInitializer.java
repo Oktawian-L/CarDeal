@@ -2,13 +2,9 @@ package pl.szop.andrzejshop.data.database;
 
 import android.content.Context;
 
-import java.util.Arrays;
-import java.util.List;
-
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.models.Book;
-import pl.szop.andrzejshop.models.BookDetails;
-import pl.szop.andrzejshop.models.BooksImages;
+import pl.szop.andrzejshop.models.Auto;
+import pl.szop.andrzejshop.models.AutoDetails;
 import pl.szop.andrzejshop.models.Category;
 import pl.szop.andrzejshop.models.DaoSession;
 import pl.szop.andrzejshop.models.Image;
@@ -27,20 +23,20 @@ public class DatabaseInitializer {
         daoSession.getCategoryDao().insert(category3);
         daoSession.getCategoryDao().insert(category4);*/
 
-        Book product1 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product2 = new Book("chevrolet", "camaro", "sportowe", 5432.99);
-        Book product3 = new Book("bmw", "tt", "sedan", 3234.45);
-        Book product4 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product5 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product6 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product7 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product8 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product9 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product10 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product11 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product12 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product13 = new Book("audi", "tt", "sedan", 3234.45);
-        Book product14 = new Book("audi", "tt", "sedan", 3234.45);
+        Auto product1 = new Auto("audi", "tt", "sedan", 3234.45);
+        Auto product2 = new Auto("chevrolet", "camaro", "sportowe", 5432.99);
+        Auto product3 = new Auto("bmw", "tt", "sedan", 3234.45);
+        Auto product4 = new Auto("audi", "tt", "sedan", 3234.45);
+        Auto product5 = new Auto("audi", "tt", "sedan", 3234.45);
+        Auto product6 = new Auto("audi", "tt", "sedan", 3234.45);
+        Auto product7 = new Auto("audi", "tt", "sedan", 3234.45);
+        Auto product8 = new Auto("audi", "tt", "sedan", 3234.45);
+        Auto product9 = new Auto("audi", "tt", "sedan", 3234.45);
+        Auto product10 = new Auto("audi", "tt", "sedan", 3234.45);
+        Auto product11 = new Auto("audi", "tt", "sedan", 3234.45);
+        Auto product12 = new Auto("audi", "tt", "sedan", 3234.45);
+        Auto product13 = new Auto("audi", "tt", "sedan", 3234.45);
+        Auto product14 = new Auto("audi", "tt", "sedan", 3234.45);
 
         byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
@@ -72,9 +68,9 @@ public class DatabaseInitializer {
         product13.setCover(img13);
         product14.setCover(img14);*/
 
-        daoSession.getBookDao().insert(product1);
-        daoSession.getBookDao().insert(product2);
-        daoSession.getBookDao().insert(product3);
+        daoSession.getAutoDao().insert(product1);
+        daoSession.getAutoDao().insert(product2);
+        daoSession.getAutoDao().insert(product3);
       /* daoSession.getBookDao().insert(product4);
         daoSession.getBookDao().insert(product5);
        daoSession.getBookDao().insert(product6);
@@ -91,11 +87,11 @@ public class DatabaseInitializer {
 
 
         // saving details
-        BookDetails details = new BookDetails();
+        AutoDetails details = new AutoDetails();
         details.setDescription("Camaro car descrpt from database");
 
-        details.setBook(product1);
-        daoSession.getBookDetailsDao().insert(details);
+        details.setAuto(product1);
+        daoSession.getAutoDetailsDao().insert(details);
 
         Image image1 = new Image();
         image1.setImage(img1);

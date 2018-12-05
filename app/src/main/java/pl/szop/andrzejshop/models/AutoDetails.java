@@ -2,22 +2,19 @@ package pl.szop.andrzejshop.models;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
-import org.greenrobot.greendao.annotation.JoinEntity;
-import org.greenrobot.greendao.annotation.JoinProperty;
 import org.greenrobot.greendao.annotation.Property;
 import org.greenrobot.greendao.annotation.ToMany;
 
-import java.util.ArrayList;
 import java.util.List;
 import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.DaoException;
 import org.greenrobot.greendao.annotation.ToOne;
 
 @Entity(nameInDb = "book_details")
-public class BookDetails extends Product{
+public class AutoDetails extends Product{
 
     @ToOne(joinProperty = "id")
-    private Book book;
+    private Auto auto;
 
     @Id
     private Long id;
@@ -30,8 +27,8 @@ public class BookDetails extends Product{
 
 //    @ToMany
 //    @JoinEntity(
-//            entity = BooksImages.class,
-//            sourceProperty = "book",
+//            entity = AutoImages.class,
+//            sourceProperty = "auto",
 //            targetProperty = "image"
 //    )
 //    private List<Image> images;
@@ -66,13 +63,12 @@ public class BookDetails extends Product{
     private transient DaoSession daoSession;
 
     /** Used for active entity operations. */
-    @Generated(hash = 2006025983)
-    private transient BookDetailsDao myDao;
+    @Generated(hash = 1281899595)
+    private transient AutoDetailsDao myDao;
 
-    @Generated(hash = 205324385)
-    public BookDetails(Long id, String description, Double rating,
-            String translation, String publisher, String language,
-            String orgLanguage, int pages, int releaseNumber, int releaseYear) {
+    @Generated(hash = 2039703661)
+    public AutoDetails(Long id, String description, Double rating, String translation, String publisher,
+            String language, String orgLanguage, int pages, int releaseNumber, int releaseYear) {
         this.id = id;
         this.description = description;
         this.rating = rating;
@@ -85,8 +81,8 @@ public class BookDetails extends Product{
         this.releaseYear = releaseYear;
     }
 
-    @Generated(hash = 1372818535)
-    public BookDetails() {
+    @Generated(hash = 1042681008)
+    public AutoDetails() {
     }
 
     public Long getId() {
@@ -170,46 +166,46 @@ public class BookDetails extends Product{
     }
 
     public String getTitle(){
-        return book.getTitle();
+        return auto.getTitle();
     }
 
     public String getAuthor(){
-        return book.getAuthor();
+        return auto.getAuthor();
     }
 
     public String getCategory(){
-        return book.getCategory();
+        return auto.getCategory();
     }
 
-    @Generated(hash = 893611298)
-    private transient Long book__resolvedKey;
+    @Generated(hash = 1964815679)
+    private transient Long auto__resolvedKey;
 
     /** To-one relationship, resolved on first access. */
-    @Generated(hash = 1425297770)
-    public Book getBook() {
+    @Generated(hash = 933141992)
+    public Auto getAuto() {
         Long __key = this.id;
-        if (book__resolvedKey == null || !book__resolvedKey.equals(__key)) {
+        if (auto__resolvedKey == null || !auto__resolvedKey.equals(__key)) {
             final DaoSession daoSession = this.daoSession;
             if (daoSession == null) {
                 throw new DaoException("Entity is detached from DAO context");
             }
-            BookDao targetDao = daoSession.getBookDao();
-            Book bookNew = targetDao.load(__key);
+            AutoDao targetDao = daoSession.getAutoDao();
+            Auto autoNew = targetDao.load(__key);
             synchronized (this) {
-                book = bookNew;
-                book__resolvedKey = __key;
+                auto = autoNew;
+                auto__resolvedKey = __key;
             }
         }
-        return book;
+        return auto;
     }
 
     /** called by internal mechanisms, do not call yourself. */
-    @Generated(hash = 1395036341)
-    public void setBook(Book book) {
+    @Generated(hash = 256181844)
+    public void setAuto(Auto auto) {
         synchronized (this) {
-            this.book = book;
-            id = book == null ? null : book.getId();
-            book__resolvedKey = id;
+            this.auto = auto;
+            id = auto == null ? null : auto.getId();
+            auto__resolvedKey = id;
         }
     }
 
@@ -217,7 +213,7 @@ public class BookDetails extends Product{
      * To-many relationship, resolved on first access (and after reset).
      * Changes to to-many relations are not persisted, make changes to the target entity.
      */
-    @Generated(hash = 1726055322)
+    @Generated(hash = 703104145)
     public List<Image> getImages() {
         if (images == null) {
             final DaoSession daoSession = this.daoSession;
@@ -225,7 +221,7 @@ public class BookDetails extends Product{
                 throw new DaoException("Entity is detached from DAO context");
             }
             ImageDao targetDao = daoSession.getImageDao();
-            List<Image> imagesNew = targetDao._queryBookDetails_Images(id);
+            List<Image> imagesNew = targetDao._queryAutoDetails_Images(id);
             synchronized (this) {
                 if (images == null) {
                     images = imagesNew;
@@ -278,10 +274,10 @@ public class BookDetails extends Product{
     }
 
     /** called by internal mechanisms, do not call yourself. */
-    @Generated(hash = 1593577042)
+    @Generated(hash = 1141292141)
     public void __setDaoSession(DaoSession daoSession) {
         this.daoSession = daoSession;
-        myDao = daoSession != null ? daoSession.getBookDetailsDao() : null;
+        myDao = daoSession != null ? daoSession.getAutoDetailsDao() : null;
     }
 
     /** Used to resolve relations */

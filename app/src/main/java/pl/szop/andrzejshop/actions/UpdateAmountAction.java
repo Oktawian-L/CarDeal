@@ -28,7 +28,7 @@ public class UpdateAmountAction implements Action {
 
             CartItem cartItem = MyApplication.instance().getDataProvider().getItem(id);
             int qty = cartItem.getAmount();
-            double price = cartItem.getBook().getPrice();
+            double price = cartItem.getAuto().getPrice();
             double newPrice = (double) qty * price;
             cartItem.setAmount(qty + 1);
             cartItem.setPrice(newPrice);

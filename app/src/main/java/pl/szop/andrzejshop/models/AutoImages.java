@@ -5,7 +5,7 @@ import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Generated;
 
 @Entity(nameInDb = "books_images")
-public class BooksImages {
+public class AutoImages {
 
     @Id
     private Long id;
@@ -14,14 +14,14 @@ public class BooksImages {
     private Long image;
 
 
-    @Generated(hash = 1934316833)
-    public BooksImages(Long id, Long book, Long image) {
+    @Generated(hash = 1464024162)
+    public AutoImages(Long id, Long book, Long image) {
         this.id = id;
         this.book = book;
         this.image = image;
     }
-    @Generated(hash = 735433656)
-    public BooksImages() {
+    @Generated(hash = 1020831943)
+    public AutoImages() {
     }
     public Long getId() {
         return this.id;

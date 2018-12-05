@@ -64,3 +64,4 @@ public class ImageAdapterSlide extends PagerAdapter {
     }
 }
 
+

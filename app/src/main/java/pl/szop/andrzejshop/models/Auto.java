@@ -6,7 +6,7 @@ import org.greenrobot.greendao.annotation.Property;
 import org.greenrobot.greendao.annotation.Generated;
 
 @Entity(nameInDb = "books")
-public class Book extends Product {
+public class Auto extends Product {
 
     @Id(autoincrement = true)
     private Long id;
@@ -29,20 +29,20 @@ public class Book extends Product {
     @Property(nameInDb = "cover")
     private byte[] cover;
 
-    public Book() {
+    public Auto() {
 
     }
 
-    public Book(String title, String autor, String category, Double price) {
+    public Auto(String title, String autor, String category, Double price) {
         setTitle(title);
         setAuthor(autor);
         setCategory(category);
         setPrice(price);
     }
 
-    @Generated(hash = 1986047379)
-    public Book(Long id, String title, String author, String category, Double price,
-                Double promotionalPrice, byte[] cover) {
+    @Generated(hash = 1279976134)
+    public Auto(Long id, String title, String author, String category, Double price,
+            Double promotionalPrice, byte[] cover) {
         this.id = id;
         this.title = title;
         this.author = author;
