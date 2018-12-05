@@ -27,7 +27,7 @@ public class DecreaseAmountAction implements Action {
             } catch (InvocationTargetException e) {
                 e.printStackTrace();
             }
-            Button buyButton = (Button) ((Activity) context).findViewById(R.id.CartButton);
+            //Button buyButton = (Button) ((Activity) context).findViewById(R.id.CartButton);
             //Button subtractButton = (Button) ((Activity) context).findViewById(R.id.minus);
             CartItem cartItem = MyApplication.instance().getDataProvider().getItem(id);
             int qty = cartItem.getAmount();

@@ -25,7 +25,7 @@ public class AddToCartAction implements Action{
     public void execute(Object object, Context context){
         EventBus.getDefault().post(new ProductsListFragment.TestEvent());
         ImageButton buyButton = (ImageButton) ((Activity) context).findViewById(R.id.buy_button);
-        Button cartButton = (Button) ((Activity) context).findViewById(R.id.CartButton);
+        //Button cartButton = (Button) ((Activity) context).findViewById(R.id.CartButton);
 
          try {
              Long id = null;
@@ -38,7 +38,7 @@ public class AddToCartAction implements Action{
              CartItem checkItem = MyApplication.instance().getDataProvider().getItem(id);
              if (checkItem == null) {
                  MyApplication.instance().getDataProvider().addToCart(ci);
-                 cartButton.setEnabled(true);
+                 //cartButton.setEnabled(true);
              } else {
                  Toast.makeText(context, "This item is in cart already", Toast.LENGTH_SHORT).show();
              }
