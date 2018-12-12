@@ -146,7 +146,11 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
         });
         builder.create().show();
     }
-
+    public void showGalleryfromProductList(View view)
+    {
+        Intent intent = new Intent(this,ViewPagerActivity.class);
+        startActivity(intent);
+    }
     private int getCurrentSortingOptions(List<Sort> sortingOptions, Filter currentFilter){
         Sort currentSort = currentFilter.getSort();
         Sort sort;
