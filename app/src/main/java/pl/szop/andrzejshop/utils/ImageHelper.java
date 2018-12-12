@@ -1,4 +1,4 @@
-package pl.szop.andrzejshop.adapters;
+package pl.szop.andrzejshop.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
