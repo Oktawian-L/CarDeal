@@ -15,10 +15,10 @@ import java.util.List;
 
 import pl.szop.andrzejshop.MyApplication;
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.actions.RemoveFromFavoritesAction;
+import pl.szop.andrzejshop.actions.UsunZUlubionych;
 import pl.szop.andrzejshop.adapters.ProductsAdapter;
-import pl.szop.andrzejshop.models.Album;
 import pl.szop.andrzejshop.models.Favorites;
+import pl.szop.andrzejshop.models.Image;
 import pl.szop.andrzejshop.models.Product;
 
 public class FavoritesActivity extends AppCompatActivity {
@@ -29,7 +29,7 @@ public class FavoritesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_favorites);
+        setContentView(R.layout.activity_favourites);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -39,12 +39,12 @@ public class FavoritesActivity extends AppCompatActivity {
     private void initComponents(){
         cFavoritesList = findViewById(R.id.favorites_list);
         List<Favorites> favorites = (List<Favorites>) MyApplication.instance().getDataProvider().getFavorites();
-        List<Album> products = new ArrayList<>();
+        List<Image> products = new ArrayList<>();
         for (Favorites fav : favorites){
-            products.add(fav.getAlbum());
+           products.add(fav.getAlbum());
         }
-        ProductsAdapter adapter = new ProductsAdapter(this, R.layout.item_favorites, new ArrayList<>(), productId -> {}); // TODO wstawić jakiegoś słuchacza
-        adapter.addAction(R.id.remove_button, RemoveFromFavoritesAction.NAME);
+        ProductsAdapter adapter = new ProductsAdapter(this, R.layout.item_favorites, new ArrayList<>(), productId -> {});
+        adapter.addAction(R.id.remove_button, UsunZUlubionych.NAME);
         cFavoritesList.setAdapter(adapter);
         setListLayout(cFavoritesList);
         mAdapter = adapter;
