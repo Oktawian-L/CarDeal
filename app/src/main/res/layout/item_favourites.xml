@@ -57,5 +57,6 @@
         android:src="@drawable/shopping"
         app:layout_constraintBottom_toBottomOf="@+id/cover"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_profile" />
 </android.support.constraint.ConstraintLayout>

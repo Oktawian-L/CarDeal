@@ -49,6 +49,11 @@ public class ButtonsActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Dialogsorting.class);
         startActivity(intent);
     }
+    public void showFavourites(View view)
+    {
+        Intent intent = new Intent(this, FavoritesActivity.class);
+        startActivity(intent);
+    }
     public void showGridList(View view)
     {
         Log.v("1","odpalam view");
