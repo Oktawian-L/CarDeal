@@ -32,7 +32,6 @@ public class FavoritesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_favourites);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         initComponents();
     }
 
@@ -43,7 +42,7 @@ public class FavoritesActivity extends AppCompatActivity {
         for (Favorites fav : favorites){
            products.add(fav.getAlbum());
         }
-        ProductsAdapter adapter = new ProductsAdapter(this, R.layout.item_favorites, new ArrayList<>(), productId -> {});
+        ProductsAdapter adapter = new ProductsAdapter(this, R.layout.item_favourites, new ArrayList<>(), productId -> {});
         adapter.addAction(R.id.remove_button, UsunZUlubionych.NAME);
         cFavoritesList.setAdapter(adapter);
         setListLayout(cFavoritesList);

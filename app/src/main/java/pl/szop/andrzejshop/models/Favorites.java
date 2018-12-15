@@ -13,7 +13,7 @@ public class Favorites extends Product{
     private Long id;
 
     @ToOne(joinProperty = "id")
-    private Auto book;
+    private Auto auto;
 
     /** Used to resolve relations */
     @Generated(hash = 2040040024)
@@ -40,35 +40,35 @@ public class Favorites extends Product{
         this.id = id;
     }
 
-    @Generated(hash = 893611298)
-    private transient Long book__resolvedKey;
+    @Generated(hash = 1964815679)
+    private transient Long auto__resolvedKey;
 
     /** To-one relationship, resolved on first access. */
-    @Generated(hash = 1825222666)
-    public Auto getBook() {
+    @Generated(hash = 933141992)
+    public Auto getAuto() {
         Long __key = this.id;
-        if (book__resolvedKey == null || !book__resolvedKey.equals(__key)) {
+        if (auto__resolvedKey == null || !auto__resolvedKey.equals(__key)) {
             final DaoSession daoSession = this.daoSession;
             if (daoSession == null) {
                 throw new DaoException("Entity is detached from DAO context");
             }
             AutoDao targetDao = daoSession.getAutoDao();
-            Auto bookNew = targetDao.load(__key);
+            Auto autoNew = targetDao.load(__key);
             synchronized (this) {
-                book = bookNew;
-                book__resolvedKey = __key;
+                auto = autoNew;
+                auto__resolvedKey = __key;
             }
         }
-        return book;
+        return auto;
     }
 
     /** called by internal mechanisms, do not call yourself. */
-    @Generated(hash = 346212646)
-    public void setBook(Auto book) {
+    @Generated(hash = 256181844)
+    public void setAuto(Auto auto) {
         synchronized (this) {
-            this.book = book;
-            id = book == null ? null : book.getId();
-            book__resolvedKey = id;
+            this.auto = auto;
+            id = auto == null ? null : auto.getId();
+            auto__resolvedKey = id;
         }
     }
 
@@ -115,29 +115,6 @@ public class Favorites extends Product{
         myDao = daoSession != null ? daoSession.getFavoritesDao() : null;
     }
 
-    /** Used to resolve relations */
-
-//    private transient DaoSession daoSession;
-
-    /** Used for active entity operations. */
-
-   // private transient FavoritesDao myDao;
-
-
-    /*
-    @Generated
-    public byte[] getCover(){
-        return book.getCover();
-    }
-    @Generated
-    public String getTitle(){
-        return book.getTitle();
-    }
-    @Generated
-    public String getAuthor(){
-        return book.getAuthor();
-    }
-*/
 
 
 
