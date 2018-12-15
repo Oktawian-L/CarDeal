@@ -35,19 +35,19 @@ public class FavoritesActivity extends AppCompatActivity {
         initComponents();
     }
 
-    private void initComponents(){
+   private void initComponents(){
         cFavoritesList = findViewById(R.id.favorites_list);
         List<Favorites> favorites = (List<Favorites>) MyApplication.instance().getDataProvider().getFavorites();
         List<Image> products = new ArrayList<>();
         for (Favorites fav : favorites){
-           products.add(fav.getAlbum());
+          // products.add(fav.getAuto());
         }
         ProductsAdapter adapter = new ProductsAdapter(this, R.layout.item_favourites, new ArrayList<>(), productId -> {});
         adapter.addAction(R.id.remove_button, UsunZUlubionych.NAME);
         cFavoritesList.setAdapter(adapter);
         setListLayout(cFavoritesList);
         mAdapter = adapter;
-        mAdapter.setItems(products);
+       // mAdapter.setItems(products);
     }
 
     private void setListLayout(RecyclerView productList) {

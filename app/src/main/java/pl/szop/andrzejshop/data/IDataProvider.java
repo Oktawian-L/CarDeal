@@ -17,4 +17,9 @@ public interface IDataProvider {
     void updateAmount(CartItem ci);
     CartItem getItem(long id);
     List<? extends Product> getCartItems();
+
+    boolean isFavorite(Long id);
+    void setFavorite(Long id, boolean favorite);
+    List<? extends Product> getFavorites();
+
 }
