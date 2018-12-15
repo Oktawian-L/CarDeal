@@ -43,7 +43,7 @@ public class FavoritesActivity extends AppCompatActivity {
         cFavoritesList.setAdapter(adapter);
         setListLayout(cFavoritesList);
         mAdapter = adapter;
-       // mAdapter.setItems(products);
+        mAdapter.setItems(products);
     }
 
     private void setListLayout(RecyclerView productList) {
