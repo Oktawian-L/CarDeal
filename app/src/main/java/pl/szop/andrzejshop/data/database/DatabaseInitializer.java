@@ -2,11 +2,15 @@ package pl.szop.andrzejshop.data.database;
 
 import android.content.Context;
 
+import java.util.Arrays;
+import java.util.List;
+
 import pl.szop.andrzejshop.R;
 import pl.szop.andrzejshop.models.Auto;
 import pl.szop.andrzejshop.models.AutoDetails;
 import pl.szop.andrzejshop.models.Category;
 import pl.szop.andrzejshop.models.DaoSession;
+import pl.szop.andrzejshop.models.Favorites;
 import pl.szop.andrzejshop.models.Image;
 import pl.szop.andrzejshop.utils.ImageUtils;
 
@@ -92,6 +96,36 @@ public class DatabaseInitializer {
 
         details.setAuto(product1);
         daoSession.getAutoDetailsDao().insert(details);
+        Favorites favorites = new Favorites(1L);
+        daoSession.getFavoritesDao().insert(favorites);
+        details.setAuto(product1);
+       /* daoSession.getBookDetailsDao().insert(details);
+        details.setBook(product2);
+        daoSession.getBookDetailsDao().insert(details);
+        details.setBook(product3);
+        daoSession.getBookDetailsDao().insert(details);
+        details.setBook(product4);
+        daoSession.getBookDetailsDao().insert(details);
+        details.setBook(product5);
+        daoSession.getBookDetailsDao().insert(details);
+        details.setBook(product6);
+        daoSession.getBookDetailsDao().insert(details);
+        details.setBook(product7);
+        daoSession.getBookDetailsDao().insert(details);
+        details.setBook(product8);
+        daoSession.getBookDetailsDao().insert(details);
+        details.setBook(product9);
+        daoSession.getBookDetailsDao().insert(details);
+        details.setBook(product10);
+        daoSession.getBookDetailsDao().insert(details);
+        details.setBook(product11);
+        daoSession.getBookDetailsDao().insert(details);
+        details.setBook(product12);
+        daoSession.getBookDetailsDao().insert(details);
+        details.setBook(product13);
+        daoSession.getBookDetailsDao().insert(details);
+        details.setBook(product14);
+        daoSession.getBookDetailsDao().insert(details);*/
 
         Image image1 = new Image();
         image1.setImage(img1);
