@@ -39,7 +39,7 @@
         android:background="@drawable/backradius"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title3"
-        app:srcCompat="@drawable/audi2"></ImageView>
+        app:srcCompat="@drawable/camaro"></ImageView>
 
 
     <ImageView
@@ -51,7 +51,7 @@
         android:background="@drawable/backradius"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title3"
-        app:srcCompat="@drawable/audi2"></ImageView>
+        app:srcCompat="@drawable/chevrolet"></ImageView>
 
     <ImageView
         android:id="@+id/imageView5"
@@ -62,7 +62,7 @@
         android:background="@drawable/backradius"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/audi2"></ImageView>
+        app:srcCompat="@drawable/skoda"></ImageView>
 
     <ImageView
         android:id="@+id/imageView6"
@@ -73,7 +73,7 @@
         android:background="@drawable/backradius"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/audi2"></ImageView>
+        app:srcCompat="@drawable/camaro"></ImageView>
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -97,7 +97,7 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="151dp"
+        android:layout_width="145dp"
         android:layout_height="59dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="364dp"
@@ -136,7 +136,7 @@
         android:id="@+id/button7"
         android:layout_width="159dp"
         android:layout_height="56dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="12dp"
         android:background="@color/colorBtn"
         android:onClick="showGridList"
