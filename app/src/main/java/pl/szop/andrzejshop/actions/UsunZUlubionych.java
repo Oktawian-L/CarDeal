@@ -16,8 +16,7 @@ public class UsunZUlubionych  implements Action{
     public void execute(Object object, Context context) {
         try {
             Long id = (Long) ((Product)object).getValue("id");
-          //  MyApplication.instance().getDataProvider().setFavorite(id, false);
-            // TODO zrobić odświeżanie listy po wykonaiu akcji. Prawdopodobnie będzie trzeba zmienić trochę interfejs, aby mieć dostęp do listy
+            MyApplication.instance().getDataProvider().setFavorite(id, false);
         } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
             e.printStackTrace();
         }

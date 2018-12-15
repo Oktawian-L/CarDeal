@@ -7,7 +7,7 @@ import pl.szop.andrzejshop.models.DaoSession;
 
 public class DatabaseProviderSettings {
 
-    public static String[] SEARCH_COLUMN  = {"title", "author", "category"};
+    public static String[] SEARCH_COLUMN  = {"model", "marka", "typ"};
     public static Class PRODUCT_CLASS = Auto.class;
     public static Class PRODUCT_DETAILS_CLASS = AutoDetails.class;
 

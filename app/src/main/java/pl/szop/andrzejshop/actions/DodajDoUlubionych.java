@@ -15,9 +15,8 @@ public class DodajDoUlubionych implements Action {
     public void execute(Object object, Context context) {
         try {
             Long id = (Long) ((Product)object).getValue("id");
-            // TODO spróbować to zrobić bez pobierania
-           // boolean favorites = MyApplication.instance().getDataProvider().isFavorite(id);
-           // MyApplication.instance().getDataProvider().setFavorite(id, !favorites);
+           boolean favorites = MyApplication.instance().getDataProvider().isFavorite(id);
+           MyApplication.instance().getDataProvider().setFavorite(id, !favorites);
         } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
             e.printStackTrace();
         }
