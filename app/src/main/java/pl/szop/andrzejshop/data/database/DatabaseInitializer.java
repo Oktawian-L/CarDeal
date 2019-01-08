@@ -42,10 +42,10 @@ public class DatabaseInitializer {
         Auto product13 = new Auto("audi", "tt", "sedan", 3234.45);
         Auto product14 = new Auto("audi", "tt", "sedan", 3234.45);
 
-        byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
-        byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
-        byte[] img3 = ImageUtils.getBytesFromResource(context, R.drawable.camaro);
-      /*  byte[] img4 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img3 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img4 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img5 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img6 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img7 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
@@ -55,7 +55,7 @@ public class DatabaseInitializer {
         byte[] img11 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img12 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img13 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
-        byte[] img14 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);*/
+        byte[] img14 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
 
         product1.setCover(img1);
         product2.setCover(img2);

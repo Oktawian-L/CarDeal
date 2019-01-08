@@ -39,7 +39,7 @@
         android:background="@drawable/backradius"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title3"
-        app:srcCompat="@drawable/camaro"></ImageView>
+        app:srcCompat="@drawable/audi2"></ImageView>
 
 
     <ImageView
@@ -50,7 +50,7 @@
         android:background="@drawable/backradius"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title3"
-        app:srcCompat="@drawable/chevrolet"></ImageView>
+        app:srcCompat="@drawable/audi2"></ImageView>
 
     <ImageView
         android:id="@+id/imageView5"
@@ -61,7 +61,7 @@
         android:background="@drawable/backradius"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/skoda"></ImageView>
+        app:srcCompat="@drawable/audi2"></ImageView>
 
     <ImageView
         android:id="@+id/imageView6"
@@ -71,7 +71,7 @@
         android:background="@drawable/backradius"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/camaro"></ImageView>
+        app:srcCompat="@drawable/audi2"></ImageView>
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -98,13 +98,13 @@
         android:layout_width="146dp"
         android:layout_height="59dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="364dp"
         android:background="@color/colorBtn"
         android:onClick="showCategory"
         android:text="Wyszukiwanie"
         android:textColor="@color/vpi__background_holo_dark"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/productlistbtn"
@@ -116,14 +116,14 @@
         android:onClick="showProductList"
         android:text="Lista produktów"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/basic_list_btn"
-        android:layout_width="145dp"
+        android:layout_width="146dp"
         android:layout_height="56dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="16dp"
         android:background="@color/colorBtn"
         android:onClick="showFavourites"
         android:text="Ulubione"
