@@ -54,7 +54,7 @@
         android:adjustViewBounds="true"
         android:background="@color/colorPrimaryDark"
         android:scaleType="fitCenter"
-        android:src="@drawable/shopping"
+        android:src="@drawable/ic_profile"
         app:layout_constraintBottom_toBottomOf="@+id/cover"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
