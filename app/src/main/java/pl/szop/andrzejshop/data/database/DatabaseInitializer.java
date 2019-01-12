@@ -60,8 +60,8 @@ public class DatabaseInitializer {
         product1.setCover(img1);
         product2.setCover(img2);
         product3.setCover(img3);
-        /*product4.setCover(img4);
-        product5.setCover(img5);
+        product4.setCover(img4);
+        /*product5.setCover(img5);
         product6.setCover(img6);
         product7.setCover(img7);
         product8.setCover(img8);
@@ -75,17 +75,7 @@ public class DatabaseInitializer {
         daoSession.getAutoDao().insert(product1);
         daoSession.getAutoDao().insert(product2);
         daoSession.getAutoDao().insert(product3);
-      /* daoSession.getBookDao().insert(product4);
-        daoSession.getBookDao().insert(product5);
-       daoSession.getBookDao().insert(product6);
-       daoSession.getBookDao().insert(product7);
-        daoSession.getBookDao().insert(product8);
-        daoSession.getBookDao().insert(product9);
-       daoSession.getBookDao().insert(product10);
-        daoSession.getBookDao().insert(product11);
-       daoSession.getBookDao().insert(product12);
-        daoSession.getBookDao().insert(product13);
-        daoSession.getBookDao().insert(product14);*/
+        daoSession.getAutoDao().insert(product4);
 
 
 
@@ -99,33 +89,7 @@ public class DatabaseInitializer {
         Favorites favorites = new Favorites(1L);
         daoSession.getFavoritesDao().insert(favorites);
         details.setAuto(product1);
-       /* daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product2);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product3);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product4);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product5);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product6);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product7);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product8);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product9);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product10);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product11);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product12);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product13);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product14);
-        daoSession.getBookDetailsDao().insert(details);*/
+
 
         Image image1 = new Image();
         image1.setImage(img1);
