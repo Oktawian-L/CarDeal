@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import pl.szop.andrzejshop.R;
 import pl.szop.andrzejshop.adapters.ImageAdapterSlide;
+import pl.szop.andrzejshop.models.Category;
 import pl.szop.andrzejshop.models.Product;
 
 public class ButtonsActivity extends AppCompatActivity {
@@ -81,34 +82,12 @@ public class ButtonsActivity extends AppCompatActivity {
         // Handle presses on the action bar items
         switch (item.getItemId()) {
             case R.id.miHome:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "You clicked the compose button.",
-                        Toast.LENGTH_SHORT)
-                        .show();
-                return true;
-            case R.id.miCompose:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "You clicked the compose button.",
-                        Toast.LENGTH_SHORT)
-                        .show();
+                startActivity(new Intent(getApplicationContext(), CategoryActivity.class));
                 return true;
             case R.id.miProfile:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "You clicked the profile button.",
-                        Toast.LENGTH_SHORT)
-                        .show();
+                startActivity(new Intent(getApplicationContext(), ProductsActivity.class));
                 return true;
             case R.id.action_settings:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "You clicked the settings button.",
-                        Toast.LENGTH_SHORT)
-                        .show();
-                return true;
-            case R.id.action_login:
                 startActivity(new Intent(getApplicationContext(), ProductsActivity.class));
                 return true;
             default:

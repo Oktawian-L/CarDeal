@@ -194,22 +194,21 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
 
         getMenuInflater().inflate(R.menu.toolbar_menu,menu);
         // TODO dodać wyszukiwanie. Może zrobić jeszcze jakąś liste z podpowiedziami
-        MenuItem searchItem = menu.findItem(R.id.search_action);
-        SearchView searchView = (SearchView) searchItem.getActionView();
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                Filter filter = mCurrentFilter;
-                filter.setText(query);
-                mFragment.loadProducts(filter);
-                return false;
-            }
+        //MenuItem searchItem = menu.findItem(R.id.search_action);
+       // SearchView searchView = (SearchView) searchItem.getActionView();
+        //searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+           // @Override
+          //  public boolean onQueryTextSubmit(String query) {
+         //       Filter filter = mCurrentFilter;
+         //       filter.setText(query);
+         //       mFragment.loadProducts(filter);
+         //       return false;
+         //   }
 
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                return false;
+//            public boolean onQueryTextChange(String newText) {
+              /*  return false;
             }
-        });
+        });*/
 
         return true;
     }
@@ -229,34 +228,12 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
         // Handle presses on the action bar items
         switch (item.getItemId()) {
             case R.id.miHome:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "You clicked the compose button.",
-                        Toast.LENGTH_SHORT)
-                        .show();
-                return true;
-            case R.id.miCompose:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "You clicked the compose button.",
-                        Toast.LENGTH_SHORT)
-                        .show();
+                startActivity(new Intent(getApplicationContext(), ButtonsActivity.class));
                 return true;
             case R.id.miProfile:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "You clicked the profile button.",
-                        Toast.LENGTH_SHORT)
-                        .show();
+                startActivity(new Intent(getApplicationContext(), ProductsActivity.class));
                 return true;
             case R.id.action_settings:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "You clicked the settings button.",
-                        Toast.LENGTH_SHORT)
-                        .show();
-                return true;
-            case R.id.action_login:
                 startActivity(new Intent(getApplicationContext(), ProductsActivity.class));
                 return true;
             default:

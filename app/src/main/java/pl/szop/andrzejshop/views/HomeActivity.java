@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
+import android.widget.Button;
 import android.widget.Toast;
 
 import pl.szop.andrzejshop.R;
@@ -46,35 +47,12 @@ public class HomeActivity extends AppCompatActivity {
         // Handle presses on the action bar items
         switch (item.getItemId()) {
             case R.id.miHome:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "GoHome func",
-                        Toast.LENGTH_SHORT)
-                        .show();
-                return true;
-
-            case R.id.miCompose:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "Compose func",
-                        Toast.LENGTH_SHORT)
-                        .show();
+                startActivity(new Intent(getApplicationContext(), ButtonsActivity.class));
                 return true;
             case R.id.miProfile:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "Profile func",
-                        Toast.LENGTH_SHORT)
-                        .show();
+                startActivity(new Intent(getApplicationContext(), ProductsActivity.class));
                 return true;
             case R.id.action_settings:
-                Toast.makeText(
-                        getApplicationContext(),
-                        "settings func",
-                        Toast.LENGTH_SHORT)
-                        .show();
-                return true;
-            case R.id.action_login:
                 startActivity(new Intent(getApplicationContext(), ProductsActivity.class));
                 return true;
             default:
