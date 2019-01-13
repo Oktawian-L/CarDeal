@@ -18,6 +18,7 @@ import android.widget.Toast;
 import pl.szop.andrzejshop.R;
 import pl.szop.andrzejshop.adapters.ImageAdapterSlide;
 import pl.szop.andrzejshop.models.Category;
+import pl.szop.andrzejshop.models.Favorites;
 import pl.szop.andrzejshop.models.Product;
 
 public class ButtonsActivity extends AppCompatActivity {
@@ -55,6 +56,11 @@ public class ButtonsActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FavoritesActivity.class);
         startActivity(intent);
     }
+    public void showAuto(View view)
+    {
+        Intent intent = new Intent(this, AutoActivity.class);
+        startActivity(intent);
+    }
     public void showGridList(View view)
     {
         Log.v("1","odpalam view");
@@ -85,10 +91,10 @@ public class ButtonsActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), CategoryActivity.class));
                 return true;
             case R.id.miProfile:
-                startActivity(new Intent(getApplicationContext(), ProductsActivity.class));
+                startActivity(new Intent(getApplicationContext(), FavoritesActivity.class));
                 return true;
             case R.id.action_settings:
-                startActivity(new Intent(getApplicationContext(), ProductsActivity.class));
+                startActivity(new Intent(getApplicationContext(), GridActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

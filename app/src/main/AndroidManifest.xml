@@ -22,6 +22,7 @@
         <activity android:name=".views.ProductsActivity" />
         <activity android:name=".views.ProductDetailsActivity" />
         <activity android:name=".views.ViewPagerActivity" />
+        <activity android:name=".views.AutoActivity" />
         <activity android:name=".views.FavoritesActivity" />
         <activity
             android:name=".views.ImageActivity"

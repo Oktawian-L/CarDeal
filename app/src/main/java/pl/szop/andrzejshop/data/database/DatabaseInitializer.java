@@ -43,7 +43,7 @@ public class DatabaseInitializer {
         Auto product14 = new Auto("audi", "tt", "sedan", 3234.45);
 
         byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
-        byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+       /* byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img3 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img4 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img5 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
@@ -55,37 +55,37 @@ public class DatabaseInitializer {
         byte[] img11 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img12 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img13 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
-        byte[] img14 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img14 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);*/
 
         product1.setCover(img1);
-        product2.setCover(img2);
-        product3.setCover(img3);
-        /*product4.setCover(img4);
-        product5.setCover(img5);
-        product6.setCover(img6);
-        product7.setCover(img7);
-        product8.setCover(img8);
-        product9.setCover(img9);
-        product10.setCover(img10);
-        product11.setCover(img11);
-        product12.setCover(img12);
-        product13.setCover(img13);
-        product14.setCover(img14);*/
+        product2.setCover(img1);
+        product3.setCover(img1);
+        product4.setCover(img1);
+        product5.setCover(img1);
+        product6.setCover(img1);
+        product7.setCover(img1);
+        product8.setCover(img1);
+        product9.setCover(img1);
+        product10.setCover(img1);
+        product11.setCover(img1);
+        product12.setCover(img1);
+        product13.setCover(img1);
+        product14.setCover(img1);
 
         daoSession.getAutoDao().insert(product1);
         daoSession.getAutoDao().insert(product2);
         daoSession.getAutoDao().insert(product3);
-      /* daoSession.getBookDao().insert(product4);
-        daoSession.getBookDao().insert(product5);
-       daoSession.getBookDao().insert(product6);
-       daoSession.getBookDao().insert(product7);
-        daoSession.getBookDao().insert(product8);
-        daoSession.getBookDao().insert(product9);
-       daoSession.getBookDao().insert(product10);
-        daoSession.getBookDao().insert(product11);
-       daoSession.getBookDao().insert(product12);
-        daoSession.getBookDao().insert(product13);
-        daoSession.getBookDao().insert(product14);*/
+        daoSession.getAutoDao().insert(product4);
+        daoSession.getAutoDao().insert(product5);
+        daoSession.getAutoDao().insert(product6);
+        daoSession.getAutoDao().insert(product7);
+        daoSession.getAutoDao().insert(product8);
+        daoSession.getAutoDao().insert(product9);
+        daoSession.getAutoDao().insert(product10);
+        daoSession.getAutoDao().insert(product11);
+        daoSession.getAutoDao().insert(product12);
+        daoSession.getAutoDao().insert(product13);
+        daoSession.getAutoDao().insert(product14);
 
 
 
