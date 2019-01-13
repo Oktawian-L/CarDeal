@@ -10,21 +10,21 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.models.GenericModel;
+import pl.szop.andrzejshop.models.Product;
 import pl.szop.andrzejshop.utils.ResourceUtils;
 
 public class DescriptionFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
     private TextView cDescriptionView;
-    private GenericModel mProduct;
+    private Product mProduct;
     private View cView;
 
     public DescriptionFragment() {
         // Required empty public constructor
     }
 
-    public void setProduct(GenericModel product){
+    public void setProduct(Product product){
         mProduct = product;
         setValues();
     }

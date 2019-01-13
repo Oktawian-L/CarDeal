@@ -9,25 +9,26 @@ import java.lang.reflect.InvocationTargetException;
 
 import pl.szop.andrzejshop.MyApplication;
 import pl.szop.andrzejshop.models.CartItem;
-import pl.szop.andrzejshop.models.GenericModel;
+import pl.szop.andrzejshop.models.Product;
 import pl.szop.andrzejshop.views.ProductsListFragment;
 
-public class UpdateAmountAction {
+public class UpdateAmountAction implements Action {
     public static final String NAME = "UPDATE_AMOUNT";
 
-
+    @Override
     public void execute(Object object, Context context){
+        EventBus.getDefault().post(new ProductsListFragment.TestEvent());
         try {
             Long id = null;
             try {
-                id = (Long) ((GenericModel)object).getValue("id");
+                id = (Long) ((Product)object).getValue("id");
             } catch (InvocationTargetException e) {
                 e.printStackTrace();
             }
 
             CartItem cartItem = MyApplication.instance().getDataProvider().getItem(id);
             int qty = cartItem.getAmount();
-            double price = cartItem.getBook().getPrice();
+            double price = cartItem.getAuto().getPrice();
             double newPrice = (double) qty * price;
             cartItem.setAmount(qty + 1);
             cartItem.setPrice(newPrice);

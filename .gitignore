@@ -32,9 +32,3 @@ gradlew\.bat
 local\.properties
 
 CarDeal\.iml
-
-*.lock
-
-*.ser
-
-CarDeal2\.iml

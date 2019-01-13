@@ -6,28 +6,36 @@
         android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Księgarnia"
+        android:label="CarDeal"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".views.ProductDetailsActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity
-            android:name=".views.ImageActivity"
-            android:label="@string/title_activity_image"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".views.MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:configChanges="orientation|screenSize|keyboardHidden">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".views.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".views.ButtonsActivity"/>
+        <activity android:name=".views.GridActivity"/>
+        <activity android:name=".views.ProductsActivity" />
+        <activity android:name=".views.ProductDetailsActivity" />
+        <activity android:name=".views.ViewPagerActivity" />
+        <activity android:name=".views.FavoritesActivity" />
+        <activity
+            android:name=".views.ImageActivity"
+            android:label="@string/title_activity_image"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".views.CategoryActivity" />
+        <activity android:name=".views.CartActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".views.MainActivity" />
     </application>
 
 </manifest>
+
+
+
+
+

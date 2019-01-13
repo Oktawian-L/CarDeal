@@ -40,7 +40,7 @@ public class ImageAdapterSlide extends PagerAdapter {
     }
 
     private int[] sliderImagesId = new int[]{
-            R.drawable.skoda, R.drawable.fabain,1 R.drawable.mustang2,
+            R.drawable.skoda, R.drawable.skoda_fabia_49, R.drawable.mustang2,
             R.drawable.fabia_red, R.drawable.camaro2, R.drawable.images,
     };
 

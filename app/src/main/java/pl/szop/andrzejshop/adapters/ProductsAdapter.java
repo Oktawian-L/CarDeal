@@ -43,8 +43,8 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
     }
 
     public void addAction(int elementResource, String actionName){
-        //Action action = ActionFactory.getAction(actionName);
-       // mActions.put(elementResource, action);
+        Action action = ActionFactory.getAction(actionName);
+        mActions.put(elementResource, action);
     }
 
     public interface AdapterListener{
