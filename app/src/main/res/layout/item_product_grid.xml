@@ -4,13 +4,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="10dp"
-    android:layout_marginRight="3dp">
+    android:background="@color/colorTlo"
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/cover"
-        android:tag="cover"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -18,7 +16,6 @@
         android:adjustViewBounds="true"
         android:maxWidth="150dp"
         android:maxHeight="150dp"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -28,13 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:tag="title"
         android:text="Tytul"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/author"
-        app:layout_constraintBottom_toTopOf="@+id/author"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cover" />
@@ -44,60 +35,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:tag="author.name"
         android:text="Autor"
-        app:layout_constraintBottom_toTopOf="@+id/price"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <TextView
         android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:tag="priceText"
         android:text="cena"
         android:textColor="@color/colorPrice"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/buy_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/author" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buy_button"
-        android:layout_width="0dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:adjustViewBounds="true"
-        android:background="@drawable/button_shape"
         android:scaleType="fitCenter"
         android:src="@drawable/shopping"
-        android:tag="buy_button"
-        android:text="Dodaj do koszyka"
         android:tooltipText="@string/buy"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/price"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/bought"
-        android:layout_width="wrap_content"
-        android:layout_height="23dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:tag="bought"
-        android:text="W koszyku"
-        android:textColor="@color/colorPrice"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/price" />
-    android:visibility="gone"
-    />
+        app:layout_constraintTop_toTopOf="@+id/price" />
 </android.support.constraint.ConstraintLayout>
