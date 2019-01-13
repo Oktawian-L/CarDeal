@@ -15,6 +15,6 @@ public class AutoActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ImageView img23 = (ImageView) findViewById(R.id.jednozdjecie);
-        img23.setBackgroundResource(R.drawable.audi2);
+        img23.setBackgroundResource(R.drawable.camaro3);
     }
 }
