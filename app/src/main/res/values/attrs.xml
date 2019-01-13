@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="mapper">
-        <attr name="data" format="string"></attr>
-        <attr name="action" format="string"></attr>
-    </declare-styleable>
+    
 </resources>

@@ -4,74 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorTlo"
     tools:context=".views.ProductDetailsActivity"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    >
+    android:id="@+id/content">
+    <!--<android.support.v4.view.ViewPager android:id="@+id/images"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"></android.support.v4.view.ViewPager>-->
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <include android:id="@+id/content"
-            layout="@layout/content_product_details"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="invisible"/>
-    </ScrollView>
-
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/toolbar2"
+    <FrameLayout
+        android:id="@+id/products_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
-        <ImageButton
-            android:id="@+id/add_to_cart"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:layout_marginEnd="8dp"
-            android:background="@null"
-            android:padding="12dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/cart"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:tint="@color/colorBlue"/>
+        <include layout="@layout/element_product_details" />
+    </FrameLayout>
 
-        <CheckBox
-            android:id="@+id/add_to_wish_list"
-            android:layout_width="70dp"
-            android:layout_height="52dp"
-            android:button="@drawable/star_selector"
-            android:padding="2dp"
-            android:scaleX="0.4"
-            android:scaleY="0.4"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/add_to_cart" />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/products_details"/>
+    <TableLayout android:id="@+id/details_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/products_details" />
+    <android.support.v4.view.ViewPager android:id="@+id/details_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/details_tabs"/>
 
-        <ImageButton
-            android:id="@+id/share"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:background="@null"
-            android:padding="8dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/share"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/add_to_wish_list" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="62dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/audi2" />
 
-        <ImageButton
-            android:id="@+id/previous"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:layout_marginStart="8dp"
-            android:background="@null"
-            android:padding="8dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/previous"
-            app:layout_constraintStart_toStartOf="parent" />
-    </android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="393dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

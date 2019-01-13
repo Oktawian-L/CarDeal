@@ -1,7 +1,6 @@
 package pl.szop.andrzejshop;
 
 import android.app.Application;
-import android.content.Context;
 import android.content.SharedPreferences;
 
 import pl.szop.andrzejshop.data.IDataProvider;
@@ -20,28 +19,22 @@ public class MyApplication extends Application {
     private SharedPreferences mPreferences;
 
     private static MyApplication mInstance;
-    private Context mContext;
 
     @Override
     public void onCreate(){
         super.onCreate();
-        mInstance = this;
-        mContext = getBaseContext();
         mPreferences = getSharedPreferences(getPackageName(), MODE_PRIVATE);
         setDataProvider(OFFLINE_MODE);
 
         if(isFirstRun()){
             initApplication();
         }
-    }
 
-    public Context getContext(){
-        return mContext;
+        mInstance = this;
     }
 
     private void initApplication(){
-        DatabaseInitializer initializer = new DatabaseInitializer(((DatabaseProvider)mDataProvider).getDaoSession(), getContext());
-        initializer.init();
+        DatabaseInitializer.init(((DatabaseProvider)mDataProvider).getDaoSession(),getApplicationContext());
         mPreferences.edit().putBoolean("firstrun", false).apply();
     }
 
