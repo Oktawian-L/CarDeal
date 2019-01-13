@@ -6,5 +6,7 @@
     <color name="colorPrice">#ff0004</color>
     <color name="colorBackground">#48ffff</color>
     <color name="colorTlo">#0d2133</color>
+    <color name="duskYellow">#fff82f</color>
+    <color name="lightGrey">#acb4ba</color>
     <color name="colorBtn">#02710d</color>
 </resources>
