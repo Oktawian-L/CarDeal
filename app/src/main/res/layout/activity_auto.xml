@@ -35,12 +35,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/jednozdjecie"
         android:layout_width="290dp"
         android:layout_height="324dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="36dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/camaro" />
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

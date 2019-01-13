@@ -30,7 +30,7 @@ public class ButtonsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_buttons);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         ImageView img23 = (ImageView) findViewById(R.id.splash);
-        img23.setBackgroundResource(R.drawable.camaro);
+        img23.setBackgroundResource(R.drawable.fake);
         setSupportActionBar(myToolbar);
     }
 
