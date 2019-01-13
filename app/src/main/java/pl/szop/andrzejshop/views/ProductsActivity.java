@@ -148,7 +148,10 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
     }
     public void showGalleryfromProductList(View view)
     {
-        Intent intent = new Intent(this,ViewPagerActivity.class);
+        //pokaz galerie przewijana
+        //Intent intent = new Intent(this,ViewPagerActivity.class);
+        //pokaz jedno zdjecie
+        Intent intent = new Intent(this,AutoActivity.class);
         startActivity(intent);
     }
     private int getCurrentSortingOptions(List<Sort> sortingOptions, Filter currentFilter){
