@@ -14,7 +14,6 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="70dp"
-        android:layout_marginBottom="23dp"
         android:fontFamily="sans-serif"
         android:lineSpacingExtra="10sp"
         android:text=" CarDeal"
@@ -25,54 +24,10 @@
 
         android:textStyle="bold"
         android:typeface="sans"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="177dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/backradius"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title3"
-        app:srcCompat="@drawable/audi2"></ImageView>
-
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="177dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/backradius"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title3"
-        app:srcCompat="@drawable/audi2"></ImageView>
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="177dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/backradius"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/audi2"></ImageView>
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="177dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/backradius"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/audi2"></ImageView>
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -142,5 +97,19 @@
         android:text="Grid"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/productlistbtn" />
+
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="369dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="25dp"
+        android:onClick="imageClick"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title3" />
 
 </android.support.constraint.ConstraintLayout>

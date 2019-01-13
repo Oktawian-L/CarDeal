@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import pl.szop.andrzejshop.R;
@@ -28,8 +29,11 @@ public class ButtonsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buttons);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        ImageView img23 = (ImageView) findViewById(R.id.splash);
+        img23.setBackgroundResource(R.drawable.camaro);
         setSupportActionBar(myToolbar);
     }
+
 
     private void startButtonsActivity(String cat) {
         Intent intent = new Intent(this, ButtonsActivity.class);
@@ -106,5 +110,9 @@ public class ButtonsActivity extends AppCompatActivity {
         anim.setDuration(1500);
         view.startAnimation(anim);
         view.setVisibility(View.VISIBLE);
+    }
+    public void imageClick(View view) {
+        Intent intent = new Intent(this, ProductsActivity.class);
+        startActivity(intent);
     }
 }
