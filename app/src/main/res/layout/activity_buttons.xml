@@ -40,7 +40,7 @@
         android:background="@drawable/backradius"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title3"
-        app:srcCompat="@drawable/audi"></ImageView>
+        app:srcCompat="@drawable/audi2"></ImageView>
 
 
     <ImageView
@@ -51,7 +51,7 @@
         android:background="@drawable/backradius"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title3"
-        app:srcCompat="@drawable/chevrolet"></ImageView>
+        app:srcCompat="@drawable/audi2"></ImageView>
 
     <ImageView
         android:id="@+id/imageView5"
