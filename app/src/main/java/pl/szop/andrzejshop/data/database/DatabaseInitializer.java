@@ -43,7 +43,7 @@ public class DatabaseInitializer {
         Auto product14 = new Auto("audi", "tt", "sedan", 3234.45);
 
         byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
-       /* byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] img2 = ImageUtils.getBytesFromResource(context, R.drawable.camaro3);/*
         byte[] img3 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img4 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img5 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
@@ -58,8 +58,8 @@ public class DatabaseInitializer {
         byte[] img14 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);*/
 
         product1.setCover(img1);
-        product2.setCover(img1);
-        product3.setCover(img1);
+        product2.setCover(img2);
+        product3.setCover(img2);
         product4.setCover(img1);
         product5.setCover(img1);
         product6.setCover(img1);
