@@ -1,172 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidLayouts">
-    <shared>
-      <config />
-    </shared>
-  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f672d2a3-927d-432e-a70d-769fd7a6748e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+    <list default="true" id="98a9f0ab-5e76-4999-8a9e-6b5b1d3e46c2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_collections_28_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_28_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_inkapplications_viewpageindicator_library_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_greenrobot_eventbus_3_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_greenrobot_greendao_3_2_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_greenrobot_greendao_api_3_2_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_2_71_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_2_71_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_2_71_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarDeal2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarDeal3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CarDeal3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/andrzejszop.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/ic_launcher-web.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/MyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/Action.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/ActionFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/AddToCartAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/DecreaseAmountAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/DecreaseAmountAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/DodajDoUlubionych.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/RemoveFromCartAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/RemoveFromCartAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/UpdateAmountAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/UpdateAmountAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/actions/UsunZUlubionych.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/adapters/ImageAdapterGrid.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/adapters/ImageAdapterSlide.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/adapters/ProductsAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/adapters/SortingAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/adapters/SortingAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/adapters/ViewAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/Filter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/IDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/IDataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/Sort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseProviderSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseProviderSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/Auto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/AutoDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/AutoImages.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/CarDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/CarImages.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/CartItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/Favorites.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/Favorites.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/models/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/rules/BoughtRule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/rules/InCartRule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/rules/Rule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/rules/RulesFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/utils/ImageHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ButtonsActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/CartActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/CategoryActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/DescriptionFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/DescriptionFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/Dialogsorting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/FavoritesActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/GridActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/GridItemAcivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/HomeActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductDetailsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ProductsListFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/ViewPagerActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/audi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/audi2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/backradius.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/backrafab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/beast.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/camaro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/camaro2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/car.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/cart_old.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/chevrolet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/fabia_red.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/game.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/game.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/homek.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_compose.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_info_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/images.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/mustang.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/mustang2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/nissan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ring.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ring.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/sample_0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/sample_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/sample_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/sample_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/sample_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/sample_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/sample_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shopping.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shopping.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/skoda.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/skoda_fabia_49.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tellnoone.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tellnoone.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/trash.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/trash.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/xx.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/action_bar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/action_bar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_buttons.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_category.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_favourites.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_image.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_product_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_product_details.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_products_list.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/cartitem_layout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_cart.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_favorites.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_sorting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_sorting.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/element_product_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/element_product_details.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_description.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_description.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_images.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_images.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_products_grid.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_products_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_products_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/grid.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_favourites.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_image.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_product_grid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_product_grid.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_product_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_product_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_simple_text.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_simple_text.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/switch_item.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_pager.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_pager_item.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/x_activity_splash.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/x_grid.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/x_grid_item.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/x_grid_row.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/x_list_item_view.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/single_menu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/toolbar_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/toolbar_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_tire.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/app/.gradle/" />
+    <ignored path="$PROJECT_DIR$/app/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -178,131 +86,6 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view />
-      </state>
-    </system>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="activity_product_details.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_product_details.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content_home.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_home.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseInitializer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="152" column="130" selection-start-line="152" selection-start-column="130" selection-end-line="152" selection-end-column="130" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoriesFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/CategoriesFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="106" column="42" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_book_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_book_main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_cartitem.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_cartitem.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_favorites.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_favorites.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_product_grid.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_product_grid.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_product_list.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_product_list.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_filter_category.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_filter_category.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -323,14 +106,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="CarDeal3" />
+              <option name="name" value="CarDeal4" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="CarDeal3" />
+                <option name="name" value="CarDeal4" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
@@ -348,7 +131,7 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'CarDeal3'." />
+                <option name="description" value="Displays the sub-projects of root project 'CarDeal4'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
@@ -428,7 +211,7 @@
                 <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'CarDeal3'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'CarDeal4'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
@@ -712,12 +495,12 @@
                 <option name="name" value="generateDebugAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'CarDeal3'. [incubating]" />
+                <option name="description" value="Displays the dependent components of components in root project 'CarDeal4'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'CarDeal3'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'CarDeal4'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
@@ -847,7 +630,7 @@
                 <option name="name" value="bundleRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'CarDeal3'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'CarDeal4'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
@@ -860,7 +643,7 @@
                 <option name="name" value="reportSourceSetTransformAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'CarDeal3' (some of the displayed tasks may belong to subprojects)." />
+                <option name="description" value="Displays the tasks runnable from root project 'CarDeal4' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
@@ -878,7 +661,7 @@
                 <option name="name" value="bundleDebugAndroidTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'CarDeal3'." />
+                <option name="description" value="Displays all dependencies declared in root project 'CarDeal4'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
@@ -983,7 +766,7 @@
                 <option name="name" value="packageAppClassesReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'CarDeal3'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'CarDeal4'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -1235,7 +1018,7 @@
                 <option name="name" value="packageDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'CarDeal3'." />
+                <option name="description" value="Displays the properties of root project 'CarDeal4'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
@@ -2538,7 +2321,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="CarDeal3" />
+              <option name="name" value="CarDeal4" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/announce" />
@@ -2695,76 +2478,35 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_book_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_cartitem.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_favorites.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_product_grid.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_product_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_filter_category.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/CategoriesFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseInitializer.java" />
-      </list>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="308" />
     <option name="y" value="202" />
     <option name="width" value="1400" />
     <option name="height" value="749" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="andrzejszop3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="andrzejszop3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="andrzejszop3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="andrzejshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="andrzejszop3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="andrzejszop3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="F:/Android/SDK" />
     <property name="device.picker.selection" value="42008a70cedb3300" />
+    <property name="last_opened_file_path" value="C:/bitBucket" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2873,9 +2615,21 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -2883,367 +2637,66 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f672d2a3-927d-432e-a70d-769fd7a6748e" name="Default" comment="" />
-      <created>1547397537387</created>
+      <changelist id="98a9f0ab-5e76-4999-8a9e-6b5b1d3e46c2" name="Default" comment="" />
+      <created>1547406777322</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1547397537387</updated>
+      <updated>1547406777322</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Build Variants" order="2" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.5012225" side_tool="true" visible="true" weight="0.32995495" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32995495" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Logcat" order="7" />
+      <window_info anchor="bottom" id="Logcat" />
       <window_info id="Captures" order="2" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info id="Capture Tool" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.22635135" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25305623" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4987775" visible="true" weight="0.32995495" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Preview" order="3" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="Build" order="0" visible="true" weight="0.22635135" />
-      <window_info id="Designer" order="0" />
-      <window_info id="Build Variants" order="1" side_tool="true" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Run" order="8" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Android Profiler" order="1" show_stripe_button="false" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Captures" order="7" weight="0.25" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="right" id="Preview" order="1" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="right" id="Device File Explorer" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Logcat" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" />
-      <window_info anchor="right" id="Gradle" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_product_details.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_home.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/CategoriesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="106" column="42" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_book_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_cartitem.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_favorites.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_product_grid.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_product_list.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_filter_category.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
-          <caret line="127" column="81" selection-start-line="127" selection-start-column="81" selection-end-line="127" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_product_details.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_home.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/CategoriesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="106" column="42" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_book_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_cartitem.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_favorites.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_product_grid.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_product_list.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_filter_category.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="127" column="81" selection-start-line="127" selection-start-column="81" selection-end-line="127" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_product_details.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_book_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_cartitem.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_favorites.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_product_grid.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_product_list.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_filter_category.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_home.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/views/CategoriesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="106" column="42" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pl/szop/andrzejshop/data/database/DatabaseInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="152" column="130" selection-start-line="152" selection-start-column="130" selection-end-line="152" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
