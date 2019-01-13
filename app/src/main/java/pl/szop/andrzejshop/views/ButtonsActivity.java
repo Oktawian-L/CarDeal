@@ -81,36 +81,32 @@ public class ButtonsActivity extends AppCompatActivity {
         // Handle presses on the action bar items
         switch (item.getItemId()) {
             case R.id.miHome:
-                /*Toast.makeText(
+                Toast.makeText(
                         getApplicationContext(),
                         "You clicked the compose button.",
                         Toast.LENGTH_SHORT)
-                        .show();*/
-                startActivity(new Intent(getApplicationContext(), CategoryActivity.class));
+                        .show();
                 return true;
             case R.id.miCompose:
-                /*Toast.makeText(
+                Toast.makeText(
                         getApplicationContext(),
                         "You clicked the compose button.",
                         Toast.LENGTH_SHORT)
-                        .show();*/
-                startActivity(new Intent(getApplicationContext(), ProductsActivity.class));
+                        .show();
                 return true;
             case R.id.miProfile:
-               /* Toast.makeText(
+                Toast.makeText(
                         getApplicationContext(),
                         "You clicked the profile button.",
                         Toast.LENGTH_SHORT)
-                        .show();*/
-                startActivity(new Intent(getApplicationContext(), FavoritesActivity.class));
+                        .show();
                 return true;
             case R.id.action_settings:
-               /* Toast.makeText(
+                Toast.makeText(
                         getApplicationContext(),
                         "You clicked the settings button.",
                         Toast.LENGTH_SHORT)
-                        .show();*/
-                startActivity(new Intent(getApplicationContext(), GridActivity.class));
+                        .show();
                 return true;
             case R.id.action_login:
                 startActivity(new Intent(getApplicationContext(), ProductsActivity.class));

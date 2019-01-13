@@ -64,6 +64,7 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
 //        createActionBar();
         Bundle b = getIntent().getExtras();
         String cat = null;
+        //tutaj gdzies wskauje blad
         if (b != null) {
             cat = b.getString("categoryType");
         }
