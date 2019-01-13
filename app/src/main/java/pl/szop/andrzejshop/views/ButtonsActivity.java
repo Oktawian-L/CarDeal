@@ -67,7 +67,7 @@ public class ButtonsActivity extends AppCompatActivity {
     }
     public void showGridList(View view)
     {
-        Log.v("1","odpalam view");
+        //Log.v("1","odpalam view");
         Intent intent = new Intent(this,GridActivity.class);
         startActivity(intent);
         //setContentView(R.layout.activity_main);
