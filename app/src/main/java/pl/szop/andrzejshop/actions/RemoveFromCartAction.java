@@ -5,18 +5,17 @@ import android.content.Context;
 import java.lang.reflect.InvocationTargetException;
 
 import pl.szop.andrzejshop.MyApplication;
-import pl.szop.andrzejshop.models.CartItem;
-import pl.szop.andrzejshop.models.Product;
+import pl.szop.andrzejshop.models.GenericModel;
 
-public class RemoveFromCartAction implements Action{
+public class RemoveFromCartAction {
 
-    public static final String NAME = "REMOVE_FROM_FAVORITES";
+    public static final String NAME = "REMOVE_FROM_CART";
 
 
-    @Override
+
     public void execute(Object object, Context context) {
         try {
-            Long id = (Long) ((Product)object).getValue("id");
+            Long id = (Long) ((GenericModel)object).getValue("id");
             MyApplication.instance().getDataProvider().removeFromCart(id);
 
         } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {

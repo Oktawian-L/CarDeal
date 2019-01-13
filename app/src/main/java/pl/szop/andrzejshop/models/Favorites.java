@@ -7,13 +7,13 @@ import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.DaoException;
 
 @Entity(nameInDb = "favorites")
-public class Favorites extends Product{
+public class Favorites extends GenericModel {
 
     @Id(autoincrement = false)
     private Long id;
 
     @ToOne(joinProperty = "id")
-    private Auto auto;
+    private Book book;
 
     /** Used to resolve relations */
     @Generated(hash = 2040040024)
@@ -40,35 +40,35 @@ public class Favorites extends Product{
         this.id = id;
     }
 
-    @Generated(hash = 1964815679)
-    private transient Long auto__resolvedKey;
+    @Generated(hash = 893611298)
+    private transient Long book__resolvedKey;
 
     /** To-one relationship, resolved on first access. */
-    @Generated(hash = 933141992)
-    public Auto getAuto() {
+    @Generated(hash = 1425297770)
+    public Book getBook() {
         Long __key = this.id;
-        if (auto__resolvedKey == null || !auto__resolvedKey.equals(__key)) {
+        if (book__resolvedKey == null || !book__resolvedKey.equals(__key)) {
             final DaoSession daoSession = this.daoSession;
             if (daoSession == null) {
                 throw new DaoException("Entity is detached from DAO context");
             }
-            AutoDao targetDao = daoSession.getAutoDao();
-            Auto autoNew = targetDao.load(__key);
+            BookDao targetDao = daoSession.getBookDao();
+            Book bookNew = targetDao.load(__key);
             synchronized (this) {
-                auto = autoNew;
-                auto__resolvedKey = __key;
+                book = bookNew;
+                book__resolvedKey = __key;
             }
         }
-        return auto;
+        return book;
     }
 
     /** called by internal mechanisms, do not call yourself. */
-    @Generated(hash = 256181844)
-    public void setAuto(Auto auto) {
+    @Generated(hash = 1395036341)
+    public void setBook(Book book) {
         synchronized (this) {
-            this.auto = auto;
-            id = auto == null ? null : auto.getId();
-            auto__resolvedKey = id;
+            this.book = book;
+            id = book == null ? null : book.getId();
+            book__resolvedKey = id;
         }
     }
 
@@ -114,8 +114,4 @@ public class Favorites extends Product{
         this.daoSession = daoSession;
         myDao = daoSession != null ? daoSession.getFavoritesDao() : null;
     }
-
-
-
-
 }
