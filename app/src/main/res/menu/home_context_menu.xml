@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/add_to_cart"
+        android:title="Dodaj do koszyka"
+        android:icon="@drawable/shopping"/>
+    <item android:id="@+id/remove_from_cart"
+        android:title="Usuń z koszyka"
+        android:icon="@drawable/shopping"/>
+    <item android:id="@+id/add_to_wish_list"
+        android:title="Dodaj do listy życzeń"
+        android:icon="@drawable/wish"
+        app:showAsAction="withText"/>
+    <item android:id="@+id/remove_from_wish_list"
+        android:title="Usuń z listy życzeń"
+        android:icon="@drawable/wish"
+        app:showAsAction="withText"/>
+</menu>

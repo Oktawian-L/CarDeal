@@ -1,15 +1,24 @@
 package pl.szop.andrzejshop.data.database;
 
+import java.util.ArrayList;
 import java.util.List;
 
-import pl.szop.andrzejshop.data.Filter;
+import kotlin.NotImplementedError;
+import pl.szop.andrzejshop.data.criteria.Criteria;
 import pl.szop.andrzejshop.data.IDataProvider;
-import pl.szop.andrzejshop.data.Sort;
+import pl.szop.andrzejshop.data.criteria.Filter;
+import pl.szop.andrzejshop.data.criteria.FilterGroup;
+import pl.szop.andrzejshop.data.criteria.Sort;
+import pl.szop.andrzejshop.models.Author;
+import pl.szop.andrzejshop.models.Category;
 import pl.szop.andrzejshop.models.CartItem;
 import pl.szop.andrzejshop.models.DaoSession;
 import pl.szop.andrzejshop.models.Favorites;
+import pl.szop.andrzejshop.models.GenericModel;
 import pl.szop.andrzejshop.models.Image;
-import pl.szop.andrzejshop.models.Product;
+import pl.szop.andrzejshop.models.Language;
+import pl.szop.andrzejshop.models.Promotions;
+import pl.szop.andrzejshop.models.Publisher;
 
 public class DatabaseProvider implements IDataProvider {
 
@@ -24,30 +33,27 @@ public class DatabaseProvider implements IDataProvider {
     }
 
     @Override
-    public  List<? extends Product> getProducts(Filter filter) {
+    public  List<? extends GenericModel> getProducts(Criteria criteria) {
         Class productClass = DatabaseProviderSettings.PRODUCT_CLASS;
         // if filter is empty, load all products
-        if(filter == null || filter.isEmpty()){
-            return (List<? extends Product>) mDaoSession.getDao(productClass).loadAll();
+        if(criteria == null || criteria.isEmpty()){
+            return (List<? extends GenericModel>) mDaoSession.getDao(productClass).loadAll();
         }
         // else create where statement and load data from database
-        String where = filter.hasCondition() ? createWhere(filter) : "";
-        String[] arguments = filter.hasCondition()? getWhereArguments(filter) : new String[0];
+        String where = criteria.hasConditions() ? createWhere(criteria) : "";
+        String[] arguments = criteria.hasConditions()? getWhereArguments(criteria) : new String[0];
 
-        if (filter.hasSorting()){
-            where += createOrderBy(filter);
+        if (criteria.hasSorting()){
+            where += createOrderBy(criteria);
         }
-        return (List<? extends Product>) mDaoSession.getDao(productClass).queryRaw(where, arguments);
-    }
-
-
-    @Override
-    public List<? extends Product> getProducts(){
-        return getProducts(null);
+        if(criteria.getLimit() != null){
+            where += " LIMIT " + String.valueOf(criteria.getLimit());
+        }
+        return (List<? extends GenericModel>) mDaoSession.getDao(productClass).queryRaw(where, arguments);
     }
 
     @Override
-    public Product getDetails(Long id) {
+    public GenericModel getDetails(Long id) {
         return DatabaseProviderSettings.getDetailsDao(mDaoSession).loadDeep(id);
     }
 
@@ -57,8 +63,37 @@ public class DatabaseProvider implements IDataProvider {
     }
 
     @Override
-    public void addToCart(CartItem id) {
-        getDaoSession().getCartItemDao().insert(id);
+    public boolean isFavorite(Long id) {
+        Favorites favorites = getDaoSession().getFavoritesDao().load(id);
+        return favorites != null;
+    }
+
+    @Override
+    public void setFavorite(Long id, boolean favorite) {
+        Favorites favorites = new Favorites(id);
+        if(favorite){
+            getDaoSession().getFavoritesDao().insert(favorites);
+        } else {
+            getDaoSession().getFavoritesDao().delete(favorites);
+        }
+    }
+
+    @Override
+    public List<? extends GenericModel> getFavorites() {
+        return getDaoSession().getFavoritesDao().loadAll();
+    }
+
+    @Override
+    public List<Category> getCategories() {
+        return getDaoSession().getCategoryDao().loadAll();
+    }
+
+
+    @Override
+    public void addToCart(Long id) {
+        CartItem item = new CartItem();
+        item.setId(id);
+        getDaoSession().getCartItemDao().insert(item);
     }
     @Override
     public CartItem getItem(long id) {
@@ -74,31 +109,83 @@ public class DatabaseProvider implements IDataProvider {
     }
 
     @Override
-    public List<? extends Product> getCartItems() {
+    public List<? extends GenericModel> getCartItems() {
         return getDaoSession().getCartItemDao().loadAll();
     }
 
-    public boolean isFavorite(Long id) {
-        Favorites favorites = getDaoSession().getFavoritesDao().load(id);
-        return favorites != null;
+    @Override
+    public boolean isInCart(Long id) {
+        return getDaoSession().getCartItemDao().load(id) != null;
     }
 
-    public void setFavorite(Long id, boolean favorite) {
-        Favorites favorites = new Favorites(id);
-        if(favorite){
-            // TODO chyba należało by dodać sprawdzanie, czy taka wartość już nie istnieje w bazie danych
-            getDaoSession().getFavoritesDao().insert(favorites);
-        } else {
-            getDaoSession().getFavoritesDao().delete(favorites);
+    @Override
+    public List<Author> getAuthors() {
+        return getDaoSession().getAuthorDao().loadAll();
+    }
+
+    @Override
+    public int getCartSize() {
+        return (int) getDaoSession().getCartItemDao().count();
+    }
+
+    @Override
+    public List<Promotions> getPromotions(Criteria criteria) {
+        // TODO pomyśleć nad jakimś innym sposobem
+        if(criteria.getLimit() != null){
+            String where = " LIMIT ?";
+            String[] whereArgs = new String[]{String.valueOf(criteria.getLimit())};
+            return getDaoSession().getPromotionsDao().queryRaw(where, whereArgs);
         }
+        return getDaoSession().getPromotionsDao().loadAll();
     }
 
-    public List<? extends Product> getFavorites() {
-        return getDaoSession().getFavoritesDao().loadAll();
+    @Override
+    public Promotions getPromotion(Long id) {
+        return getDaoSession().getPromotionsDao().load(id);
     }
-    private String createWhere(Filter filter) {
+
+    @Override
+    public List<Publisher> getPublishers() {
+        return getDaoSession().getPublisherDao().loadAll();
+    }
+
+    @Override
+    public List<Language> getLanguages() {
+        return getDaoSession().getLanguageDao().loadAll();
+    }
+
+    @Override
+    public Publisher getPublisher(Long id) {
+        throw new NotImplementedError();
+    }
+
+    @Override
+    public Language getLanguage(Long id) {
+        throw new NotImplementedError();
+    }
+
+    private String createWhere(Criteria criteria) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("WHERE ");
+
+        String filtersConditions = getFilterConditions(criteria);
+        stringBuilder.append(filtersConditions);
+        if(criteria.hasText() && !filtersConditions.isEmpty()){
+            stringBuilder.append(" AND ");
+        }
+        if(criteria.hasText()){
+            stringBuilder.append(getTextConditions());
+        }
+        if(criteria.getLimit() != null){ // TODO można zastąpić to hasLimit
+            stringBuilder.append(" LIMIT " + String.valueOf(criteria.getLimit()));
+        }
+
+        return stringBuilder.toString();
+    }
+
+    private String getTextConditions(){
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("(");
         String[] whereColumns = DatabaseProviderSettings.SEARCH_COLUMN;
         for(int i=0; i<whereColumns.length; i++){
             stringBuilder.append(whereColumns[i]);
@@ -107,14 +194,45 @@ public class DatabaseProvider implements IDataProvider {
                 stringBuilder.append(" OR ");
             }
         }
-        // TODO dodać wartości filtrowania
+        // TODO very ugly hack
+        stringBuilder.append(" OR ");
+        stringBuilder.append("author IN (SELECT _id FROM authors WHERE firstName LIKE ?)");
+        stringBuilder.append(" OR ");
+        stringBuilder.append("author IN (SELECT _id FROM authors WHERE lastName LIKE ?)");
+        stringBuilder.append(")");
         return stringBuilder.toString();
     }
 
-    private String createOrderBy(Filter filter) {
-        if (filter.getSort() == null){
-            return "";
+    private String getFilterConditions(Criteria criteria) {
+        StringBuilder stringBuilder = new StringBuilder();
+        boolean firstCondition = true;
+        for(FilterGroup filter : criteria.getFilters()) {
+            if(!firstCondition){
+                stringBuilder.append(" AND ");
+            }
+            firstCondition = false;
+
+            stringBuilder.append(filter.getQuery());
         }
+        return stringBuilder.toString();
+    }
+
+    private String getOption(Filter.Option option) {
+        switch (option){
+            case EQUAL:
+                return " = ";
+            case IN:
+                return " IN ";
+            case LESS:
+                return " < ";
+            case GREATER:
+                return " > ";
+                default:
+                throw new IllegalArgumentException("Unknown filter option");
+        }
+    }
+
+    private String createOrderBy(Criteria filter) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("ORDER BY ");
         Sort sort = filter.getSort();
@@ -126,13 +244,31 @@ public class DatabaseProvider implements IDataProvider {
 
     }
 
-    private String[] getWhereArguments(Filter filter){
-        String[] arguments = new String[DatabaseProviderSettings.SEARCH_COLUMN.length];
-        String filterText = "%"+filter.getText()+"%";
-        for(int i=0; i < arguments.length; i++){
-            arguments[i] = filterText;
+    private String[] getWhereArguments(Criteria criteria){
+        List<String> arguments = new ArrayList<>();
+        if(criteria.hasFilters()) {
+            List<String> filterArguments = new ArrayList<>();
+            for(FilterGroup filter : criteria.getFilters()) {
+                for(Object value : filter.getValues()){
+                    filterArguments.add(value.toString());
+                }
+//                filterArguments.add(filter.getValue().toString());
+            }
+            arguments.addAll(filterArguments);
+        }
+        if(criteria.hasText()) {
+            int searchArgumentsSize = DatabaseProviderSettings.SEARCH_COLUMN.length;
+            String filterText = "%"+criteria.getText()+"%";
+            List<String> searchArguments = new ArrayList<>();
+            for(int i=0; i<searchArgumentsSize; i++){
+                searchArguments.add(filterText);
+            }
+            // TODO very ugly hack
+            searchArguments.add(filterText);
+            searchArguments.add(filterText);
+            arguments.addAll(searchArguments);
         }
 
-        return arguments;
+        return arguments.toArray(new String[0]);
     }
 }

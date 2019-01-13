@@ -2,21 +2,22 @@ package pl.szop.andrzejshop.models;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
+import org.greenrobot.greendao.annotation.Property;
 import org.greenrobot.greendao.annotation.ToOne;
 import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.DaoException;
 
 @Entity(nameInDb = "cartitem")
-public class CartItem extends Product {
+public class CartItem extends GenericModel {
 
     @Id(autoincrement = false)
     private Long id;
 
     @ToOne(joinProperty = "id")
-    private Auto auto;
+    private Book book;
 
-    @Generated
-    private int amount;
+    @Property(nameInDb = "amount")
+    private int amount = 1;
 
 
     /** Used to resolve relations */
@@ -27,10 +28,10 @@ public class CartItem extends Product {
     @Generated(hash = 1725826038)
     private transient CartItemDao myDao;
 
-    @Generated(hash = 1964815679)
-    private transient Long auto__resolvedKey;
+    @Generated(hash = 893611298)
+    private transient Long book__resolvedKey;
 
-@Generated(hash = 273818085)
+   @Generated(hash = 273818085)
 public CartItem(Long id, int amount) {
     this.id = id;
     this.amount = amount;
@@ -40,8 +41,6 @@ public CartItem(Long id, int amount) {
 @Generated(hash = 1451153759)
 public CartItem() {
 }
-
-
     public Long getId() {
         return this.id;
     }
@@ -51,52 +50,41 @@ public CartItem() {
     }
 
     public byte[] getCover() {
-        return auto.getCover();
+        return book.getCover();
     }
 
     public void setPrice(double price) {
-       this.auto.setPrice(price);
-    }
-
-    public String getTitle() {
-        return auto.getTitle();
-    }
-
-    public String getAuthor() {
-        return auto.getAuthor();
-    }
-    public double getPrice() {
-       return auto.getPrice();
+       this.book.setPrice(price);
     }
 
 
     /** To-one relationship, resolved on first access. */
-    @Generated(hash = 933141992)
-    public Auto getAuto() {
+    @Generated(hash = 1425297770)
+    public Book getBook() {
         Long __key = this.id;
-        if (auto__resolvedKey == null || !auto__resolvedKey.equals(__key)) {
+        if (book__resolvedKey == null || !book__resolvedKey.equals(__key)) {
             final DaoSession daoSession = this.daoSession;
             if (daoSession == null) {
                 throw new DaoException("Entity is detached from DAO context");
             }
-            AutoDao targetDao = daoSession.getAutoDao();
-            Auto autoNew = targetDao.load(__key);
+            BookDao targetDao = daoSession.getBookDao();
+            Book bookNew = targetDao.load(__key);
             synchronized (this) {
-                auto = autoNew;
-                auto__resolvedKey = __key;
+                book = bookNew;
+                book__resolvedKey = __key;
             }
         }
-        return auto;
+        return book;
     }
 
 
     /** called by internal mechanisms, do not call yourself. */
-    @Generated(hash = 256181844)
-    public void setAuto(Auto auto) {
+    @Generated(hash = 1395036341)
+    public void setBook(Book book) {
         synchronized (this) {
-            this.auto = auto;
-            id = auto == null ? null : auto.getId();
-            auto__resolvedKey = id;
+            this.book = book;
+            id = book == null ? null : book.getId();
+            book__resolvedKey = id;
         }
     }
 
@@ -125,8 +113,6 @@ public CartItem() {
         }
         myDao.refresh(this);
     }
-
-
     /**
      * Convenient call for {@link org.greenrobot.greendao.AbstractDao#update(Object)}.
      * Entity must attached to an entity context.
@@ -146,6 +132,19 @@ public CartItem() {
 
     public void setAmount(int amount) {
         this.amount = amount;
+    }
+
+
+    public void increase(){
+        this.amount++;
+        myDao.update(this);
+    }
+
+    public void decrease(){
+        if(this.amount > 1){
+            this.amount--;
+        }
+        myDao.update(this);
     }
 
 
