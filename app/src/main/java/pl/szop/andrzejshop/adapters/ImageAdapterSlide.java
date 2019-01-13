@@ -40,7 +40,7 @@ public class ImageAdapterSlide extends PagerAdapter {
     }
 
     private int[] sliderImagesId = new int[]{
-            R.drawable.skoda, R.drawable.skoda_fabia_49, R.drawable.nissan,
+            R.drawable.camaro3, R.drawable.nissan, R.drawable.nissan,
 
     };
 
@@ -52,7 +52,7 @@ public class ImageAdapterSlide extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int i) {
         ImageView mImageView = new ImageView(mContext);
-        mImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        mImageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
         mImageView.setImageResource(sliderImagesId[i]);
         ((ViewPager) container).addView(mImageView, 0);
         return mImageView;
