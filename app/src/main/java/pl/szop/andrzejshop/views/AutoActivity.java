@@ -24,4 +24,5 @@ public class AutoActivity extends AppCompatActivity {
         Intent intent = new Intent(this,ViewPagerActivity.class);
         startActivity(intent);
     }
+
 }
