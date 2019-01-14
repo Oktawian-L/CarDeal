@@ -47,17 +47,17 @@ public class ImageAdapterGrid extends BaseAdapter {
 
         // references to our images
         private Integer[] mThumbIds = {
-                R.drawable.audi2, R.drawable.audi2,
-                R.drawable.audi2, R.drawable.camaro3,
-                R.drawable.audi2, R.drawable.camaro3,
-                R.drawable.audi2, R.drawable.camaro3,
-                R.drawable.audi2, R.drawable.camaro3,
-                R.drawable.audi2, R.drawable.audi2,
-                R.drawable.audi2, R.drawable.audi2,
-                R.drawable.audi2, R.drawable.audi2,
-                R.drawable.audi2, R.drawable.audi2,
-                R.drawable.audi2, R.drawable.audi2,
-                R.drawable.audi2, R.drawable.audi2
+                R.drawable.bmwsmall, R.drawable.twingo3,
+                R.drawable.camaro3, R.drawable.skoda_fabia_49,
+                R.drawable.chevrolet, R.drawable.bmw2,
+                R.drawable.bmw1, R.drawable.auditt,
+                R.drawable.tiburon, R.drawable.nissan,
+                R.drawable.skoda, R.drawable.camaro2,
+                R.drawable.audi2, R.drawable.tiburon,
+                R.drawable.twingo3, R.drawable.nissan,
+                R.drawable.auditt, R.drawable.bmw1,
+                R.drawable.camaro3, R.drawable.tiburon,
+                R.drawable.audi2, R.drawable.twingo3
         };
     }
 

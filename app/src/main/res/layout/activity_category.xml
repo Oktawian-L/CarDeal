@@ -7,12 +7,21 @@
     android:background="@color/colorTlo"
     tools:context="pl.szop.andrzejshop.views.CategoryActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
     <TextView
         android:id="@+id/title2"
         android:layout_width="250dp"
         android:layout_height="47dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="46dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="84dp"
         android:fontFamily="monospace"
         android:lineSpacingExtra="8sp"
         android:text="Kategorie"

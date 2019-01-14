@@ -27,20 +27,20 @@ public class DatabaseInitializer {
         daoSession.getCategoryDao().insert(category3);
         daoSession.getCategoryDao().insert(category4);*/
 
-        Auto product1 = new Auto("Audi", "TT", "sedan", 3234.45);
-        Auto product2 = new Auto("Camaro", "Chevrolet", "sportowe", 5432.99);
-        Auto product3 = new Auto("BMW", "X6", "sedan", 5999.45);
-        Auto product4 = new Auto("Nissan", "Murano", "sedan", 1854.45);
-        Auto product5 = new Auto("Skoda", "Fabia", "sedan", 2349.45);
+        Auto product1 = new Auto("Hyundai", "Tiburon", "sedan", 2374.45);
+        Auto product2 = new Auto("Fiat", "Twingo", "sedan", 1956.45);
+        Auto product3 = new Auto("Skoda", "Fabia", "sedan", 2349.45);
+        Auto product4 = new Auto("Camaro", "Chevrolet", "sedan", 5555.45);
+        Auto product5 = new Auto("BMW", "X6", "sedan", 5999.45);
         Auto product6 = new Auto("Audi", "x86", "sedan", 9876.45);
         Auto product7 = new Auto("Camaro", "Chevrolet", "sedan", 5555.45);
         Auto product8 = new Auto("Hyundai", "Tiburon", "sedan", 2374.45);
         Auto product9 = new Auto("Skoda", "Octavia", "sedan", 4679.45);
         Auto product10 = new Auto("Fiat", "Twingo", "sedan", 1956.45);
-        Auto product11 = new Auto("Camaro", "Chevrolet", "sedan", 3234.45);
-        Auto product12 = new Auto("audi", "tt", "sedan", 3234.45);
-        Auto product13 = new Auto("Camaro", "Chevrolet", "sedan", 3234.45);
-        Auto product14 = new Auto("audi", "tt", "sedan", 3234.45);
+        Auto product11 = new Auto("Nissan", "Murano", "sedan", 1854.45);
+        Auto product12 = new Auto("BMW", "X6", "sedan", 5999.45);
+        Auto product13 = new Auto("Audi", "TT", "sedan", 3234.45);
+        Auto product14 = new Auto("Camaro", "Chevrolet", "sportowe", 5432.99);
 
         byte[] audi2pics = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] camaropics = ImageUtils.getBytesFromResource(context, R.drawable.camaro3);
@@ -48,8 +48,8 @@ public class DatabaseInitializer {
         byte[] nissan = ImageUtils.getBytesFromResource(context, R.drawable.nissan);
         byte[] htiburioon = ImageUtils.getBytesFromResource(context, R.drawable.tiburon);
         byte[] audi = ImageUtils.getBytesFromResource(context, R.drawable.auditt);
-        byte[] bmw= ImageUtils.getBytesFromResource(context, R.drawable.bmw1);/*
-        byte[] img8 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
+        byte[] bmw= ImageUtils.getBytesFromResource(context, R.drawable.bmw1);
+        byte[] twingo = ImageUtils.getBytesFromResource(context, R.drawable.twingo3);/*
         byte[] img9 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img10 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img11 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
@@ -57,19 +57,19 @@ public class DatabaseInitializer {
         byte[] img13 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img14 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);*/
 
-        product1.setCover(audi);
-        product2.setCover(camaropics);
-        product3.setCover(bmw);
-        product4.setCover(nissan);
-        product5.setCover(fabia);
+        product1.setCover(htiburioon);
+        product2.setCover(twingo);
+        product3.setCover(fabia);
+        product4.setCover(camaropics);
+        product5.setCover(bmw);
         product6.setCover(audi2pics);
         product7.setCover(camaropics);
         product8.setCover(htiburioon);
         product9.setCover(fabia);
-        product10.setCover(nissan);
-        product11.setCover(htiburioon);
+        product10.setCover(twingo);
+        product11.setCover(nissan);
         product12.setCover(bmw);
-        product13.setCover(camaropics);
+        product13.setCover(audi2pics);
         product14.setCover(camaropics);
 
         daoSession.getAutoDao().insert(product1);
