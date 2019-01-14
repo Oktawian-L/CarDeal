@@ -27,19 +27,19 @@ public class DatabaseInitializer {
         daoSession.getCategoryDao().insert(category3);
         daoSession.getCategoryDao().insert(category4);*/
 
-        Auto product1 = new Auto("audi", "tt", "sedan", 3234.45);
-        Auto product2 = new Auto("chevrolet", "camaro", "sportowe", 5432.99);
-        Auto product3 = new Auto("bmw", "tt", "sedan", 3234.45);
-        Auto product4 = new Auto("audi", "tt", "sedan", 3234.45);
-        Auto product5 = new Auto("audi", "tt", "sedan", 3234.45);
-        Auto product6 = new Auto("audi", "tt", "sedan", 3234.45);
-        Auto product7 = new Auto("audi", "tt", "sedan", 3234.45);
-        Auto product8 = new Auto("audi", "tt", "sedan", 3234.45);
-        Auto product9 = new Auto("audi", "tt", "sedan", 3234.45);
-        Auto product10 = new Auto("audi", "tt", "sedan", 3234.45);
-        Auto product11 = new Auto("audi", "tt", "sedan", 3234.45);
+        Auto product1 = new Auto("Audi", "TT", "sedan", 3234.45);
+        Auto product2 = new Auto("Camaro", "Chevrolet", "sportowe", 5432.99);
+        Auto product3 = new Auto("BMW", "X6", "sedan", 5999.45);
+        Auto product4 = new Auto("Nissan", "Murano", "sedan", 1854.45);
+        Auto product5 = new Auto("Camaro", "Chevrolet", "sedan", 2349.45);
+        Auto product6 = new Auto("audi", "tt", "sedan", 9876.45);
+        Auto product7 = new Auto("Camaro", "Chevrolet", "sedan", 5555.45);
+        Auto product8 = new Auto("audi", "tt", "sedan", 2374.45);
+        Auto product9 = new Auto("Camaro", "Chevrolet", "sedan", 4679.45);
+        Auto product10 = new Auto("audi", "tt", "sedan", 1956.45);
+        Auto product11 = new Auto("Camaro", "Chevrolet", "sedan", 3234.45);
         Auto product12 = new Auto("audi", "tt", "sedan", 3234.45);
-        Auto product13 = new Auto("audi", "tt", "sedan", 3234.45);
+        Auto product13 = new Auto("Camaro", "Chevrolet", "sedan", 3234.45);
         Auto product14 = new Auto("audi", "tt", "sedan", 3234.45);
 
         byte[] img1 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
