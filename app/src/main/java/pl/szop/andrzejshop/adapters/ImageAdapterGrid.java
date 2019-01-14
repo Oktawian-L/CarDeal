@@ -48,10 +48,10 @@ public class ImageAdapterGrid extends BaseAdapter {
         // references to our images
         private Integer[] mThumbIds = {
                 R.drawable.audi2, R.drawable.audi2,
-                R.drawable.audi2, R.drawable.audi2,
-                R.drawable.audi2, R.drawable.audi2,
-                R.drawable.audi2, R.drawable.audi2,
-                R.drawable.audi2, R.drawable.audi2,
+                R.drawable.audi2, R.drawable.camaro3,
+                R.drawable.audi2, R.drawable.camaro3,
+                R.drawable.audi2, R.drawable.camaro3,
+                R.drawable.audi2, R.drawable.camaro3,
                 R.drawable.audi2, R.drawable.audi2,
                 R.drawable.audi2, R.drawable.audi2,
                 R.drawable.audi2, R.drawable.audi2,

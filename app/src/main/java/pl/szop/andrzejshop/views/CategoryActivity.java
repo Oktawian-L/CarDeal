@@ -18,7 +18,7 @@ public class CategoryActivity extends AppCompatActivity {
         btnCriminal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startProductsListActivity("category");
+                startProductsListActivity("sportowe");
             }
         });
 
@@ -52,7 +52,7 @@ public class CategoryActivity extends AppCompatActivity {
     }
     private void startProductsListActivity(String cat) {
         Intent intent = new Intent(this, ProductsActivity.class);
-        intent.putExtra("categoryType", cat);
+        //intent.putExtra("categoryType", cat);
         startActivity(intent);
     }/*
     @Override
