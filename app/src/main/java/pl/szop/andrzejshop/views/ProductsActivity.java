@@ -259,4 +259,17 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
             that set the view to INVISIBLE */
         view.setVisibility(View.VISIBLE);
     }
+
+    @Override
+    protected void onDestroy() {
+        //android.os.Process.killProcess(android.os.Process.myPid());
+
+        super.onDestroy();
+        if(mFragment!=null)
+        {
+           // mFragment.recycle();
+            mFragment=null;
+        }
+
+    }
 }
