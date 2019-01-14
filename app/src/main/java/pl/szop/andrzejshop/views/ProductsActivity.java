@@ -236,9 +236,11 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
             case R.id.miProfile:
                 startActivity(new Intent(getApplicationContext(), FavoritesActivity.class));
                 return true;
-            case R.id.action_settings:
+            case R.id.miGrid:
                 startActivity(new Intent(getApplicationContext(), GridActivity.class));
                 return true;
+            case R.id.action_settings:
+                startActivity(new Intent(getApplicationContext(), ViewPagerActivity.class));
             default:
                 return super.onOptionsItemSelected(item);
         }
