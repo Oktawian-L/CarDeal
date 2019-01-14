@@ -19,24 +19,26 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="66dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="95dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="5dp"
         android:text="Model"
         android:textAlignment="textStart"
         android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/cover"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/author"
-        android:layout_width="67dp"
+        android:layout_width="94dp"
         android:layout_height="33dp"
-        android:layout_marginStart="46dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="14dp"
         android:text="Marka"
         android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/cover"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
