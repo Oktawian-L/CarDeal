@@ -7,12 +7,20 @@
     android:background="@color/colorTlo"
     android:layout_height="match_parent">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbarautopoj"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="323dp"
-        android:layout_height="161dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
+        android:layout_height="143dp"
+        android:layout_marginEnd="44dp"
         android:text="Chevrolet Camaro – amerykański samochód osobowy typu pony car produkowany przez koncern General Motors pod marką Chevrolet w latach 1967 - 2002 oraz ponownie od 2009 roku. Pierwszy egzemplarz zaprezentowano 12 września 1966 roku[1] w Detroit. Pojazd dzielił podwozie oraz większość części z Pontiaciem Firebird. "
         android:textAlignment="center"
         android:textColor="@color/default_circle_indicator_fill_color"
@@ -37,10 +45,10 @@
     <ImageView
         android:id="@+id/jednozdjecie"
         android:layout_width="290dp"
-        android:layout_height="324dp"
+        android:layout_height="276dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="68dp"
+        android:onClick="showGaleriePrzewijana"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="showGaleriePrzewijana"/>
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
