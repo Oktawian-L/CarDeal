@@ -48,7 +48,7 @@ public class DatabaseInitializer {
         byte[] nissan = ImageUtils.getBytesFromResource(context, R.drawable.nissan);
         byte[] htiburioon = ImageUtils.getBytesFromResource(context, R.drawable.tiburon);
         byte[] audi = ImageUtils.getBytesFromResource(context, R.drawable.auditt);
-        byte[] bmw= ImageUtils.getBytesFromResource(context, R.drawable.bmw1);
+        byte[] bmw= ImageUtils.getBytesFromResource(context, R.drawable.bmw2);
         byte[] twingo = ImageUtils.getBytesFromResource(context, R.drawable.twingo3);/*
         byte[] img9 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
         byte[] img10 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
