@@ -19,6 +19,8 @@ public class ProductDetailsActivity extends AppCompatActivity implements ImagesF
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_auto);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ImageView img23 = (ImageView) findViewById(R.id.jednozdjecie);
@@ -29,7 +31,6 @@ public class ProductDetailsActivity extends AppCompatActivity implements ImagesF
         Intent intent = new Intent(this,ViewPagerActivity.class);
         startActivity(intent);
     }
-
 
     @Override
     public void onFragmentInteraction(Uri uri) {
