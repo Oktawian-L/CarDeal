@@ -215,4 +215,9 @@ public class ProductsListFragment extends Fragment {
     public static class TestEvent{
 
     }
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Runtime.getRuntime().gc();
+    }
 }

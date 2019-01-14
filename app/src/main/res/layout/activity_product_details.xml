@@ -11,47 +11,4 @@
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="200dp"></android.support.v4.view.ViewPager>-->
 
-    <FrameLayout
-        android:id="@+id/products_details"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
-
-        <include layout="@layout/element_product_details" />
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/products_details"/>
-    <TableLayout android:id="@+id/details_tabs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/products_details" />
-    <android.support.v4.view.ViewPager android:id="@+id/details_pager"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/details_tabs"/>
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="62dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/audi2" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="393dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="4dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 </android.support.constraint.ConstraintLayout>

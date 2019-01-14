@@ -236,9 +236,11 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
             case R.id.miProfile:
                 startActivity(new Intent(getApplicationContext(), FavoritesActivity.class));
                 return true;
-            case R.id.action_settings:
+            case R.id.miGrid:
                 startActivity(new Intent(getApplicationContext(), GridActivity.class));
                 return true;
+            case R.id.action_settings:
+                startActivity(new Intent(getApplicationContext(), ViewPagerActivity.class));
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -258,5 +260,18 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
             to VISIBLE. Otherwise it will go back to being INVISIBLE due to our previous lines
             that set the view to INVISIBLE */
         view.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    protected void onDestroy() {
+        //android.os.Process.killProcess(android.os.Process.myPid());
+
+        super.onDestroy();
+        if(mFragment!=null)
+        {
+           // mFragment.recycle();
+            mFragment=null;
+        }
+
     }
 }
