@@ -1,11 +1,14 @@
 package pl.szop.andrzejshop.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +29,7 @@ public class FavoritesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favourites);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarfav);
         setSupportActionBar(toolbar);
         initComponents();
     }
@@ -50,6 +53,33 @@ public class FavoritesActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         productList.setLayoutManager(layoutManager);
         productList.setItemAnimator(new DefaultItemAnimator());
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.toolbar_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.miHome:
+                startActivity(new Intent(getApplicationContext(), CategoryActivity.class));
+                return true;
+            case R.id.miProfile:
+                startActivity(new Intent(getApplicationContext(), FavoritesActivity.class));
+                return true;
+            case R.id.miGrid:
+                startActivity(new Intent(getApplicationContext(), GridActivity.class));
+                return true;
+            case R.id.action_settings:
+                startActivity(new Intent(getApplicationContext(), ViewPagerActivity.class));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
 }

@@ -7,8 +7,6 @@
 
 \.gradle/4\.6/taskHistory/
 
-\.gradle/buildOutputCleanup/
-
 \.idea/caches/
 
 \.idea/libraries/
@@ -28,7 +26,5 @@ gradle/wrapper/
 gradlew
 
 gradlew\.bat
-
-local\.properties
 
 CarDeal\.iml

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
@@ -18,10 +19,10 @@ public class ViewPagerActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.view_pager);
             //toolbar start
-            Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+            Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbarviewpager);
             setSupportActionBar(myToolbar);
             //toolbar end
-            setSupportActionBar(myToolbar);
+          //  setSupportActionBar(myToolbar);
             ViewPager mViewPager = (ViewPager) findViewById(R.id.viewPageAndroid);
             ImageAdapterSlide adapterView = new ImageAdapterSlide(this);
             mViewPager.setAdapter(adapterView);
@@ -29,6 +30,13 @@ public class ViewPagerActivity extends AppCompatActivity {
 
 
         }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.toolbar_menu,menu);
+        return true;
+    }
+
     // Respond to menu item clicks
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

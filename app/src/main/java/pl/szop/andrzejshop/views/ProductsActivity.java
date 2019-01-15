@@ -115,10 +115,10 @@ public class ProductsActivity extends AppCompatActivity implements ProductsListF
     }
 
     private void createActionBar() {
-        ActionBar actionBar = getSupportActionBar();
+      /*  ActionBar actionBar = getSupportActionBar();
         actionBar.setCustomView(R.layout.action_bar);
         cSearchEditText = actionBar.getCustomView().findViewById(R.id.search_edit_text);
-        cSearchButton = actionBar.getCustomView().findViewById(R.id.search_button);
+        cSearchButton = actionBar.getCustomView().findViewById(R.id.search_button);*/
     }
 
     private void initComponents(){
