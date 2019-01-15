@@ -9,7 +9,7 @@
     tools:context="pl.szop.andrzejshop.views.ViewPagerActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
+        android:id="@+id/my_toolbarviewpager"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         android:layout_width="368dp"
         android:layout_height="wrap_content"

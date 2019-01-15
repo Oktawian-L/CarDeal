@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorTlo">
     <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
+        android:id="@+id/toolbargridyy"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
@@ -17,8 +17,8 @@
     <GridView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/gridview"
         android:layout_width="match_parent"
-        android:layout_height="508dp"
-        android:layout_marginTop="3dp"
+        android:layout_height="528dp"
+        android:layout_marginTop="1dp"
         android:columnWidth="90dp"
         android:gravity="center"
         android:horizontalSpacing="10dp"
@@ -27,6 +27,6 @@
         android:verticalSpacing="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbargridyy" />
 
 </android.support.constraint.ConstraintLayout>
