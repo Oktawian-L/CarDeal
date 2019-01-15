@@ -8,8 +8,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"/>
-    <ImageButton android:id="@+id/search_button"
+
+    <ImageButton
+        android:id="@+id/search_button"
         android:layout_width="35dp"
-        android:layout_height="35dp"
-        />
+        android:layout_height="54dp"
+        android:visibility="invisible" />
 </LinearLayout>
