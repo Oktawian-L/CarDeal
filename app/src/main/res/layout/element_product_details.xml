@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:textSize="25dp"
         android:textStyle="bold"
-        android:text="tytuł"/>
+        android:text="model"/>
 
     <TextView
         android:id="@+id/author"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:textSize="20dp"
-        android:text="autor"
+        android:text="marka"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <TextView
@@ -42,7 +42,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:tag="book.priceText"
-        android:text="99 zł"
+        android:text="1199 zł"
         android:textColor="@color/colorPrice"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"

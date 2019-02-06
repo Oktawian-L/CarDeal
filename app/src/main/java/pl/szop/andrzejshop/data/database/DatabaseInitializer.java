@@ -21,14 +21,14 @@ public class DatabaseInitializer {
 
     public static void init(DaoSession daoSession, Context context){
 
-        Author author1 = new Author(1L,"Autor", "Jeden");
-        Author author2 = new Author(2L, "Autor", "Dwa");
+        Author author1 = new Author(1L,"Marka", "Audi");
+        Author author2 = new Author(2L, "Marka", "Nissan");
         daoSession.getAuthorDao().insert(author1);
         daoSession.getAuthorDao().insert(author2);
 
-        Category category1 = new Category(1L, "thriller");
-        Category category2 = new Category(2L, "fantasy");
-        Category category3 = new Category(3L, "sci_fi");
+        Category category1 = new Category(1L, "sedan");
+        Category category2 = new Category(2L, "sportowe");
+        Category category3 = new Category(3L, "suv");
         daoSession.getCategoryDao().insert(category1);
         daoSession.getCategoryDao().insert(category2);
         daoSession.getCategoryDao().insert(category3);
@@ -37,7 +37,7 @@ public class DatabaseInitializer {
         product1.setReleaseDate(DateUtils.createTimestamp(1,1,2018));
         Book product2 = new Book("Nissan", author1, category3, 2234.00);
         product2.setReleaseDate(DateUtils.createTimestamp(2,1,2018));
-        Book product3 = new Book("Camaro", author2, category1, 99.99);
+        Book product3 = new Book("Nissan", author2, category1, 9931.99);
         product3.setReleaseDate(DateUtils.createTimestamp(3,1,2018));
         byte[] image = ImageUtils.getBytesFromResource(context, R.drawable.game);
         byte[] telnoImage = ImageUtils.getBytesFromResource(context, R.drawable.tellnoone);
@@ -57,7 +57,7 @@ public class DatabaseInitializer {
 
         // saving details
         BookDetails details = new BookDetails();
-        details.setDescription("“Władca Pierścieni” to niesamowita przygoda mówiąca o przyjaźni, poświęceniu i walce o dobro. Przenieś się w świat porywającego Śródziemia, miejsca, gdzie można spotkać nie tylko ludzi, lecz dumne krasnoludy, piękne elfy i, co najważniejsze, dzielne hobbity. Poznaj historię niepozornego niziołka, Froda Bagginsa, na którego barki niespodziewanie spada ogromna odpowiedzialność. Dzięki życzliwości swoich towarzyszy podejmuje się niebezpiecznego zadania i zabiera nas do magicznego świata.");
+        details.setDescription("Super auto jedzenia po miescie. Zona tylko do kosciala nim jezdzila");
 
         Favorites favorites = new Favorites(1L);
         daoSession.getFavoritesDao().insert(favorites);
