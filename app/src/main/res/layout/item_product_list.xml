@@ -3,80 +3,113 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorTlo"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_shape"
+    android:padding="10dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginBottom="1dp"
+    android:layout_marginTop="1dp">
 
-    <ImageView
-        android:id="@+id/cover"
-        android:layout_width="113dp"
-        android:layout_height="99dp"
-        android:adjustViewBounds="true"
-        android:maxWidth="150dp"
+    <ImageView android:id="@+id/cover"
+        android:tag="cover"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
         android:maxHeight="150dp"
-
-        android:onClick="showGalleryfromProductList" />
+        android:maxWidth="150dp"
+        android:adjustViewBounds="true"
+        />
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="103dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="5dp"
-        android:text="Model"
-        android:textAlignment="textStart"
-        android:textColor="@color/colorNapis"
-        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="title"
+        android:text="Tytul"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/cover"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/price" />
     <TextView
         android:id="@+id/author"
-        android:layout_width="115dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="14dp"
-        android:text="Marka"
-        android:textColor="@color/colorNapis"
-        android:textSize="24sp"
+        android:tag="author.name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Autor"
         app:layout_constraintStart_toEndOf="@+id/cover"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <TextView
-        android:id="@+id/price"
-        android:layout_width="54dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="32dp"
-        android:text="cena"
-        android:textAlignment="viewStart"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/title"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/buyed"
+        android:id="@+id/category"
+        android:tag="category.localisedName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorPrice"
-        android:textSize="30dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Zakupiono"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:visibility="gone"/>
+        android:text="Kategoria"
+        app:layout_constraintStart_toEndOf="@+id/cover"
+        app:layout_constraintTop_toBottomOf="@+id/author" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="46dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="32dp"
-        android:text="$"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/price"
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="priceText"
+        android:text="cena"
+        android:textColor="@color/colorPrice"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/cover"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/bought"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:tag="bought"
+        android:text="W koszyku"
+        android:textColor="@color/colorPrice"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+        android:visibility="gone"
+        />
+
+    <CheckBox
+        android:id="@+id/favorites"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:button="@drawable/star_selector"
+        android:gravity="center"
+        android:tag="favorites"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buy_button"
+        android:tag="buy_button"
+        android:text="Dodaj do koszyka"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/shopping"
+        android:background="@drawable/button_shape"
+        android:tooltipText="@string/buy"
+        app:layout_constraintBottom_toBottomOf="@+id/cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favorites" />
 </android.support.constraint.ConstraintLayout>

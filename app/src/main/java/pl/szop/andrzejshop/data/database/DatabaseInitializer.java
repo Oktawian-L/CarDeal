@@ -6,131 +6,96 @@ import java.util.Arrays;
 import java.util.List;
 
 import pl.szop.andrzejshop.R;
-import pl.szop.andrzejshop.models.Auto;
-import pl.szop.andrzejshop.models.AutoDetails;
+import pl.szop.andrzejshop.models.Author;
+import pl.szop.andrzejshop.models.Book;
+import pl.szop.andrzejshop.models.BookDetails;
 import pl.szop.andrzejshop.models.Category;
 import pl.szop.andrzejshop.models.DaoSession;
 import pl.szop.andrzejshop.models.Favorites;
 import pl.szop.andrzejshop.models.Image;
+import pl.szop.andrzejshop.models.Promotions;
+import pl.szop.andrzejshop.utils.DateUtils;
 import pl.szop.andrzejshop.utils.ImageUtils;
 
 public class DatabaseInitializer {
 
     public static void init(DaoSession daoSession, Context context){
 
-        Category category1 = new Category( "sportowe");
-        Category category2 = new Category( "sedan");
-        Category category3 = new Category ("coupe");
-        Category category4 = new Category( "kombi");
-        /*daoSession.getCategoryDao().insert(category1);
+        Author author1 = new Author(1L,"Autor", "Jeden");
+        Author author2 = new Author(2L, "Autor", "Dwa");
+        daoSession.getAuthorDao().insert(author1);
+        daoSession.getAuthorDao().insert(author2);
+
+        Category category1 = new Category(1L, "thriller");
+        Category category2 = new Category(2L, "fantasy");
+        Category category3 = new Category(3L, "sci_fi");
+        daoSession.getCategoryDao().insert(category1);
         daoSession.getCategoryDao().insert(category2);
         daoSession.getCategoryDao().insert(category3);
-        daoSession.getCategoryDao().insert(category4);*/
 
-        Auto product1 = new Auto("Hyundai", "Tiburon", "sedan", 2374.45);
-        Auto product2 = new Auto("Fiat", "Twingo", "sedan", 1956.45);
-        Auto product3 = new Auto("Skoda", "Fabia", "sedan", 2349.45);
-        Auto product4 = new Auto("Camaro", "Chevrolet", "sedan", 5555.45);
-        Auto product5 = new Auto("BMW", "X6", "sedan", 5999.45);
-        Auto product6 = new Auto("Audi", "x86", "sedan", 9876.45);
-        Auto product7 = new Auto("Camaro", "Chevrolet", "sedan", 5555.45);
-        Auto product8 = new Auto("Hyundai", "Tiburon", "sedan", 2374.45);
-        Auto product9 = new Auto("Skoda", "Octavia", "sedan", 4679.45);
-        Auto product10 = new Auto("Fiat", "Twingo", "sedan", 1956.45);
-        Auto product11 = new Auto("Nissan", "Murano", "sedan", 1854.45);
-        Auto product12 = new Auto("BMW", "X6", "sedan", 5999.45);
-        Auto product13 = new Auto("Audi", "TT", "sedan", 3234.45);
-        Auto product14 = new Auto("Camaro", "Chevrolet", "sportowe", 5432.99);
+        Book product1 = new Book("Książka 1", author1, category2, 30.99);
+        product1.setReleaseDate(DateUtils.createTimestamp(1,1,2018));
+        Book product2 = new Book("Książka 2", author1, category3, 24.00);
+        product2.setReleaseDate(DateUtils.createTimestamp(2,1,2018));
+        Book product3 = new Book("Książka 3", author2, category1, 99.99);
+        product3.setReleaseDate(DateUtils.createTimestamp(3,1,2018));
+        byte[] image = ImageUtils.getBytesFromResource(context, R.drawable.game);
+        byte[] telnoImage = ImageUtils.getBytesFromResource(context, R.drawable.tellnoone);
+        product1.setCover(image);
+        product2.setCover(image);
+        product3.setCover(telnoImage);
 
-        byte[] audi2pics = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
-        byte[] camaropics = ImageUtils.getBytesFromResource(context, R.drawable.camaro3);
-        byte[] fabia = ImageUtils.getBytesFromResource(context, R.drawable.skoda_fabia_49);
-        byte[] nissan = ImageUtils.getBytesFromResource(context, R.drawable.nissan);
-        byte[] htiburioon = ImageUtils.getBytesFromResource(context, R.drawable.tiburon);
-        byte[] audi = ImageUtils.getBytesFromResource(context, R.drawable.auditt);
-        byte[] bmw= ImageUtils.getBytesFromResource(context, R.drawable.bmw2);
-        byte[] twingo = ImageUtils.getBytesFromResource(context, R.drawable.twingo3);/*
-        byte[] img9 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
-        byte[] img10 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
-        byte[] img11 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
-        byte[] img12 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
-        byte[] img13 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);
-        byte[] img14 = ImageUtils.getBytesFromResource(context, R.drawable.audi2);*/
+        daoSession.getBookDao().insert(product1);
+        daoSession.getBookDao().insert(product2);
+        daoSession.getBookDao().insert(product3);
 
-        product1.setCover(htiburioon);
-        product2.setCover(twingo);
-        product3.setCover(fabia);
-        product4.setCover(camaropics);
-        product5.setCover(bmw);
-        product6.setCover(audi2pics);
-        product7.setCover(camaropics);
-        product8.setCover(htiburioon);
-        product9.setCover(fabia);
-        product10.setCover(twingo);
-        product11.setCover(nissan);
-        product12.setCover(bmw);
-        product13.setCover(audi2pics);
-        product14.setCover(camaropics);
+        Promotions promotions1 = new Promotions(product1.getId(), 20D);
+        Promotions promotions2 = new Promotions(product3.getId(), 10D);
 
-        daoSession.getAutoDao().insert(product1);
-        daoSession.getAutoDao().insert(product2);
-        daoSession.getAutoDao().insert(product3);
-        daoSession.getAutoDao().insert(product4);
-        daoSession.getAutoDao().insert(product5);
-        daoSession.getAutoDao().insert(product6);
-        daoSession.getAutoDao().insert(product7);
-        daoSession.getAutoDao().insert(product8);
-        daoSession.getAutoDao().insert(product9);
-        daoSession.getAutoDao().insert(product10);
-        daoSession.getAutoDao().insert(product11);
-        daoSession.getAutoDao().insert(product12);
-        daoSession.getAutoDao().insert(product13);
-        daoSession.getAutoDao().insert(product14);
-
-
-
+        daoSession.getPromotionsDao().insert(promotions1);
+        daoSession.getPromotionsDao().insert(promotions2);
 
         // saving details
-        AutoDetails details = new AutoDetails();
-        details.setDescription("Camaro car descrpt from database");
+        BookDetails details = new BookDetails();
+        details.setDescription("“Władca Pierścieni” to niesamowita przygoda mówiąca o przyjaźni, poświęceniu i walce o dobro. Przenieś się w świat porywającego Śródziemia, miejsca, gdzie można spotkać nie tylko ludzi, lecz dumne krasnoludy, piękne elfy i, co najważniejsze, dzielne hobbity. Poznaj historię niepozornego niziołka, Froda Bagginsa, na którego barki niespodziewanie spada ogromna odpowiedzialność. Dzięki życzliwości swoich towarzyszy podejmuje się niebezpiecznego zadania i zabiera nas do magicznego świata.");
 
-        details.setAuto(product1);
-        daoSession.getAutoDetailsDao().insert(details);
         Favorites favorites = new Favorites(1L);
         daoSession.getFavoritesDao().insert(favorites);
-        details.setAuto(product1);
-       /* daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product2);
+//        Image image1 = new Image();
+//        image1.setMImage(image);
+//        Image image2 = new Image();
+//        image2.setMImage(image);
+//        Image image3 = new Image();
+//        image3.setMImage(image);
+
+//        daoSession.getImageDao().insert(image1);
+//        daoSession.getImageDao().insert(image2);
+//        daoSession.getImageDao().insert(image3);
+//
+//        // to nie działa
+
+//        daoSession.getImageDao().insert(image1);
+//        daoSession.getImageDao().insert(image2);
+//        details.getImages().add(image1);
+//        details.getImages().add(image2);
+//        List<Image> images = Arrays.asList(image1, image2, image3);
+//        details.setImages(images);
+
+        details.setBook(product1);
         daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product3);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product4);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product5);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product6);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product7);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product8);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product9);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product10);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product11);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product12);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product13);
-        daoSession.getBookDetailsDao().insert(details);
-        details.setBook(product14);
-        daoSession.getBookDetailsDao().insert(details);*/
 
         Image image1 = new Image();
-        image1.setImage(camaropics);
+        image1.setImage(image);
         image1.setProductId(details.getId());
         Image image2 = new Image();
-
+        image2.setProductId(details.getId());
+        image2.setImage(image);
+        daoSession.getImageDao().insert(image1);
+        daoSession.getImageDao().insert(image2);
+        List<Image> images = Arrays.asList(image1, image2);
+//        BooksImages booksImages = new BooksImages();
+//        booksImages.setBook(details.getId());
+//        booksImages.setImage(image1.getId());
+//        daoSession.getBooksImagesDao().insert(booksImages);
     }
 }

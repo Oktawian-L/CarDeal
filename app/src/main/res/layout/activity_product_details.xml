@@ -4,22 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorTlo"
     tools:context=".views.ProductDetailsActivity"
     android:id="@+id/content">
     <!--<android.support.v4.view.ViewPager android:id="@+id/images"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="200dp"></android.support.v4.view.ViewPager>-->
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
+    <fragment android:id="@+id/images_fragment"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        android:layout_height="200dp"
+        android:name="pl.szop.andrzejshop.views.ImagesFragment"
+        android:background="@drawable/border_shape"
+        android:padding="5dp"></fragment>
+    <FrameLayout android:id="@+id/products_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/images_fragment">
+        <include layout="@layout/element_product_details" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_shape"
+        android:text="Dodaj do koszyka"
+        app:layout_constraintTop_toBottomOf="@+id/products_details" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_shape"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:tag="description"
+        app:layout_constraintTop_toBottomOf="@+id/add_to_cart" />
+
 
 </android.support.constraint.ConstraintLayout>
