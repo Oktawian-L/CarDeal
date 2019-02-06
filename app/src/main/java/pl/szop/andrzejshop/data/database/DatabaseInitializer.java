@@ -33,11 +33,11 @@ public class DatabaseInitializer {
         daoSession.getCategoryDao().insert(category2);
         daoSession.getCategoryDao().insert(category3);
 
-        Book product1 = new Book("Książka 1", author1, category2, 30.99);
+        Book product1 = new Book("AudiTT", author1, category2, 3000.99);
         product1.setReleaseDate(DateUtils.createTimestamp(1,1,2018));
-        Book product2 = new Book("Książka 2", author1, category3, 24.00);
+        Book product2 = new Book("Nissan", author1, category3, 2234.00);
         product2.setReleaseDate(DateUtils.createTimestamp(2,1,2018));
-        Book product3 = new Book("Książka 3", author2, category1, 99.99);
+        Book product3 = new Book("Camaro", author2, category1, 99.99);
         product3.setReleaseDate(DateUtils.createTimestamp(3,1,2018));
         byte[] image = ImageUtils.getBytesFromResource(context, R.drawable.game);
         byte[] telnoImage = ImageUtils.getBytesFromResource(context, R.drawable.tellnoone);
